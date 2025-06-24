@@ -1,3 +1,5 @@
+<!-- MARCXML Record: A machine-readable format commonly used in library catalogs. -->
+
 <?xml version="1.0" encoding="UTF-8"?><record xmlns="http://www.loc.gov/MARC21/slim" xmlns:zs="http://docs.oasis-open.org/ns/search-ws/sruResponse">
   <leader>01639cam a22003855i 4500</leader>
   <controlfield tag="001">20988030</controlfield>
