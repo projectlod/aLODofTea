@@ -1,3 +1,9 @@
+<!-- MODS Record: A metadata standard developed by the Library of Congress, suitable for digital resources. -->
+<!-- For our RDF project, the best metadata format to start from is MODS (Metadata Object Description Schema). -->
+<!-- MODS is XML-based → can be directly parsed and transformed into RDF using XSLT or Python. -->
+<!-- DublinCore is too rdf-friendly but too basic for rich bibliographic records. -->
+<!-- MARCXML is very complete but too complex, we need to do various conversions before turning it into rdf -->
+
 <?xml version="1.0" encoding="UTF-8"?><mods xmlns="http://www.loc.gov/mods/v3" xmlns:zs="http://docs.oasis-open.org/ns/search-ws/sruResponse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.8" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-8.xsd">
   <titleInfo>
     <nonSort xml:space="preserve">The </nonSort>
