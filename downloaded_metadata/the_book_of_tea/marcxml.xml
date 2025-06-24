@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record xmlns="http://www.loc.gov/MARC21/slim" xmlns:zs="http://docs.oasis-open.org/ns/search-ws/sruResponse">
+  <leader>01639cam a22003855i 4500</leader>
+  <controlfield tag="001">20988030</controlfield>
+  <controlfield tag="005">20221003134628.0</controlfield>
+  <controlfield tag="007">cr |||||||||||</controlfield>
+  <controlfield tag="008">190528s20191906xxu     o     000 0 eng  </controlfield>
+  <datafield ind1=" " ind2=" " tag="906">
+    <subfield code="a">0</subfield>
+    <subfield code="b">ibc</subfield>
+    <subfield code="c">orignew</subfield>
+    <subfield code="d">2</subfield>
+    <subfield code="e">ncip</subfield>
+    <subfield code="f">20</subfield>
+    <subfield code="g">y-gencatlg</subfield>
+  </datafield>
+  <datafield ind1="0" ind2=" " tag="925">
+    <subfield code="a">undetermined</subfield>
+    <subfield code="x">policy default</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="955">
+    <subfield code="a">xk16 2019-05-28</subfield>
+    <subfield code="i">xk16 2019-05-28</subfield>
+    <subfield code="w">xk16 2019-05-28</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="010">
+    <subfield code="a">  2019299129</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="040">
+    <subfield code="a">DLC</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">DLC</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="042">
+    <subfield code="a">pcc</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="043">
+    <subfield code="a">a-ja---</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="0" tag="050">
+    <subfield code="a">GT2910</subfield>
+    <subfield code="b">.O6 2019</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="0" tag="082">
+    <subfield code="a">394.1/50952</subfield>
+    <subfield code="2">23</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="100">
+    <subfield code="a">Okakura, Kakuzō,</subfield>
+    <subfield code="d">1862-1913.</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="4" tag="245">
+    <subfield code="a">The book of tea /</subfield>
+    <subfield code="c">Okakura Kakuzō.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="250">
+    <subfield code="a">First edition</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="1" tag="264">
+    <subfield code="a">[United States] :</subfield>
+    <subfield code="b">Standard Ebooks,</subfield>
+    <subfield code="c">2019.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="300">
+    <subfield code="a">1 online resource :</subfield>
+    <subfield code="b">PDF</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="336">
+    <subfield code="a">text</subfield>
+    <subfield code="b">txt</subfield>
+    <subfield code="2">rdacontent</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="337">
+    <subfield code="a">computer</subfield>
+    <subfield code="b">c</subfield>
+    <subfield code="2">rdamedia</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="338">
+    <subfield code="a">online resource</subfield>
+    <subfield code="b">cr</subfield>
+    <subfield code="2">rdacarrier</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">"The book of tea was published in 1906 by Okakura Kakuzō. This ebook was produced for the Standard Ebooks project by Tassos Natsakis, and is based on a transcription produced in 1997 by Matthew, Gabrielle Harbowy, and David Widger for Project Gutenberg and on digital scans available at the Internet Archive" --Colophon.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="506">
+    <subfield code="f">Unrestricted online access</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="540">
+    <subfield code="a">Creative Commons CC0 1.0 Universal</subfield>
+    <subfield code="f">CC0 1.0</subfield>
+    <subfield code="u">https://creativecommons.org/publicdomain/zero/1.0/legalcode</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="588">
+    <subfield code="a">Title from standardebooks.org ; viewed on 05/28/2019</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Japanese tea ceremony.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Tea</subfield>
+    <subfield code="z">Japan.</subfield>
+  </datafield>
+  <datafield ind1="4" ind2="0" tag="856">
+    <subfield code="d">gdcebookspublic</subfield>
+    <subfield code="f">2019299129</subfield>
+    <subfield code="u">https://hdl.loc.gov/loc.gdc/gdcebookspublic.2019299129</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="985">
+    <subfield code="a">gdc/doab</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="985">
+    <subfield code="a">gdc/scd</subfield>
+  </datafield>
+</record>

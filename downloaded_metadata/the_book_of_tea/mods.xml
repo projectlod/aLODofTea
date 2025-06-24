@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><mods xmlns="http://www.loc.gov/mods/v3" xmlns:zs="http://docs.oasis-open.org/ns/search-ws/sruResponse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.8" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-8.xsd">
+  <titleInfo>
+    <nonSort xml:space="preserve">The </nonSort>
+    <title>book of tea</title>
+  </titleInfo>
+  <name type="personal" usage="primary">
+    <namePart>Okakura, Kakuzō,</namePart>
+    <namePart type="date">1862-1913</namePart>
+  </name>
+  <typeOfResource>text</typeOfResource>
+  <genre authority="rdacontent">text</genre>
+  <originInfo>
+    <place>
+      <placeTerm authority="marccountry" type="code">xxu</placeTerm>
+    </place>
+    <dateIssued encoding="marc">2019</dateIssued>
+    <issuance>monographic</issuance>
+    <edition>First edition</edition>
+  </originInfo>
+  <originInfo eventType="publication">
+    <place>
+      <placeTerm type="text">[United States] :</placeTerm>
+    </place>
+    <agent>
+      <namePart>Standard Ebooks,</namePart>
+      <role>
+        <roleTerm>publisher</roleTerm>
+      </role>
+    </agent>
+    <dateIssued>2019.</dateIssued>
+  </originInfo>
+  <language>
+    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+  </language>
+  <physicalDescription>
+    <form authority="marccategory">electronic resource</form>
+    <form authority="marcsmd">remote</form>
+    <form authority="rdamedia" type="media">computer</form>
+    <form authority="rdacarrier" type="carrier">online resource</form>
+    <extent>1 online resource : PDF</extent>
+  </physicalDescription>
+  <accessCondition type="restriction on access"/>
+  <accessCondition type="use and reproduction">Creative Commons CC0 1.0 Universal</accessCondition>
+  <note type="statement of responsibility">Okakura Kakuzō.</note>
+  <note>"The book of tea was published in 1906 by Okakura Kakuzō. This ebook was produced for the Standard Ebooks project by Tassos Natsakis, and is based on a transcription produced in 1997 by Matthew, Gabrielle Harbowy, and David Widger for Project Gutenberg and on digital scans available at the Internet Archive" --Colophon.</note>
+  <note>Title from standardebooks.org ; viewed on 05/28/2019</note>
+  <subject>
+    <geographicCode authority="marcgac">a-ja---</geographicCode>
+  </subject>
+  <subject authority="lcsh">
+    <topic>Japanese tea ceremony</topic>
+  </subject>
+  <subject authority="lcsh">
+    <topic>Tea</topic>
+    <geographic>Japan</geographic>
+  </subject>
+  <classification authority="lcc">GT2910 .O6 2019</classification>
+  <classification authority="ddc" edition="23">394.1/50952</classification>
+  <location>
+    <url displayLabel="electronic resource" usage="primary display">https://hdl.loc.gov/loc.gdc/gdcebookspublic.2019299129</url>
+  </location>
+  <identifier type="lccn">2019299129</identifier>
+  <recordInfo>
+    <descriptionStandard>rda</descriptionStandard>
+    <recordContentSource authority="marcorg">DLC</recordContentSource>
+    <recordCreationDate encoding="marc">190528</recordCreationDate>
+    <recordChangeDate encoding="iso8601">20221003134628.0</recordChangeDate>
+    <recordIdentifier>20988030</recordIdentifier>
+    <recordOrigin>Converted from MARCXML to MODS version 3.8 using MARC21slim2MODS3-8_XSLT1-0.xsl
+				(Revision 1.172 20230208)</recordOrigin>
+    <languageOfCataloging>
+      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+    </languageOfCataloging>
+  </recordInfo>
+</mods>
