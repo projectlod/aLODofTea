@@ -1,3 +1,5 @@
+<!-- Dublin Core Record: A simple and widely used metadata standard for describing digital resources. -->
+
 <?xml version="1.0" encoding="UTF-8"?><srw_dc:dc xmlns:srw_dc="info:srw/schema/1/dc-schema" xmlns:zs="http://docs.oasis-open.org/ns/search-ws/sruResponse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:srw/schema/1/dc-schema http://www.loc.gov/standards/sru/resources/dc-schema.xsd">
   <title xmlns="http://purl.org/dc/elements/1.1/">The book of tea /</title>
   <creator xmlns="http://purl.org/dc/elements/1.1/">Okakura, Kakuzō, 1862-1913.</creator>
