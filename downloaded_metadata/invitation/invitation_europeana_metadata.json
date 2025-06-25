@@ -1,0 +1,1262 @@
+{
+    "apikey": "uragnestenal",
+    "success": true,
+    "statsDuration": 242,
+    "requestNumber": 999,
+    "object": {
+        "about": "/15514/BI_17444_11_9",
+        "agents": [
+            {
+                "about": "#Utagawa_歌川派_(Schule)_Schule",
+                "prefLabel": {
+                    "de": [
+                        "Utagawa 歌川派 (Schule) (Schule) (Japan, 1840-1844)"
+                    ],
+                    "en": [
+                        "Utagawa 歌川派 (Schule)"
+                    ]
+                },
+                "begin": {
+                    "def": [
+                        "1840"
+                    ]
+                },
+                "end": {
+                    "def": [
+                        "1844"
+                    ]
+                },
+                "foafName": {
+                    "de": [
+                        "Utagawa 歌川派 (Schule)"
+                    ],
+                    "en": [
+                        "Utagawa 歌川派 (school)"
+                    ]
+                },
+                "rdaGr2ProfessionOrOccupation": {
+                    "de": [
+                        "Schule"
+                    ]
+                },
+                "rdaGr2BiographicalInformation": {
+                    "de": [
+                        "Japan, 1840-1844"
+                    ],
+                    "en": [
+                        "Japan, 1840-1844"
+                    ]
+                }
+            },
+            {
+                "about": "#Yamamuro_Harukichi_山室春吉_Ausführung",
+                "prefLabel": {
+                    "de": [
+                        "Yamamuro Harukichi 山室春吉 (Ausführung) (Japan, 1881)"
+                    ],
+                    "en": [
+                        "Yamamuro Harukichi 山室春吉"
+                    ]
+                },
+                "begin": {
+                    "def": [
+                        "1881"
+                    ]
+                },
+                "end": {
+                    "def": [
+                        "1881"
+                    ]
+                },
+                "foafName": {
+                    "de": [
+                        "Yamamuro Harukichi 山室春吉"
+                    ],
+                    "en": [
+                        "Yamamuro Harukichi 山室春吉"
+                    ]
+                },
+                "rdaGr2ProfessionOrOccupation": {
+                    "de": [
+                        "Ausführung"
+                    ]
+                },
+                "rdaGr2BiographicalInformation": {
+                    "de": [
+                        "Japan, 1881"
+                    ],
+                    "en": [
+                        "Japan, 1881"
+                    ]
+                }
+            },
+            {
+                "about": "#Hayashi_Kichizō_林吉蔵_Verlag",
+                "prefLabel": {
+                    "de": [
+                        "Hayashi Kichizō 林吉蔵 (Verlag) (Japan, 1881)"
+                    ],
+                    "en": [
+                        "Hayashi Kichizō 林吉蔵"
+                    ]
+                },
+                "begin": {
+                    "def": [
+                        "1881"
+                    ]
+                },
+                "end": {
+                    "def": [
+                        "1881"
+                    ]
+                },
+                "foafName": {
+                    "de": [
+                        "Hayashi Kichizō 林吉蔵"
+                    ],
+                    "en": [
+                        "Hayashi Kichizō 林吉蔵"
+                    ]
+                },
+                "rdaGr2ProfessionOrOccupation": {
+                    "de": [
+                        "Verlag"
+                    ]
+                },
+                "rdaGr2BiographicalInformation": {
+                    "de": [
+                        "Japan, 1881"
+                    ],
+                    "en": [
+                        "Japan, 1881"
+                    ]
+                }
+            },
+            {
+                "about": "#Utagawa_Hiroshige_III._三代目歌川廣重_Entwurf",
+                "prefLabel": {
+                    "de": [
+                        "Utagawa Hiroshige III. 三代目歌川廣重 (Entwurf) (Japan, 1881)"
+                    ],
+                    "en": [
+                        "Utagawa Hiroshige III. 三代目歌川廣重"
+                    ]
+                },
+                "begin": {
+                    "def": [
+                        "1881"
+                    ]
+                },
+                "end": {
+                    "def": [
+                        "1881"
+                    ]
+                },
+                "foafName": {
+                    "de": [
+                        "Utagawa Hiroshige III. 三代目歌川廣重"
+                    ],
+                    "en": [
+                        "Utagawa Hiroshige III. 三代目歌川廣重"
+                    ]
+                },
+                "rdaGr2ProfessionOrOccupation": {
+                    "de": [
+                        "Entwurf"
+                    ]
+                },
+                "rdaGr2BiographicalInformation": {
+                    "de": [
+                        "Japan, 1881"
+                    ],
+                    "en": [
+                        "Japan, 1881"
+                    ]
+                }
+            }
+        ],
+        "aggregations": [
+            {
+                "about": "/aggregation/provider/15514/BI_17444_11_9",
+                "edmDataProvider": {
+                    "def": [
+                        "http://data.europeana.eu/organization/1482250000004509093"
+                    ]
+                },
+                "edmIsShownBy": "https://sammlung.mak.at/img/1200x1200/publikationsbilder/bi-17444-11-9_1.jpg",
+                "edmIsShownAt": "https://sammlung.mak.at/sammlung_online?id=collect-198114",
+                "edmObject": "https://sammlung.mak.at/img/300x300/publikationsbilder/bi-17444-11-9_1.jpg",
+                "edmProvider": {
+                    "def": [
+                        "http://data.europeana.eu/organization/1482250000004507745"
+                    ]
+                },
+                "edmRights": {
+                    "def": [
+                        "http://rightsstatements.org/vocab/InC/1.0/"
+                    ]
+                },
+                "edmUgc": "false",
+                "aggregatedCHO": "/item/15514/BI_17444_11_9",
+                "webResources": [
+                    {
+                        "about": "https://sammlung.mak.at/sammlung_online?id=collect-198114",
+                        "textAttributionSnippet": "(en) Invitation to a tea ceremony; Mirror of instructions for women (Serientitel) - https://www.europeana.eu/item/15514/BI_17444_11_9. MAK – Museum für angewandte Kunst - https://sammlung.mak.at/sammlung_online?id=collect-198114. In Copyright - http://rightsstatements.org/vocab/InC/1.0/",
+                        "htmlAttributionSnippet": "<link rel='stylesheet' type='text/css' href='https://api.europeana.eu/attribution/style.css'/><dl class='europeana-attribution' lang='en'><dt>Title</dt><dd lang='en'><a href='http://data.europeana.eu/item/15514/BI_17444_11_9' target='_blank' rel='noopener'>Invitation to a tea ceremony; Mirror of instructions for women (Serientitel)</a></dd><dt>Institution</dt><dd lang=''><a href='https://sammlung.mak.at/sammlung_online?id=collect-198114' target='_blank' rel='noopener'>MAK – Museum für angewandte Kunst</a></dd><dt>Country</dt><dd lang=''>Austria</dd><dt>Rights</dt><dd><a href='http://rightsstatements.org/vocab/InC/1.0/' target='_blank' rel='noopener'><span class='icon-rs-yes'/>In Copyright</a></dd></dl>",
+                        "ebucoreHasMimeType": "text/html",
+                        "ebucoreFileByteSize": 0
+                    },
+                    {
+                        "webResourceDcRights": {
+                            "de": [
+                                "In Copyright"
+                            ]
+                        },
+                        "webResourceEdmRights": {
+                            "def": [
+                                "http://rightsstatements.org/vocab/InC/1.0/"
+                            ]
+                        },
+                        "about": "http://www.kulturpool.at/plugins/kulturpool/showitem.action?kupoContext=default&itemId=107375046794",
+                        "dcDescription": {
+                            "de": [
+                                "Hiroshigega 廣重画 Serie mit erzieherischen und moralischen Belehrungen zur Tugendhaftigkeit der Frauen. Einladung zur Teezeremonie. Die Frau ganz rechts bereitet den Tee. Die anderen Frauen sind ihre Gäste. Links hinten an der Wand ein Rollbild mit einem Porträt von Sen no Rikyū 千利休, dem großen Teemeister und einem Gedicht von ihm."
+                            ]
+                        },
+                        "dctermsIsPartOf": {
+                            "de": [
+                                "Asien (Abteilung)",
+                                "Ukiyo-e (Sammlung)",
+                                "Sammlung Richard Lieben (Sammlung)"
+                            ],
+                            "ja": [
+                                "アジアコレクション (Abteilung)"
+                            ],
+                            "en": [
+                                "Asia Collection (Department)",
+                                "Ukiyo-e collection (Collection)",
+                                "Richard Lieben collection (Collection)"
+                            ]
+                        },
+                        "textAttributionSnippet": "(en) Invitation to a tea ceremony; Mirror of instructions for women (Serientitel) - https://www.europeana.eu/item/15514/BI_17444_11_9. MAK – Museum für angewandte Kunst - https://sammlung.mak.at/sammlung_online?id=collect-198114. In Copyright - http://rightsstatements.org/vocab/InC/1.0/",
+                        "htmlAttributionSnippet": "<link rel='stylesheet' type='text/css' href='https://api.europeana.eu/attribution/style.css'/><dl class='europeana-attribution' lang='en'><dt>Title</dt><dd lang='en'><a href='http://data.europeana.eu/item/15514/BI_17444_11_9' target='_blank' rel='noopener'>Invitation to a tea ceremony; Mirror of instructions for women (Serientitel)</a></dd><dt>Institution</dt><dd lang=''><a href='https://sammlung.mak.at/sammlung_online?id=collect-198114' target='_blank' rel='noopener'>MAK – Museum für angewandte Kunst</a></dd><dt>Country</dt><dd lang=''>Austria</dd><dt>Rights</dt><dd><a href='http://rightsstatements.org/vocab/InC/1.0/' target='_blank' rel='noopener'><span class='icon-rs-yes'/>In Copyright</a></dd></dl>",
+                        "dctermsIsReferencedBy": [
+                            "http://www.kulturpool.at/plugins/kulturpool/showitem.action?kupoContext=default&itemId=107375046794"
+                        ]
+                    },
+                    {
+                        "about": "https://sammlung.mak.at/img/300x300/publikationsbilder/bi-17444-11-9_1.jpg",
+                        "textAttributionSnippet": "(en) Invitation to a tea ceremony; Mirror of instructions for women (Serientitel) - https://www.europeana.eu/item/15514/BI_17444_11_9. MAK – Museum für angewandte Kunst - https://sammlung.mak.at/sammlung_online?id=collect-198114. In Copyright - http://rightsstatements.org/vocab/InC/1.0/",
+                        "htmlAttributionSnippet": "<link rel='stylesheet' type='text/css' href='https://api.europeana.eu/attribution/style.css'/><dl class='europeana-attribution' lang='en'><dt>Title</dt><dd lang='en'><a href='http://data.europeana.eu/item/15514/BI_17444_11_9' target='_blank' rel='noopener'>Invitation to a tea ceremony; Mirror of instructions for women (Serientitel)</a></dd><dt>Institution</dt><dd lang=''><a href='https://sammlung.mak.at/sammlung_online?id=collect-198114' target='_blank' rel='noopener'>MAK – Museum für angewandte Kunst</a></dd><dt>Country</dt><dd lang=''>Austria</dd><dt>Rights</dt><dd><a href='http://rightsstatements.org/vocab/InC/1.0/' target='_blank' rel='noopener'><span class='icon-rs-yes'/>In Copyright</a></dd></dl>",
+                        "ebucoreHasMimeType": "image/jpeg",
+                        "ebucoreFileByteSize": 16120,
+                        "ebucoreWidth": 300,
+                        "ebucoreHeight": 222,
+                        "edmHasColorSpace": "sRGB",
+                        "edmComponentColor": [
+                            "#FFEFD5",
+                            "#CD5C5C",
+                            "#B8860B",
+                            "#808000",
+                            "#A9A9A9",
+                            "#483D8B"
+                        ],
+                        "ebucoreOrientation": "landscape"
+                    },
+                    {
+                        "about": "https://sammlung.mak.at/img/1200x1200/publikationsbilder/bi-17444-11-9_1.jpg",
+                        "textAttributionSnippet": "(en) Invitation to a tea ceremony; Mirror of instructions for women (Serientitel) - https://www.europeana.eu/item/15514/BI_17444_11_9. MAK – Museum für angewandte Kunst - https://sammlung.mak.at/sammlung_online?id=collect-198114. In Copyright - http://rightsstatements.org/vocab/InC/1.0/",
+                        "htmlAttributionSnippet": "<link rel='stylesheet' type='text/css' href='https://api.europeana.eu/attribution/style.css'/><dl class='europeana-attribution' lang='en'><dt>Title</dt><dd lang='en'><a href='http://data.europeana.eu/item/15514/BI_17444_11_9' target='_blank' rel='noopener'>Invitation to a tea ceremony; Mirror of instructions for women (Serientitel)</a></dd><dt>Institution</dt><dd lang=''><a href='https://sammlung.mak.at/sammlung_online?id=collect-198114' target='_blank' rel='noopener'>MAK – Museum für angewandte Kunst</a></dd><dt>Country</dt><dd lang=''>Austria</dd><dt>Rights</dt><dd><a href='http://rightsstatements.org/vocab/InC/1.0/' target='_blank' rel='noopener'><span class='icon-rs-yes'/>In Copyright</a></dd></dl>",
+                        "dctermsIsReferencedBy": [
+                            "https://iiif.europeana.eu/presentation/15514/BI_17444_11_9/manifest"
+                        ],
+                        "ebucoreHasMimeType": "image/jpeg",
+                        "ebucoreFileByteSize": 190345,
+                        "ebucoreWidth": 1200,
+                        "ebucoreHeight": 890,
+                        "edmHasColorSpace": "sRGB",
+                        "edmComponentColor": [
+                            "#DB7093",
+                            "#FAF0E6",
+                            "#B8860B",
+                            "#483D8B",
+                            "#F0E68C",
+                            "#2F4F4F"
+                        ],
+                        "ebucoreOrientation": "landscape"
+                    },
+                    {
+                        "about": "https://iiif.europeana.eu/presentation/15514/BI_17444_11_9/manifest",
+                        "rdfType": "http://iiif.io/api/presentation/3#Manifest"
+                    }
+                ],
+                "dqvHasQualityAnnotation": [
+                    {
+                        "created": "2023-02-13T16:24:34.333054Z",
+                        "target": [
+                            "/aggregation/provider/15514/BI_17444_11_9"
+                        ],
+                        "body": "http://www.europeana.eu/schemas/epf/contentTier2"
+                    },
+                    {
+                        "created": "2023-02-13T16:24:34.333065Z",
+                        "target": [
+                            "/aggregation/provider/15514/BI_17444_11_9"
+                        ],
+                        "body": "http://www.europeana.eu/schemas/epf/metadataTierC"
+                    }
+                ]
+            }
+        ],
+        "concepts": [
+            {
+                "about": "http://data.europeana.eu/concept/2090",
+                "prefLabel": {
+                    "de": [
+                        "Papier"
+                    ],
+                    "ru": [
+                        "Бумага"
+                    ],
+                    "fi": [
+                        "Paperi"
+                    ],
+                    "pt": [
+                        "Papel"
+                    ],
+                    "bg": [
+                        "Хартия"
+                    ],
+                    "lt": [
+                        "Popierius"
+                    ],
+                    "lv": [
+                        "Papīrs"
+                    ],
+                    "hr": [
+                        "Papir"
+                    ],
+                    "fr": [
+                        "Papier"
+                    ],
+                    "hu": [
+                        "Papír"
+                    ],
+                    "sk": [
+                        "Papier"
+                    ],
+                    "sl": [
+                        "Papir"
+                    ],
+                    "ga": [
+                        "Páipéar"
+                    ],
+                    "ca": [
+                        "Paper"
+                    ],
+                    "sv": [
+                        "Papper"
+                    ],
+                    "mt": [
+                        "Karta"
+                    ],
+                    "el": [
+                        "Χαρτί"
+                    ],
+                    "en": [
+                        "Paper"
+                    ],
+                    "it": [
+                        "Carta"
+                    ],
+                    "es": [
+                        "Papel"
+                    ],
+                    "et": [
+                        "Paber"
+                    ],
+                    "eu": [
+                        "Paper"
+                    ],
+                    "cs": [
+                        "Papír"
+                    ],
+                    "pl": [
+                        "Papier"
+                    ],
+                    "ro": [
+                        "Hârtie"
+                    ],
+                    "da": [
+                        "Papir"
+                    ],
+                    "nl": [
+                        "Papier"
+                    ]
+                },
+                "note": {
+                    "de": [
+                        "Werkstoff aus Fasern zum Beschreiben, Bedrucken und Verpacken"
+                    ],
+                    "fi": [
+                        "Ohut kuiduista tehty materiaali"
+                    ],
+                    "sv": [
+                        "Cellulosabaserat material"
+                    ],
+                    "ru": [
+                        "Волокнистый материал с минеральными добавками"
+                    ],
+                    "pt": [
+                        "Folha fina feita com pasta de fibras vegetais"
+                    ],
+                    "en": [
+                        "Thin, flexible material mainly used for writing upon, printing upon, drawing or for packaging"
+                    ],
+                    "it": [
+                        "Materiale igroscopico, costituito da materie prime fibrose"
+                    ],
+                    "fr": [
+                        "Matière fabriquée à partir de fibres cellulosiques végétales et animales"
+                    ],
+                    "es": [
+                        "Delgada hoja elaborada con pasta de fibras vegetales"
+                    ],
+                    "cs": [
+                        "Tenký, pružný, vláknitý materiál s minerálními přísadami, vyráběný převážně z celulózy, užívaný pro psaní, kreslení, tisk nebo k balení"
+                    ],
+                    "sk": [
+                        "Tenký, hladký materiál vyrábaný zhutnením vlákna"
+                    ],
+                    "pl": [
+                        "Podłoże pisarskie lub malarskie otrzymywane z makulatury, celulozy i włókien innych roślin"
+                    ],
+                    "da": [
+                        "Materiale man kan skrive og tegne på"
+                    ],
+                    "nl": [
+                        "Materiaal waarop kan worden geschreven en getekend en dat kan worden bedrukt door middel van een druktechniek"
+                    ],
+                    "ca": [
+                        "Làmina constituïda per un entramat tridimensional de fibres de cel·lulosa i altres substàncies"
+                    ]
+                },
+                "broader": [
+                    "http://data.europeana.eu/concept/2069"
+                ],
+                "exactMatch": [
+                    "http://www.wikidata.org/entity/Q11472",
+                    "https://d-nb.info/gnd/4044522-7",
+                    "http://id.loc.gov/authorities/names/sh85097578",
+                    "http://data.bnf.fr/ark:/12148/cb11949744d",
+                    "http://id.ndl.go.jp/auth/ndlna/00564806",
+                    "http://id.nlm.nih.gov/mesh/D010209",
+                    "http://purl.org/bncf/tid/1192",
+                    "https://www.freebase.com/m/0641k",
+                    "https://g.co/kg/m/0641k",
+                    "http://vocab.getty.edu/aat/300014109",
+                    "http://iconclass.org/49L641",
+                    "http://www.yso.fi/onto/yso/p8522",
+                    "http://babelnet.org/rdf/s00060464n",
+                    "http://thesaurus.europeanafashion.eu/thesaurus/10574",
+                    "http://zbw.eu/stw/descriptor/14802-1",
+                    "http://vocabularies.unesco.org/thesaurus/concept14922",
+                    "http://dbpedia.org/resource/Paper"
+                ]
+            },
+            {
+                "about": "http://vocab.getty.edu/aat/300041412",
+                "prefLabel": {
+                    "de": [
+                        "Farbenholzschnitt"
+                    ],
+                    "es": [
+                        "xilografías en color"
+                    ],
+                    "nl": [
+                        "kleurenhoutsneden"
+                    ]
+                },
+                "altLabel": {
+                    "de": [
+                        "Farbenholzschnitte"
+                    ],
+                    "en": [
+                        "polychrome woodblock print",
+                        "polychrome woodblock prints"
+                    ],
+                    "es": [
+                        "xilografía en color"
+                    ],
+                    "nl": [
+                        "kleurenhoutsnede",
+                        "kleurhoutsnede",
+                        "kleurhoutsneden"
+                    ]
+                },
+                "note": {
+                    "de": [
+                        "Holzschnitt, der Farbe aufnimmt, üblicherweise durch die Kombination einer Reihe von Platten in präziser Ausrichtung, die mit einzelnen Farbtönen eingefärbt und auf einen Träger gepresst wurden."
+                    ],
+                    "en": [
+                        "Woodcuts that incorporate color, usually through combining a series of blocks in precise registration that have been inked with individual hues and pressed onto one support."
+                    ]
+                },
+                "broader": [
+                    "http://vocab.getty.edu/aat/300041504",
+                    "http://vocab.getty.edu/aat/300041405"
+                ],
+                "exactMatch": [
+                    "http://www.wikidata.org/entity/Q75837421"
+                ]
+            },
+            {
+                "about": "http://vocab.getty.edu/aat/300106769",
+                "prefLabel": {
+                    "pt": [
+                        "ukiyo-e"
+                    ],
+                    "en": [
+                        "Ukiyo-e"
+                    ],
+                    "es": [
+                        "Ukiyo-e"
+                    ],
+                    "nl": [
+                        "ukiyo-e"
+                    ]
+                },
+                "altLabel": {
+                    "en": [
+                        "Floating-world",
+                        "Ukiyoe"
+                    ],
+                    "es": [
+                        "Uyiko-e"
+                    ]
+                },
+                "note": {
+                    "pt": [
+                        "Gênero distinto na pintura e outras mídias, mas mais proeminente na impressão em xilogravura. Surgiu no período Edo (1600-1868) e construiu um amplo mercado popular entre as classes médias. O assunto normalmente é focado em bairros de bordéis e teatros kabuki, com formatos que variam de impressões de folhas soltas a ilustrações de livros. Geralmente, o estilo é caracterizado por uma mistura da narrativa realista do período Kamakura e o estilo decorativo maduro dos períodos Momoyama e Edo. Estilos e especialidades distintas nas disciplinas foram desenvolvidas por diferentes escolas ao longo do período."
+                    ],
+                    "en": [
+                        "Distinctive genre in painting and other media, but most prominently in woodblock printing. It arose in the Edo period (1600-1868) and built up a broad popular market among the middle classes. Subject matter typically focused on brothel districts and kabuki theatres, with formats ranging from single sheet prints to book illustrations. Generally, the style is characterized by a mixture of the realistic narrative of the Kamakura period and the mature decorative style of the Momoyama and Edo periods. Distinctive styles and specialties in subject matter were developed by different schools throughout the period."
+                    ],
+                    "es": [
+                        "Se refiere ampliamente a un género del arte, principalmente al medio del bloque de madera que imprime, se presentó en el período del Edo (1600-1868) y acumuló un amplio mercado popular entre las clases medias. El tema se centró típicamente en distritos del burdel y los teatros del kabuki, el formato se extendiende en una sola hoja impresa con ilustraciones. Generalmente, el estilo es caracterizado por una mezcla de la narrativa realista del período de Kamakura y del estilo decorativo maduro de los períodos de Momoyama y del Edo. Los estilos y las especialidades distintivas del tema fueron desarrollados por diversas escuelas a través del período."
+                    ],
+                    "nl": [
+                        "Verwijst in algemene zin naar een kunstgenre dat ontstond in de Edo-periode (1600-1868) en dat met name bekend is geworden door de houtgravures; de afdrukken werden gemaakt op losse vellen of fungeerden als boekillustraties. Het genre genoot een brede populariteit onder de bourgeoisie. Belangrijkste inspiratiebronnen waren de bordelen en kaboekitheaters. Doorgaans wordt de stijl gekenmerkt door een mengelmoes van realistische verhalende episoden uit de Kamakura-periode en de gerijpte decoratieve stijl van de Momoyama- en Edo-periode. Diverse scholen hebben in de loop van deze periode hun eigen stijl en specifieke themakeuze ontwikkeld."
+                    ]
+                },
+                "broader": [
+                    "http://vocab.getty.edu/aat/300018579",
+                    "http://vocab.getty.edu/aat/300106658",
+                    "http://vocab.getty.edu/aat/300106750"
+                ]
+            }
+        ],
+        "edmDatasetName": [
+            "15514_Ag_AT_Kulturpool_MAK"
+        ],
+        "europeanaAggregation": {
+            "about": "/aggregation/europeana/15514/BI_17444_11_9",
+            "aggregatedCHO": "/item/15514/BI_17444_11_9",
+            "edmCountry": {
+                "def": [
+                    "Austria"
+                ]
+            },
+            "edmLanguage": {
+                "def": [
+                    "de"
+                ]
+            },
+            "edmPreview": "https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fsammlung.mak.at%2Fimg%2F300x300%2Fpublikationsbilder%2Fbi-17444-11-9_1.jpg&type=IMAGE",
+            "edmLandingPage": "https://www.europeana.eu/item/15514/BI_17444_11_9"
+        },
+        "europeanaCollectionName": [
+            "15514_Ag_AT_Kulturpool_MAK"
+        ],
+        "europeanaCompleteness": 10,
+        "organizations": [
+            {
+                "about": "http://data.europeana.eu/organization/1482250000004507745",
+                "prefLabel": {
+                    "de": [
+                        "Kulturpool"
+                    ],
+                    "en": [
+                        "Kulturpool"
+                    ]
+                }
+            },
+            {
+                "about": "http://data.europeana.eu/organization/1482250000004509093",
+                "prefLabel": {
+                    "de": [
+                        "MAK – Museum für angewandte Kunst"
+                    ],
+                    "en": [
+                        "MAK – Museum of Applied Arts"
+                    ]
+                }
+            }
+        ],
+        "places": [
+            {
+                "about": "http://data.europeana.eu/place/216272",
+                "prefLabel": {
+                    "de": [
+                        "Japan"
+                    ],
+                    "fi": [
+                        "Japani"
+                    ],
+                    "ru": [
+                        "Япония"
+                    ],
+                    "pt": [
+                        "Japão"
+                    ],
+                    "bg": [
+                        "Япония"
+                    ],
+                    "lt": [
+                        "Japonija"
+                    ],
+                    "hr": [
+                        "Japan"
+                    ],
+                    "lv": [
+                        "Japāna"
+                    ],
+                    "fr": [
+                        "Japon"
+                    ],
+                    "hu": [
+                        "Japán"
+                    ],
+                    "sk": [
+                        "Japonsko"
+                    ],
+                    "sl": [
+                        "Japonska"
+                    ],
+                    "ga": [
+                        "An tSeapáin"
+                    ],
+                    "ca": [
+                        "Japó"
+                    ],
+                    "sv": [
+                        "Japan"
+                    ],
+                    "el": [
+                        "Ιαπωνία"
+                    ],
+                    "mt": [
+                        "Ġappun"
+                    ],
+                    "en": [
+                        "Japan"
+                    ],
+                    "it": [
+                        "Giappone"
+                    ],
+                    "es": [
+                        "Japón"
+                    ],
+                    "et": [
+                        "Jaapan"
+                    ],
+                    "cs": [
+                        "Japonsko"
+                    ],
+                    "eu": [
+                        "Japonia"
+                    ],
+                    "pl": [
+                        "Japonia"
+                    ],
+                    "da": [
+                        "Japan"
+                    ],
+                    "ro": [
+                        "Japonia"
+                    ],
+                    "nl": [
+                        "Japan"
+                    ]
+                },
+                "altLabel": {
+                    "de": [
+                        "Nihon",
+                        "Nippon",
+                        "Land der aufgehenden Sonne"
+                    ],
+                    "sv": [
+                        "Kejsardömet Japan",
+                        "Staten Japan",
+                        "Nippon",
+                        "Soluppgångens land",
+                        "Nihon",
+                        "Japanska kejsardömet",
+                        "Japanska imperiet"
+                    ],
+                    "ru": [
+                        "Страна восходящего солнца",
+                        "Ниппон"
+                    ],
+                    "pt": [
+                        "Estado do Japão",
+                        "Terra do Sol Nascente",
+                        "Nihon",
+                        "Nippon",
+                        "JP",
+                        "Nippon-koku",
+                        "Nihon-koku",
+                        "JA",
+                        "JPN",
+                        "Jp",
+                        "JAP",
+                        "Ja",
+                        "Jap"
+                    ],
+                    "bg": [
+                        "Страната на изгряващото Слънце"
+                    ],
+                    "el": [
+                        "Χώρα του ανατέλλοντος ηλίου"
+                    ],
+                    "en": [
+                        "State of Japan",
+                        "Land of the Rising Sun",
+                        "Nihon",
+                        "Nippon",
+                        "JP",
+                        "Nippon-koku",
+                        "Nihon-koku",
+                        "JPN",
+                        "Jp",
+                        "JAP",
+                        "Jap",
+                        "JA",
+                        "Ja",
+                        "Iapan",
+                        "Iapon"
+                    ],
+                    "hr": [
+                        "Nippon",
+                        "Zemlja Izlazećeg Sunca"
+                    ],
+                    "it": [
+                        "Stato del Giappone"
+                    ],
+                    "fr": [
+                        "Pays du soleil levant",
+                        "État du Japon",
+                        "JP",
+                        "Le Japon",
+                        "Jap."
+                    ],
+                    "es": [
+                        "Estado de Japón"
+                    ],
+                    "pl": [
+                        "Nippon",
+                        "Nihon",
+                        "Kraj Kwitnącej Wiśni",
+                        "Kraj Wschodzącego Słońca"
+                    ],
+                    "ro": [
+                        "Țara soarelui răsare",
+                        "Țara Soarelui Răsare",
+                        "Țara crizantemei",
+                        "Țara Crizantemei"
+                    ],
+                    "nl": [
+                        "JP",
+                        "JPN"
+                    ],
+                    "ca": [
+                        "El Japó",
+                        "Estat del Japó"
+                    ]
+                },
+                "note": {
+                    "de": [
+                        "Inselstaat in Ostasien"
+                    ],
+                    "sv": [
+                        "Konstitutionell monarki i Östasien"
+                    ],
+                    "ru": [
+                        "Островное государство в Восточной Азии"
+                    ],
+                    "fi": [
+                        "Saarivaltio Itä-Aasiassa"
+                    ],
+                    "pt": [
+                        "País insular na Ásia Oriental"
+                    ],
+                    "bg": [
+                        "Държава в Азия"
+                    ],
+                    "mt": [
+                        "Stat sovran fl-Asja tal-Lvant"
+                    ],
+                    "el": [
+                        "Νησιωτική χώρα της ανατολικής Ασίας"
+                    ],
+                    "en": [
+                        "Island country in East Asia"
+                    ],
+                    "lv": [
+                        "Valsts Austrumāzijā"
+                    ],
+                    "hr": [
+                        "Otočna država u istočnoj Aziji"
+                    ],
+                    "it": [
+                        "Stato sovrano insulare dell'Asia orientale"
+                    ],
+                    "fr": [
+                        "Pays d'Asie de l'Est"
+                    ],
+                    "hu": [
+                        "Szigetország Kelet-Ázsiában"
+                    ],
+                    "es": [
+                        "País de Asia Oriental"
+                    ],
+                    "cs": [
+                        "Východoasijská ostrovní země"
+                    ],
+                    "sk": [
+                        "Štát vo východnej Ázii"
+                    ],
+                    "pl": [
+                        "Państwo wyspiarskie w Azji"
+                    ],
+                    "da": [
+                        "Østasiatisk østat"
+                    ],
+                    "ro": [
+                        "Țară insulară din Asia de Est"
+                    ],
+                    "ca": [
+                        "País de l'Àsia i arxipèlag de l'oceà Pacífic"
+                    ],
+                    "nl": [
+                        "Eilandstaat in Oost-Azië"
+                    ]
+                },
+                "latitude": 35.0,
+                "longitude": 136.0,
+                "owlSameAs": [
+                    "http://www.wikidata.org/entity/Q17",
+                    "http://viaf.org/viaf/159367111",
+                    "https://d-nb.info/gnd/4028495-5",
+                    "http://id.loc.gov/authorities/names/n78089021",
+                    "http://data.bnf.fr/ark:/12148/cb152384465",
+                    "http://data.bnf.fr/ark:/12148/cb11934253k",
+                    "http://data.bnf.fr/ark:/12148/cb11872797r",
+                    "http://www.idref.fr/02648918X/id",
+                    "http://id.ndl.go.jp/auth/ndlna/00568158",
+                    "http://id.nlm.nih.gov/mesh/D007564",
+                    "https://www.freebase.com/m/03_3d",
+                    "https://g.co/kg/m/03_3d",
+                    "http://libris.kb.se/resource/auth/149361",
+                    "http://datos.bne.es/resource/XX450954",
+                    "https://sws.geonames.org/1861060/",
+                    "http://vocab.getty.edu/tgn/1000120",
+                    "http://id.worldcat.org/fast/1204082",
+                    "http://www.yso.fi/onto/yso/p105023",
+                    "http://babelnet.org/rdf/s00047985n",
+                    "http://zbw.eu/stw/descriptor/17568-3",
+                    "http://vocabularies.unesco.org/thesaurus/concept835",
+                    "http://lod.nl.go.kr/resource/KSH2000014336",
+                    "https://libris.kb.se/53hkj6mp5hgzjd3",
+                    "http://www.yso.fi/onto/ysa/Y105023",
+                    "http://dbpedia.org/resource/Japan"
+                ]
+            },
+            {
+                "about": "https://sws.geonames.org/2761333/",
+                "prefLabel": {
+                    "es": [
+                        "Viena"
+                    ]
+                },
+                "altLabel": {
+                    "de": [
+                        "Wien"
+                    ],
+                    "en": [
+                        "Vienna"
+                    ]
+                },
+                "isPartOf": {
+                    "def": [
+                        "https://sws.geonames.org/2761367/"
+                    ]
+                },
+                "latitude": 48.2066,
+                "longitude": 16.37341,
+                "owlSameAs": [
+                    "http://dbpedia.org/resource/Vienna"
+                ]
+            },
+            {
+                "about": "https://sws.geonames.org/2761369/",
+                "prefLabel": {
+                    "no": [
+                        "Wien"
+                    ],
+                    "de": [
+                        "Wien"
+                    ],
+                    "bg": [
+                        "Виена"
+                    ],
+                    "lt": [
+                        "Viena"
+                    ],
+                    "sk": [
+                        "Viedeň"
+                    ],
+                    "ro": [
+                        "Viena"
+                    ],
+                    "es": [
+                        "Viena"
+                    ],
+                    "et": [
+                        "Viin"
+                    ]
+                },
+                "altLabel": {
+                    "ru": [
+                        "Вена"
+                    ],
+                    "sv": [
+                        "Wien"
+                    ],
+                    "fi": [
+                        "Wien"
+                    ],
+                    "pt": [
+                        "Viena"
+                    ],
+                    "el": [
+                        "Βιέννη"
+                    ],
+                    "en": [
+                        "Vienna"
+                    ],
+                    "hr": [
+                        "Beč"
+                    ],
+                    "it": [
+                        "Vienna"
+                    ],
+                    "fr": [
+                        "Vienne"
+                    ],
+                    "hu": [
+                        "Bécs"
+                    ],
+                    "cs": [
+                        "Vídeň"
+                    ],
+                    "sl": [
+                        "Dunaj"
+                    ],
+                    "ga": [
+                        "Vín"
+                    ],
+                    "pl": [
+                        "Wiedeń"
+                    ],
+                    "da": [
+                        "Wien"
+                    ],
+                    "nl": [
+                        "Wenen"
+                    ],
+                    "ca": [
+                        "Viena"
+                    ]
+                },
+                "isPartOf": {
+                    "def": [
+                        "https://sws.geonames.org/2761333/"
+                    ]
+                },
+                "latitude": 48.20849,
+                "longitude": 16.37208,
+                "owlSameAs": [
+                    "http://dbpedia.org/resource/Vienna"
+                ]
+            },
+            {
+                "about": "https://d-nb.info/gnd/4028495-5",
+                "prefLabel": {
+                    "def": [
+                        "Japan"
+                    ]
+                },
+                "altLabel": {
+                    "def": [
+                        "Empire du Japon",
+                        "Nihon-koku",
+                        "Zen-Nihon",
+                        "Zenkoku",
+                        "Nippon",
+                        "Japon",
+                        "Dainihon",
+                        "Dainippon",
+                        "Nihon (Staat)",
+                        "Nippon (Staat)",
+                        "Yapan",
+                        "Japão",
+                        "Nihon"
+                    ]
+                },
+                "owlSameAs": [
+                    "http://viaf.org/viaf/159367111",
+                    "https://isni.org/isni/0000000123649740",
+                    "http://www.wikidata.org/entity/Q17",
+                    "http://id.loc.gov/rwo/agents/n78089021",
+                    "https://d-nb.info/gnd/37444-1",
+                    "https://sws.geonames.org/1861060"
+                ]
+            }
+        ],
+        "providedCHOs": [
+            {
+                "about": "/item/15514/BI_17444_11_9"
+            }
+        ],
+        "proxies": [
+            {
+                "about": "/proxy/europeana/15514/BI_17444_11_9",
+                "dcDescription": {
+                    "en": [
+                        "Hiroshigega Hi様 series with educational and moral teachings about the virtuousness of women. Invitation to the tea ceremony. The woman on the far right prepares the tea. The other women are their guests. On the back, a roll picture with a portrait of Sen no Rikyū Links, the big tea master and a poem of him."
+                    ]
+                },
+                "dcIdentifier": {
+                    "def": [
+                        "BI 17444-11-9"
+                    ]
+                },
+                "dcLanguage": {
+                    "def": [
+                        "deu"
+                    ]
+                },
+                "dctermsExtent": {
+                    "de": [
+                        "Höhe: 17.6 cm",
+                        "Breite: 23.7 cm"
+                    ],
+                    "en": [
+                        "Height: 17.6 cm"
+                    ]
+                },
+                "dctermsMedium": {
+                    "def": [
+                        "http://data.europeana.eu/concept/2090"
+                    ]
+                },
+                "dctermsSpatial": {
+                    "de": [
+                        "Japan"
+                    ],
+                    "def": [
+                        "http://data.europeana.eu/place/216272"
+                    ],
+                    "en": [
+                        "Japan"
+                    ]
+                },
+                "dctermsTemporal": {
+                    "de": [
+                        "temporal#107375046794"
+                    ],
+                    "en": [
+                        "temporal #107375046794"
+                    ]
+                },
+                "proxyIn": [
+                    "/aggregation/europeana/15514/BI_17444_11_9"
+                ],
+                "proxyFor": "/item/15514/BI_17444_11_9",
+                "lineage": [
+                    "/proxy/provider/15514/BI_17444_11_9"
+                ],
+                "edmType": "IMAGE",
+                "europeanaProxy": true
+            },
+            {
+                "about": "/proxy/provider/15514/BI_17444_11_9",
+                "dcContributor": {
+                    "def": [
+                        "#Yamamuro_Harukichi_山室春吉_Ausführung",
+                        "#Utagawa_Hiroshige_III._三代目歌川廣重_Entwurf",
+                        "#Utagawa_歌川派_(Schule)_Schule",
+                        "#Hayashi_Kichizō_林吉蔵_Verlag"
+                    ]
+                },
+                "dcDescription": {
+                    "de": [
+                        "Hiroshigega 廣重画 Serie mit erzieherischen und moralischen Belehrungen zur Tugendhaftigkeit der Frauen. Einladung zur Teezeremonie. Die Frau ganz rechts bereitet den Tee. Die anderen Frauen sind ihre Gäste. Links hinten an der Wand ein Rollbild mit einem Porträt von Sen no Rikyū 千利休, dem großen Teemeister und einem Gedicht von ihm."
+                    ]
+                },
+                "dcIdentifier": {
+                    "def": [
+                        "BI 17444-11-9"
+                    ]
+                },
+                "dcLanguage": {
+                    "def": [
+                        "de"
+                    ]
+                },
+                "dcPublisher": {
+                    "de": [
+                        "MAK – Museum für angewandte Kunst, Wien"
+                    ],
+                    "en": [
+                        "MAK – Museum of Applied Arts, Vienna"
+                    ]
+                },
+                "dcRights": {
+                    "de": [
+                        "In Copyright"
+                    ]
+                },
+                "dcTitle": {
+                    "de": [
+                        "Einladung zur Teezeremonie (Chanoyu manekiyose(?) no zu 茶の湯招寄(?)之圖)",
+                        "Spiegel der Belehrung von Frauen (Fujin kyōkun kagami 婦人教訓鏡) (Serientitel)"
+                    ],
+                    "ja": [
+                        "茶の湯招寄(?)之圖",
+                        "婦人教訓鏡 (Serientitel)"
+                    ],
+                    "en": [
+                        "Invitation to a tea ceremony",
+                        "Mirror of instructions for women (Serientitel)"
+                    ]
+                },
+                "dcType": {
+                    "def": [
+                        "http://vocab.getty.edu/aat/300106769",
+                        "http://vocab.getty.edu/aat/300041412"
+                    ]
+                },
+                "dctermsExtent": {
+                    "def": [
+                        "Höhe: 17.6 cm",
+                        "Breite: 23.7 cm"
+                    ]
+                },
+                "dctermsIsPartOf": {
+                    "de": [
+                        "Asien (Abteilung)",
+                        "Ukiyo-e (Sammlung)",
+                        "Sammlung Richard Lieben (Sammlung)"
+                    ],
+                    "ja": [
+                        "アジアコレクション (Abteilung)"
+                    ],
+                    "en": [
+                        "Asia Collection (Department)",
+                        "Ukiyo-e collection (Collection)",
+                        "Richard Lieben collection (Collection)"
+                    ]
+                },
+                "dctermsMedium": {
+                    "de": [
+                        "Papier"
+                    ],
+                    "en": [
+                        "paper"
+                    ]
+                },
+                "dctermsProvenance": {
+                    "de": [
+                        "Legat (1922)"
+                    ],
+                    "en": [
+                        "legacy (1922)"
+                    ]
+                },
+                "dctermsSpatial": {
+                    "def": [
+                        "https://d-nb.info/gnd/4028495-5"
+                    ]
+                },
+                "dctermsTemporal": {
+                    "def": [
+                        "temporal#107375046794"
+                    ]
+                },
+                "edmCurrentLocation": {
+                    "def": [
+                        "https://sws.geonames.org/2761369/"
+                    ]
+                },
+                "proxyIn": [
+                    "/aggregation/provider/15514/BI_17444_11_9"
+                ],
+                "proxyFor": "/item/15514/BI_17444_11_9",
+                "edmType": "IMAGE",
+                "europeanaProxy": false
+            }
+        ],
+        "timespans": [
+            {
+                "about": "temporal#107375046794",
+                "prefLabel": {
+                    "def": [
+                        "1881-1881"
+                    ]
+                },
+                "begin": {
+                    "def": [
+                        "1881"
+                    ]
+                },
+                "end": {
+                    "def": [
+                        "1881"
+                    ]
+                },
+                "isPartOf": {
+                    "de": [
+                        "Asien (Abteilung)",
+                        "Ukiyo-e (Sammlung)",
+                        "Sammlung Richard Lieben (Sammlung)"
+                    ],
+                    "ja": [
+                        "アジアコレクション (Abteilung)"
+                    ],
+                    "en": [
+                        "Asia Collection (Department)",
+                        "Ukiyo-e collection (Collection)",
+                        "Richard Lieben collection (Collection)"
+                    ]
+                }
+            }
+        ],
+        "timestamp_created": "2020-04-29T16:47:56.156Z",
+        "timestamp_created_epoch": 1588178876156,
+        "timestamp_update": "2023-02-13T15:37:53.434Z",
+        "timestamp_update_epoch": 1676302673434,
+        "type": "IMAGE"
+    }
+}
