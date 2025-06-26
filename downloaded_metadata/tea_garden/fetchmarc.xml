@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>00573cam a22001810  4500</leader>
+  <controlfield tag="001">mysteriousjapan00streuoft</controlfield>
+  <controlfield tag="003">CaSfIA</controlfield>
+  <controlfield tag="005">20241005223857.0</controlfield>
+  <controlfield tag="006">m     o  d</controlfield>
+  <controlfield tag="007">cr||||||||||||</controlfield>
+  <controlfield tag="008">721220s1922    nyu     o           eng |</controlfield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)1049878933</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">OTU</subfield>
+    <subfield code="b">ENG</subfield>
+    <subfield code="d">CaSfIA</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2="0">
+    <subfield code="a">Street, Julian,</subfield>
+    <subfield code="d">1879-1947.</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">Mysterious Japan;</subfield>
+    <subfield code="c">with illustrations from photographs by the author and others.</subfield>
+  </datafield>
+  <datafield tag="260" ind1="0" ind2=" ">
+    <subfield code="a">Garden City,</subfield>
+    <subfield code="b">Doubleday,</subfield>
+    <subfield code="c">1922.</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+    <subfield code="a">1 online resource (xii, 349 pages  pl.)</subfield>
+  </datafield>
+  <datafield tag="651" ind1=" " ind2="0">
+    <subfield code="a">Japan</subfield>
+    <subfield code="x">Description and travel</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">https://archive.org/details/mysteriousjapan00streuoft</subfield>
+    <subfield code="z">Free eBook from the Internet Archive</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">https://openlibrary.org/books/OL7116132M</subfield>
+    <subfield code="z">Additional information and access via Open Library</subfield>
+  </datafield>
+  <datafield tag="596" ind1=" " ind2=" ">
+    <subfield code="a">26</subfield>
+  </datafield>
+  <datafield tag="955" ind1=" " ind2=" ">
+    <subfield code="q">mysteriousjapan00streuoft</subfield>
+    <subfield code="b">ark:/13960/t80k2b252</subfield>
+  </datafield>
+</record>
