@@ -1,0 +1,17 @@
+﻿subject,predicate,object
+tea:item_book-of-tea,rdf:type,bf:Text
+tea:item_book-of-tea,owl:sameAs,wd:Q7719311
+tea:item_book-of-tea,bf:title,The book of tea
+tea:item_book-of-tea,bf:date,1906
+tea:item_book-of-tea,dcterms:creator,tea:person_okakura-kakuzo
+tea:item_book-of-tea,dcterms:publisher,bf:Agent
+tea:item_book-of-tea,dcterms:spacial,gn:1861060
+tea:item_book-of-tea,dcterms:source,https://www.loc.gov/resource/gdcebookspublic.2019299129/ 
+tea:item_book-of-tea,bf:subject,tea:acitivity_tea-ceremony
+tea:item_book-of-tea,bf:subject,tea:place_tearoom
+tea:item_book-of-tea,skos:related,wd:Q11899
+tea:item_book-of-tea,schema:mentions,tea:person_sen-no-rikyu
+tea:item_book-of-tea,schema:mentions,tea:person_honami-koetsu
+tea:item_book-of-tea,bf:subject,tea:acitivity_ikebana
+tea:item_book-of-tea,bf:subject,tea:concept_wabisabi
+tea:item_book-of-tea,bf:subject,tea:concept_zen

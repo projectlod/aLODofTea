@@ -1,0 +1,13 @@
+﻿subject,predicate,object
+tea:item_tea-ceremony-painting,rdf:type,edm:ProvidedCHO
+tea:item_tea-ceremony-painting,dcterms:title,Invitation to a tea ceremony; Mirror of instructions for women (Serientitel)
+tea:item_tea-ceremony-painting,edm:timespan,1881
+tea:item_tea-ceremony-painting,dcterms:contributor,edm:Agent
+tea:item_tea-ceremony-painting,dcterms:spacial,gn:1861060
+tea:item_tea-ceremony-painting,dcterms:medium,crm:E57_Material
+tea:item_tea-ceremony-painting,edm:dataProvider,foaf:Organization
+tea:item_tea-ceremony-painting,dcterms:source,https://www.europeana.eu/en/item/15514/BI_17444_11_9
+tea:item_tea-ceremony-painting,foaf:depicts,tea:person_sen-no-rikyu
+tea:item_tea-ceremony-painting,foaf:depicts,tea:acitivity_tea-ceremony
+tea:item_tea-ceremony-painting,foaf:depicts,wd:Q483444
+tea:item_tea-ceremony-painting,foaf:depicts,tea:place_roji

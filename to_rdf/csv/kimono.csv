@@ -1,0 +1,10 @@
+﻿subject,predicate,object
+tea:item_kimono,rdf:type,crm:E22_Human-Made_Object
+tea:item_kimono,crm:P102_has_title,Kimono (hitoe)
+tea:item_kimono,crm:P4_has_time-span,1750-1799
+tea:item_kimono,dcterms:temporal,wd:Q184963
+tea:item_kimono,dcterms:spatial,gn:1861060
+tea:item_kimono,dcterms:medium,crm:E57_Material
+tea:item_kimono,crm:P50_has_current_keeper,wd:Q49133
+tea:item_kimono,dcterms:source,https://collections.mfa.org/objects/28742/kimono-hitoe
+tea:item_kimono,crm:P2_has_type,wd:Q483444

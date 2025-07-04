@@ -1,0 +1,509 @@
+{
+    "@graph": [
+        {
+            "@id": "file:///usr/local/tomcat/webapps/RDF/XML#Hayashi_Kichizō_林吉蔵_Verlag",
+            "@type": "edm:Agent",
+            "rdaGr2:biographicalInformation": [
+                {
+                    "@language": "en",
+                    "@value": "Japan, 1881"
+                }
+            ],
+            "edm:begin": "1881",
+            "edm:end": "1881",
+            "skos:prefLabel": [
+                {
+                    "@language": "en",
+                    "@value": "Hayashi Kichizō 林吉蔵"
+                }
+            ],
+            "foaf:name": [
+                {
+                    "@language": "en",
+                    "@value": "Hayashi Kichizō 林吉蔵"
+                }
+            ]
+        },
+        {
+            "@id": "file:///usr/local/tomcat/webapps/RDF/XML#Utagawa_Hiroshige_III._三代目歌川廣重_Entwurf",
+            "@type": "edm:Agent",
+            "rdaGr2:biographicalInformation": [
+                {
+                    "@language": "en",
+                    "@value": "Japan, 1881"
+                }
+            ],
+            "edm:begin": "1881",
+            "edm:end": "1881",
+            "skos:prefLabel": [
+                {
+                    "@language": "en",
+                    "@value": "Utagawa Hiroshige III. 三代目歌川廣重"
+                }
+            ],
+            "foaf:name": [
+                {
+                    "@language": "en",
+                    "@value": "Utagawa Hiroshige III. 三代目歌川廣重"
+                }
+            ]
+        },
+        {
+            "@id": "file:///usr/local/tomcat/webapps/RDF/XML#Utagawa_歌川派_(Schule)_Schule",
+            "@type": "edm:Agent",
+            "rdaGr2:biographicalInformation": [
+                {
+                    "@language": "en",
+                    "@value": "Japan, 1840-1844"
+                }
+            ],
+
+            "edm:begin": "1840",
+            "edm:end": "1844",
+            "skos:prefLabel": [
+                {
+                    "@language": "en",
+                    "@value": "Utagawa 歌川派 (Schule)"
+                }
+
+            ],
+            "foaf:name": [
+                {
+                    "@language": "en",
+                    "@value": "Utagawa 歌川派 (school)"
+                }
+            ]
+        },
+        {
+            "@id": "file:///usr/local/tomcat/webapps/RDF/XML#Yamamuro_Harukichi_山室春吉_Ausführung",
+            "@type": "edm:Agent",
+            "rdaGr2:biographicalInformation": [
+                {
+                    "@language": "en",
+                    "@value": "Japan, 1881"
+                }
+            ],
+            "edm:begin": "1881",
+            "edm:end": "1881",
+            "skos:prefLabel": [
+                {
+                    "@language": "en",
+                    "@value": "Yamamuro Harukichi 山室春吉"
+                }
+            ],
+            "foaf:name": [
+                {
+                    "@language": "en",
+                    "@value": "Yamamuro Harukichi 山室春吉"
+                }
+            ]
+        },
+        {
+            "@id": "file:///usr/local/tomcat/webapps/RDF/temporal#107375046794",
+            "@type": "edm:TimeSpan",
+            "dcterms:isPartOf": [
+                {
+                    "@language": "en",
+                    "@value": "Ukiyo-e collection (Collection)"
+                },
+                {
+                    "@language": "en",
+                    "@value": "Asia Collection (Department)"
+                },
+                {
+                    "@language": "en",
+                    "@value": "Richard Lieben collection (Collection)"
+                }
+            ],
+            "edm:begin": "1881",
+            "edm:end": "1881",
+            "skos:prefLabel": "1881-1881"
+        },
+        {
+            "@id": "http://data.europeana.eu/aggregation/europeana/15514/BI_17444_11_9",
+            "@type": "edm:EuropeanaAggregation",
+            "dcterms:created": "2020-04-29T16:47:56.156Z",
+            "dcterms:modified": "2023-02-13T15:37:53.434Z",
+            "edm:aggregatedCHO": {
+                "@id": "http://data.europeana.eu/item/15514/BI_17444_11_9"
+            },
+            "edm:completeness": "10",
+            "edm:country": "Austria",
+            "edm:datasetName": "15514_Ag_AT_Kulturpool_MAK",
+            "edm:landingPage": {
+                "@id": "https://www.europeana.eu/item/15514/BI_17444_11_9"
+            }
+        },
+        {
+            "@id": "http://data.europeana.eu/aggregation/provider/15514/BI_17444_11_9",
+            "@type": "ore:Aggregation",
+            "edm:aggregatedCHO": {
+                "@id": "http://data.europeana.eu/item/15514/BI_17444_11_9"
+            },
+            "edm:dataProvider": {
+                "@id": "http://data.europeana.eu/organization/1482250000004509093"
+            },
+            "edm:isShownAt": {
+                "@id": "https://sammlung.mak.at/sammlung_online?id=collect-198114"
+            },
+            "edm:isShownBy": {
+                "@id": "https://sammlung.mak.at/img/1200x1200/publikationsbilder/bi-17444-11-9_1.jpg"
+            },
+            "edm:object": {
+                "@id": "https://sammlung.mak.at/img/300x300/publikationsbilder/bi-17444-11-9_1.jpg"
+            },
+            "edm:provider": {
+                "@id": "http://data.europeana.eu/organization/1482250000004507745"
+            },
+            "edm:rights": {
+                "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+            },
+            "dqv:hasQualityAnnotation": [
+                {
+                    "@id": "_:b0"
+                },
+                {
+                    "@id": "_:b1"
+                }
+            ]
+        },
+        {
+            "@id": "http://data.europeana.eu/concept/2090",
+            "@type": "skos:Concept",
+            "skos:broader": {
+                "@id": "http://data.europeana.eu/concept/2069"
+            },
+            "skos:exactMatch": [
+                {
+                    "@id": "http://www.wikidata.org/entity/Q11472"
+                },
+                {
+                    "@id": "http://id.ndl.go.jp/auth/ndlna/00564806"
+                },
+                {
+                    "@id": "http://thesaurus.europeanafashion.eu/thesaurus/10574"
+                },
+                {
+                    "@id": "http://vocab.getty.edu/aat/300014109"
+                },
+                {
+                    "@id": "http://id.nlm.nih.gov/mesh/D010209"
+                },
+                {
+                    "@id": "http://www.yso.fi/onto/yso/p8522"
+                },
+                {
+                    "@id": "https://g.co/kg/m/0641k"
+                },
+                {
+                    "@id": "http://babelnet.org/rdf/s00060464n"
+                },
+                {
+                    "@id": "http://vocabularies.unesco.org/thesaurus/concept14922"
+                },
+                {
+                    "@id": "http://zbw.eu/stw/descriptor/14802-1"
+                },
+                {
+                    "@id": "http://iconclass.org/49L641"
+                },
+                {
+                    "@id": "http://data.bnf.fr/ark:/12148/cb11949744d"
+                },
+                {
+                    "@id": "https://www.freebase.com/m/0641k"
+                },
+                {
+                    "@id": "http://dbpedia.org/resource/Paper"
+                },
+                {
+                    "@id": "https://d-nb.info/gnd/4044522-7"
+                },
+                {
+                    "@id": "http://purl.org/bncf/tid/1192"
+                },
+                {
+                    "@id": "http://id.loc.gov/authorities/names/sh85097578"
+                }
+            ],
+            "skos:note": [
+                {
+                    "@language": "en",
+                    "@value": "Thin, flexible material mainly used for writing upon, printing upon, drawing or for packaging"
+                }
+            ],
+            "skos:prefLabel": [
+                {
+                    "@language": "en",
+                    "@value": "Paper"
+                }
+            ]
+        },
+        {
+            "@id": "http://data.europeana.eu/item/15514/BI_17444_11_9",
+            "@type": "edm:ProvidedCHO"
+        },
+        {
+            "@id": "http://data.europeana.eu/organization/1482250000004507745",
+            "@type": "foaf:Organization",
+            "skos:prefLabel": [
+                {
+                    "@language": "en",
+                    "@value": "Kulturpool"
+                }
+            ]
+        },
+        {
+            "@id": "http://data.europeana.eu/organization/1482250000004509093",
+            "@type": "foaf:Organization",
+            "skos:prefLabel": [
+                {
+                    "@language": "en",
+                    "@value": "MAK – Museum of Applied Arts"
+                }
+            ]
+        },
+        {
+            "@id": "http://data.europeana.eu/place/216272",
+            "@type": "edm:Place",
+            "owl:sameAs": [
+
+                {
+                    "@id": "http://dbpedia.org/resource/Japan"
+                },
+                {
+                    "@id": "http://id.loc.gov/authorities/names/n78089021"
+                },
+                {
+                    "@id": "http://www.wikidata.org/entity/Q17"
+                },
+                {
+                    "@id": "http://viaf.org/viaf/159367111"
+                },
+                {
+                    "@id": "http://vocab.getty.edu/tgn/1000120"
+                }
+               
+            ],
+            
+
+            "skos:prefLabel": [         
+                {
+                    "@language": "en",
+                    "@value": "Japan"
+                }
+            ]
+        },
+        {
+            "@id": "http://data.europeana.eu/proxy/europeana/15514/BI_17444_11_9",
+            "@type": "ore:Proxy",
+            "dc:description": {
+                "@language": "en",
+                "@value": "Hiroshigega Hi様 series with educational and moral teachings about the virtuousness of women. Invitation to the tea ceremony. The woman on the far right prepares the tea. The other women are their guests. On the back, a roll picture with a portrait of Sen no Rikyū Links, the big tea master and a poem of him."
+            },
+            "dc:identifier": "BI 17444-11-9",
+            "dc:language": "deu",
+            "dcterms:extent": [
+
+                {
+                    "@language": "en",
+                    "@value": "Height: 17.6 cm"
+                }
+            ],
+            "dcterms:medium": {
+                "@id": "http://data.europeana.eu/concept/2090"
+            },
+            "dcterms:spatial": [
+                {
+                    "@language": "en",
+                    "@value": "Japan"
+                },
+                {
+                    "@id": "http://data.europeana.eu/place/216272"
+                }
+            ],
+            "dcterms:temporal": [
+
+                {
+                    "@language": "en",
+                    "@value": "temporal #107375046794"
+                }
+            ],
+            "edm:europeanaProxy": "true",
+            "edm:type": "IMAGE",
+            "ore:lineage": {
+                "@id": "http://data.europeana.eu/proxy/provider/15514/BI_17444_11_9"
+            },
+            "ore:proxyFor": {
+                "@id": "http://data.europeana.eu/item/15514/BI_17444_11_9"
+            },
+            "ore:proxyIn": {
+                "@id": "http://data.europeana.eu/aggregation/europeana/15514/BI_17444_11_9"
+            }
+        },
+        {
+            "@id": "http://data.europeana.eu/proxy/provider/15514/BI_17444_11_9",
+            "@type": "ore:Proxy",
+            "dc:contributor": [
+                {
+                    "@id": "file:///usr/local/tomcat/webapps/RDF/XML#Hayashi_Kichizō_林吉蔵_Verlag"
+                },
+                {
+                    "@id": "file:///usr/local/tomcat/webapps/RDF/XML#Yamamuro_Harukichi_山室春吉_Ausführung"
+                },
+                {
+                    "@id": "file:///usr/local/tomcat/webapps/RDF/XML#Utagawa_歌川派_(Schule)_Schule"
+                },
+                {
+                    "@id": "file:///usr/local/tomcat/webapps/RDF/XML#Utagawa_Hiroshige_III._三代目歌川廣重_Entwurf"
+                }
+            ],
+            "dc:description": {
+                "@language": "de",
+                "@value": "Hiroshigega 廣重画 Serie mit erzieherischen und moralischen Belehrungen zur Tugendhaftigkeit der Frauen. Einladung zur Teezeremonie. Die Frau ganz rechts bereitet den Tee. Die anderen Frauen sind ihre Gäste. Links hinten an der Wand ein Rollbild mit einem Porträt von Sen no Rikyū 千利休, dem großen Teemeister und einem Gedicht von ihm."
+            },
+            "dc:identifier": "BI 17444-11-9",
+            "dc:language": "de",
+            "dc:publisher": [
+
+                {
+                    "@language": "en",
+                    "@value": "MAK – Museum of Applied Arts, Vienna"
+                }
+            ],
+            "dc:rights": {
+                "@language": "de",
+                "@value": "In Copyright"
+            },
+            "dc:title": [
+                {
+                    "@language": "en",
+                    "@value": "Invitation to a tea ceremony"
+                },
+                {
+                    "@language": "ja",
+                    "@value": "婦人教訓鏡 (Serientitel)"
+                },
+                {
+                    "@language": "en",
+                    "@value": "Mirror of instructions for women (Serientitel)"
+                },
+                {
+                    "@language": "ja",
+                    "@value": "茶の湯招寄(?)之圖"
+                }
+            ],
+            "dc:type": [
+                {
+                    "@id": "http://vocab.getty.edu/aat/300041412"
+                },
+                {
+                    "@id": "http://vocab.getty.edu/aat/300106769"
+                }
+            ],
+            "dcterms:extent": [
+                "Höhe: 17.6 cm",
+                "Breite: 23.7 cm"
+            ],
+            "dcterms:isPartOf": [
+                {
+                    "@language": "en",
+                    "@value": "Ukiyo-e collection (Collection)"
+                },
+                {
+                    "@language": "en",
+                    "@value": "Asia Collection (Department)"
+                }
+            ],
+            "dcterms:medium": [
+                {
+                    "@language": "en",
+                    "@value": "paper"
+                }
+            ],
+            "dcterms:provenance": [
+                {
+                    "@language": "en",
+                    "@value": "legacy (1922)"
+                }
+            ],
+            "dcterms:spatial": {
+                "@id": "https://d-nb.info/gnd/4028495-5"
+            },
+            "dcterms:temporal": "temporal#107375046794",
+            "edm:currentLocation": {
+                "@id": "https://sws.geonames.org/2761369/"
+            },
+            "edm:europeanaProxy": "false",
+            "edm:type": "IMAGE",
+            "ore:proxyFor": {
+                "@id": "http://data.europeana.eu/item/15514/BI_17444_11_9"
+            },
+            "ore:proxyIn": {
+                "@id": "http://data.europeana.eu/aggregation/provider/15514/BI_17444_11_9"
+            }
+        },
+        {
+            "@id": "http://vocab.getty.edu/aat/300041412",
+            "@type": "skos:Concept",
+            "skos:altLabel": [
+                {
+                    "@language": "en",
+                    "@value": "polychrome woodblock print"
+                }
+            ],
+            "skos:exactMatch": {
+                "@id": "http://www.wikidata.org/entity/Q75837421"
+            },
+            "skos:note": [
+                {
+                    "@language": "en",
+                    "@value": "Woodcuts that incorporate color, usually through combining a series of blocks in precise registration that have been inked with individual hues and pressed onto one support."
+                }
+            ]
+            
+        },
+        {
+            "@id": "http://vocab.getty.edu/aat/300106769",
+            "@type": "skos:Concept",
+            "skos:altLabel": [
+                {
+                    "@language": "en",
+                    "@value": "Ukiyoe"
+                }
+            ],
+
+            "skos:note": [
+                {
+                    "@language": "en",
+                    "@value": "Distinctive genre in painting and other media, but most prominently in woodblock printing. It arose in the Edo period (1600-1868) and built up a broad popular market among the middle classes. Subject matter typically focused on brothel districts and kabuki theatres, with formats ranging from single sheet prints to book illustrations. Generally, the style is characterized by a mixture of the realistic narrative of the Kamakura period and the mature decorative style of the Momoyama and Edo periods. Distinctive styles and specialties in subject matter were developed by different schools throughout the period."
+                }
+            ],
+            "skos:prefLabel": [                
+                {
+                    "@language": "en",
+                    "@value": "Ukiyo-e"
+                }
+            ]
+        }
+    ],
+    "@context": {
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "dcterms": "http://purl.org/dc/terms/",
+        "edm": "http://www.europeana.eu/schemas/edm/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "wgs84_pos": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "rdaGr2": "http://rdvocab.info/ElementsGr2/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "ebucore": "http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#",
+        "doap": "http://usefulinc.com/ns/doap#",
+        "odrl": "http://www.w3.org/ns/odrl/2/",
+        "cc": "http://creativecommons.org/ns#",
+        "ore": "http://www.openarchives.org/ore/terms/",
+        "svcs": "http://rdfs.org/sioc/services#",
+        "oa": "http://www.w3.org/ns/oa#",
+        "dqv": "http://www.w3.org/ns/dqv#"
+    }
+}

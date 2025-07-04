@@ -1,0 +1,11 @@
+﻿subject,predicate,object
+tea:item_rikyu-portrait,rdf:type,crm:E22_Human-Made_Object
+tea:item_rikyu-portrait,owl:sameAs,wd:Q126119266
+tea:item_rikyu-portrait,crm:P102_has_title,Portrait of Sen no Rikyū with his Death Poem
+tea:item_rikyu-portrait,crm:P4_has_time-span,1600-1633
+tea:item_rikyu-portrait,dcterms:temporal,wd:Q184963
+tea:item_rikyu-portrait,dcterms:spatial,gn:1861060
+tea:item_rikyu-portrait,dcterms:medium,crm:E57_Material
+tea:item_rikyu-portrait,crm:P50_has_current_keeper,wd:Q160236
+tea:item_rikyu-portrait,dcterms:source,https://www.metmuseum.org/art/collection/search/845141
+tea:item_rikyu-portrait,crm:P129_is_about,tea:person_sen-no-rikyu

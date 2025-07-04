@@ -1,0 +1,9 @@
+﻿subject,predicate,object
+tea:item_teagarden,rdf:type,bf:Text
+tea:item_teagarden,bf:title,Mysterious Japan
+tea:item_teagarden,bf:date,1922
+tea:item_teagarden,dcterms:creator,foaf:Person
+tea:item_teagarden,dcterms:publisher,bf:Agent
+tea:item_teagarden,dcterms:spatial,gn:1861060
+tea:item_teagarden,dcterms:source,https://archive.org/details/mysteriousjapan00streuoft/
+tea:item_teagarden,foaf:depicts,tea:place_roji

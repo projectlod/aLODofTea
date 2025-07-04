@@ -1,0 +1,18 @@
+﻿@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix tea: <https://w3id.org/a-lod-of-tea#> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+
+tea:item_rikyu-portrait a crm:E22_Human-Made_Object ;
+    dcterms:medium crm:E57_Material ;
+    dcterms:source <https://www.metmuseum.org/art/collection/search/845141> ;
+    dcterms:spatial gn:1861060 ;
+    dcterms:temporal wd:Q184963 ;
+    crm:P102_has_title "Portrait of Sen no Rikyū with his Death Poem" ;
+    crm:P129_is_about tea:person_sen-no-rikyu ;
+    crm:P4_has_time-span "1600-1633" ;
+    crm:P50_has_current_keeper wd:Q160236 ;
+    owl:sameAs wd:Q126119266 .
+

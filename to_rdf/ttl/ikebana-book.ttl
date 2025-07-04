@@ -1,0 +1,15 @@
+﻿@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix tea: <https://w3id.org/a-lod-of-tea#> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+
+tea:item_ikebana-book a bf:Archival ;
+    bf:date "1600" ;
+    bf:subject tea:acitivity_ikebana ;
+    bf:title "Ikebana hinagata densho" ;
+    dcterms:publisher bf:Agent ;
+    dcterms:source <https://archive.org/details/ikebanahinagata00> ;
+    dcterms:spatial gn:1861060 ;
+    dcterms:temporal wd:Q184963 .
+

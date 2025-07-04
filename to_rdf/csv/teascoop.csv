@@ -1,0 +1,10 @@
+﻿subject,predicate,object
+tea:item_teascoop,rdf:type,crm:E22_Human-Made_Object
+tea:item_teascoop,crm:P102_has_title,Tea Scoop (Chashaku)
+tea:item_teascoop,crm:P4_has_time-span,1580-1589
+tea:item_teascoop,crm:P94i_was_created_by,tea:person_sen-no-rikyu
+tea:item_teascoop,dcterms:spatial,gn:1861060
+tea:item_teascoop,dcterms:medium,crm:E57_Material
+tea:item_teascoop,crm:P50_has_current_keeper,wd:Q160236
+tea:item_teascoop,dcterms:source,https://www.metmuseum.org/art/collection/search/752041
+tea:item_teascoop,crm:P2_has_type,wd:Q3006804

@@ -1,0 +1,9 @@
+﻿subject,predicate,object
+tea:item_ikebana-book,rdf:type,bf:Archival
+tea:item_ikebana-book,bf:title,Ikebana hinagata densho
+tea:item_ikebana-book,bf:date,1600
+tea:item_ikebana-book,dcterms:temporal,wd:Q184963
+tea:item_ikebana-book,dcterms:publisher,bf:Agent
+tea:item_ikebana-book,dcterms:spatial,gn:1861060
+tea:item_ikebana-book,dcterms:source,https://archive.org/details/ikebanahinagata00
+tea:item_ikebana-book,bf:subject,tea:acitivity_ikebana

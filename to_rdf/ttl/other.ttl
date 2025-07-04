@@ -1,0 +1,95 @@
+﻿@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tea: <https://w3id.org/a-lod-of-tea#> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+
+gn:1861060 a dcterms:Location ;
+    rdfs:label "Japan" .
+
+tea:concept_zen a skos:Concept ;
+    rdfs:label "zen" ;
+    crm:P15_influenced tea:acitivity_tea-ceremony,
+        tea:place_tearoom ;
+    owl:sameAs wd:Q7953 ;
+    skos:related tea:concept_taoism,
+        tea:concept_wabisabi .
+
+tea:person_honami-koetsu a foaf:Person ;
+    rdfs:label "Honami K?etsu" ;
+    owl:sameAs wd:Q3139920 .
+
+tea:person_okakura-kakuzo a foaf:Person ;
+    rdfs:label "Okakura Kakuzo" ;
+    owl:sameAs wd:Q942995 ;
+    foaf:member wd:Q49133 .
+
+tea:place_roji a crm:E53_Place ;
+    rdfs:label "roji (tea garden)" ;
+    owl:sameAs wd:Q402729 ;
+    schema:isPartOf tea:acitivity_tea-ceremony .
+
+wd:Q160236 a foaf:Organization ;
+    rdfs:label "Metropolitan Museum of Art" .
+
+wd:Q184963 a crm:E4_Period ;
+    rdfs:label "Edo Period (1603-1868)" .
+
+wd:Q2740942 a crm:E29_Design_or_Procedure ;
+    rdfs:label "kintsugi" ;
+    dcterms:contributor tea:person_sen-no-rikyu .
+
+wd:Q3006804 schema:usedIn tea:acitivity_tea-ceremony .
+
+wd:Q38142 rdfs:label "samurai" .
+
+wd:Q483444 crm:P101_had_as_general_use tea:acitivity_tea-ceremony .
+
+wd:Q926 a foaf:Person ;
+    rdfs:label "Claude Monet" ;
+    crm:P91_has_created wd:Q11899 .
+
+wd:Q95965973 schema:usedIn tea:acitivity_tea-ceremony .
+
+tea:acitivity_ikebana a crm:E7_Activity ;
+    rdfs:label "ikebana (japanese flower arrangement)" ;
+    owl:sameAs wd:Q178459 ;
+    skos:related tea:acitivity_tea-ceremony .
+
+tea:concept_taoism a skos:Concept ;
+    rdfs:label "Taoism" ;
+    crm:P15_influenced tea:acitivity_tea-ceremony ;
+    owl:sameAs wd:Q9598 .
+
+tea:concept_wabisabi a skos:Concept ;
+    rdfs:label "wabi sabi" ;
+    crm:P15_influenced tea:acitivity_ikebana ;
+    owl:sameAs wd:Q1142664 .
+
+wd:Q11899 a crm:E78_Collection ;
+    rdfs:label "Water Lilies" ;
+    crm:P190_has_symbolic_content skos:Concept .
+
+wd:Q49133 a foaf:Organization ;
+    rdfs:label "Museum of Fine Arts Boston" .
+
+tea:person_sen-no-rikyu a foaf:Person ;
+    rdfs:label "Sen no Riky?" ;
+    owl:sameAs wd:Q305477 ;
+    schema:hasRole "Japanese tea master" .
+
+tea:place_tearoom a crm:E53_Place ;
+    rdfs:label "chashitsu(tea room)" ;
+    crm:P89_falls_within tea:place_tearoom ;
+    owl:sameAs wd:Q402729 ;
+    schema:isPartOf tea:acitivity_tea-ceremony .
+
+tea:acitivity_tea-ceremony a crm:E7_Activity ;
+    dcterms:contributor tea:person_sen-no-rikyu ;
+    owl:sameAs wd:Q202298 .
+

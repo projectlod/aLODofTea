@@ -1,0 +1,21 @@
+﻿@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix tea: <https://w3id.org/a-lod-of-tea#> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+
+tea:item_tea-ceremony-painting a edm:ProvidedCHO ;
+    dcterms:contributor edm:Agent ;
+    dcterms:medium crm:E57_Material ;
+    dcterms:source <https://www.europeana.eu/en/item/15514/BI_17444_11_9> ;
+    dcterms:spacial gn:1861060 ;
+    dcterms:title "Invitation to a tea ceremony; Mirror of instructions for women (Serientitel)" ;
+    edm:dataProvider foaf:Organization ;
+    edm:timespan "1881" ;
+    foaf:depicts tea:acitivity_tea-ceremony,
+        tea:person_sen-no-rikyu,
+        tea:place_roji,
+        wd:Q483444 .
+

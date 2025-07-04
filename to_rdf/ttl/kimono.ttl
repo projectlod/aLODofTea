@@ -1,0 +1,16 @@
+﻿@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix tea: <https://w3id.org/a-lod-of-tea#> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+
+tea:item_kimono a crm:E22_Human-Made_Object ;
+    dcterms:medium crm:E57_Material ;
+    dcterms:source <https://collections.mfa.org/objects/28742/kimono-hitoe> ;
+    dcterms:spatial gn:1861060 ;
+    dcterms:temporal wd:Q184963 ;
+    crm:P102_has_title "Kimono (hitoe)" ;
+    crm:P2_has_type wd:Q483444 ;
+    crm:P4_has_time-span "1750-1799" ;
+    crm:P50_has_current_keeper wd:Q49133 .
+

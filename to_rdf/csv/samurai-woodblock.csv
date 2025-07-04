@@ -1,0 +1,10 @@
+﻿subject,predicate,object
+tea:item_samurai-woodblock,rdf:type,crm:E22_Human-Made_Object
+tea:item_samurai-woodblock,dcterms:date,1755
+tea:item_samurai-woodblock,dcterms:temporal,wd:Q184963
+tea:item_samurai-woodblock,dcterms:spatial,gn:1861060
+tea:item_samurai-woodblock,dcterms:medium,crm:E57_Material
+tea:item_samurai-woodblock,crm:P50_has_current_keeper,foaf:Organization
+tea:item_samurai-woodblock,dcterms:source,https://www.britishmuseum.org/collection/object/A_1907-0531-0-3
+tea:item_samurai-woodblock,foaf:depicts,wd:Q38142
+tea:item_samurai-woodblock,foaf:depicts,tea:acitivity_tea-ceremony

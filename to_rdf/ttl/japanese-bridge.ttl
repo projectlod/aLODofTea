@@ -1,0 +1,20 @@
+﻿@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tea: <https://w3id.org/a-lod-of-tea#> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+
+tea:item_japanese-bridge a crm:E22_Human-Made_Object ;
+    dcterms:date "1899" ;
+    dcterms:isPartOf wd:Q11899 ;
+    dcterms:medium crm:E57_Material ;
+    dcterms:source <https://www.nga.gov/artworks/74796-japanese-footbridge> ;
+    dcterms:spatial crm:E53_Place ;
+    crm:P102_has_title "The Japanese Footbridge" ;
+    crm:P190_has_symbolic_content skos:Concept ;
+    crm:P50_has_current_keeper foaf:Organization ;
+    crm:P94i_was_created_by wd:Q926 ;
+    owl:sameAs wd:Q12858617 .
+

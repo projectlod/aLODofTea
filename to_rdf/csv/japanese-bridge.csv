@@ -1,0 +1,12 @@
+﻿subject,predicate,object
+tea:item_japanese-bridge,rdf:type,crm:E22_Human-Made_Object
+tea:item_japanese-bridge,owl:sameAs,wd:Q12858617
+tea:item_japanese-bridge,crm:P102_has_title,The Japanese Footbridge
+tea:item_japanese-bridge,dcterms:date,1899
+tea:item_japanese-bridge,crm:P94i_was_created_by,wd:Q926
+tea:item_japanese-bridge,dcterms:spatial,crm:E53_Place
+tea:item_japanese-bridge,dcterms:medium,crm:E57_Material
+tea:item_japanese-bridge,crm:P50_has_current_keeper,foaf:Organization
+tea:item_japanese-bridge,dcterms:source,https://www.nga.gov/artworks/74796-japanese-footbridge
+tea:item_japanese-bridge,crm:P190_has_symbolic_content,skos:Concept
+tea:item_japanese-bridge,dcterms:isPartOf,wd:Q11899

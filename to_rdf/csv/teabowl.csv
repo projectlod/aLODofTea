@@ -1,0 +1,12 @@
+﻿subject,predicate,object
+tea:item_teabowl,rdf:type,crm:E22_Human-Made_Object
+tea:item_teabowl,crm:P102_has_title,Teabowl
+tea:item_teabowl,crm:P4_has_time-span,1590-1610
+tea:item_teabowl,dcterms:temporal,wd:Q184963
+tea:item_teabowl,crm:P94i_was_created_by,tea:person_honami-koetsu
+tea:item_teabowl,dcterms:spatial,gn:1861060
+tea:item_teabowl,dcterms:medium,crm:E57_Material
+tea:item_teabowl,crm:P50_has_current_keeper,wd:Q160236
+tea:item_teabowl,dcterms:source,https://www.metmuseum.org/art/collection/search/62879
+tea:item_teabowl,crm:P2_has_type,wd:Q95965973
+tea:item_teabowl,crm:P33_used_specific_technique,wd:Q2740942
