@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--needed for scholarly xml validation-->
+<?xml-model
+  href="https://vault.tei-c.org/P5/current/xml/tei/custom/schema/relaxng/tei_all.rng"
+  schematypens="http://relaxng.org/ns/structure/1.0"
+  type="application/xml"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="en">
+        <!-- bibliographic description of electronic file.-->
+        <fileDesc>
+            <titleStmt>
+                <!--not the title of the actual book but the one i want to give it! i'm rewritig the edition-->
+                <title><hi rend="italic">The Book of Tea: A Digital Edition</hi></title>
+                <!--author of the original source-->
+                <author>
+                    <!--author has two names-->
+                    <!-- reference <persName> with @xml:id="..." when i want to link to the author -->
+                    <persName xml:id="okakura1">
+                        <forename>Kakuzo</forename>
+                        <surname>Okakura</surname>                        
+                        <note type="altName" xml:lang="ja">岡倉 覚三</note>
+                    </persName>
+
+                    <persName xml:id="okakura2">
+                        <forename>Tenshin</forename>
+                        <surname>Okakura</surname>                        
+                        <note xml:lang="ja">岡倉 天心</note>
+                    </persName>
+                </author>
+
+                <respStmt>
+                    <resp>compiled by</resp>
+                    <name>
+                        <persName ref="#FI">
+                            <forename>Fahmida</forename>
+                            <surname>Islam</surname>
+                        </persName>
+                    </name>
+                </respStmt>
+            </titleStmt>
+
+            <!--not mandatory element-->
+            <editionStmt>
+                <!--the edition of this resource-->
+                <edition n="1">DHDK edition<date when="2025-07"/></edition>
+                <respStmt>
+                    <resp>Annotations by</resp>
+                    <name>
+                        <persName ref="#FI">
+                            <forename>Fahmida</forename>
+                            <surname>Islam</surname>
+                        </persName>
+                    </name>
+                </respStmt>
+            </editionStmt>
+
+            <!--not mandatory element-->
+            <!--the size of this tei/xml-->
+            <extent>
+                <!--write measure quantity after finishing!-->
+                <measure unit="KB" quantity="27">27 KB</measure>
+                <measure unit="lines" quantity="440">440</measure>
+            </extent>
+
+            <!--the distribution of my file-->
+            <publicationStmt>
+                <publisher>University of Bologna</publisher>
+                <pubPlace>
+                    <placeName key="Bologna" sameAs="https://www.geonames.org/3181928">Bologna</placeName>
+                </pubPlace>
+                <!--milestone tag doesn't have closing tag-->
+                <date when="2025"/>
+
+                <availability status="free">
+                    <p>Open Access</p>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY</licence>
+                </availability>
+            </publicationStmt>
+
+            <notesStmt> 
+                <note>This is an XML/TEI document made for the <hi rend="italic">aLODofTEA</hi> project, realized for the final exam of the DHDK COURSE: Information Science and Cultural Heritage (2024/25)</note>
+            </notesStmt>
+
+            <!--the source from which the resource was derived-->
+            <sourceDesc>
+                <!-- Original 1906 publication -->
+                <bibl>
+                    <author>
+                        <persName>
+                            <forename>Kakuzo</forename>
+                            <surname>Okakura</surname>
+                        </persName>
+                    </author>
+
+                    <title type="main">The Book of Tea</title>
+                    <title type="original">
+                        <foreign xml:lang="ja">茶の本</foreign>
+                    </title>
+
+                    <publisher>Putnam’s Sons</publisher>
+                    <pubPlace>New York</pubPlace>
+                    <date type="publication" when="1906"/>
+                </bibl>
+
+                <!-- Digital version I are using (transcribed from the original) -->
+                <bibl>
+                    <author>
+                        <persName>
+                            <forename>Kakuzo</forename>
+                            <surname>Okakura</surname>
+                        </persName>
+                    </author>
+
+                    <!--all the trascribers-->
+                    <editor n="1">
+                        <persName>
+                            <forename>Gabrielle</forename>
+                            <surname>Harbowy</surname>
+                        </persName>
+                    </editor>
+                    <editor n="2">
+                        <persName>
+                            <forename>Matthew</forename>
+                            <!-- no surname given -->
+                        </persName>
+                    </editor>
+                    <editor n="3">
+                        <persName>
+                            <forename>David</forename>
+                            <surname>Widger</surname>
+                        </persName>
+                    </editor>
+
+                    <title type="digital" xml:lang="en">The Book of Tea</title>
+                    <publisher>Project Gutenberg / Library of Congress</publisher>
+                    <date type="publication" when="2019-01-24"/>
+                    <extent>1 online resource: PDF (56 pages)</extent>
+                    <!--online access= "You can view the digital version of this source here" -->
+                    <ref target="https://www.loc.gov/resource/gdcebookspublic.2019299129/">Online access</ref>
+                    <note>The 2019 edition was transcribed from the original and made available as an EPUB and PDF.</note>
+                    <note>This TEI edition is using the PDF file of the 2019 published version.</note>
+                    <!--pages used for this TEI/XML-->
+                    <citedRange unit="page" from="6" to="7">pp. 6-7</citedRange> and 
+                    <citedRange unit="page" from="49" to="51">pp. 49-51</citedRange>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <projectDesc>
+                <p>This tei/xml encorporates all the elements of the project: aLODofTEA. The parts to annotate were chosen on purpose for the content and the relation to the concepts around which the project rotates.</p>
+            </projectDesc>
+        </encodingDesc>
+
+        <!--summary of text semantic and main subjects-->
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+                <language ident="ja">Japanese</language>
+            </langUsage>
+
+            <particDesc>
+                <listPerson type="contributors"> 
+                    <person xml:id="FI" source="https://github.com/Fahmyrose"> 
+                        <persName>Fahmida Islam</persName>
+                        <occupation>student, annotator</occupation>
+                    </person>
+                </listPerson>
+           
+                <listPerson type="mentions">
+                    <person xml:id="confucius">
+                        <persName>Confucius</persName>
+                        <note>Chinese philosopher and teacher, active ca <date from="0401" to="0600" type="century">5th-6th century</date> BCE</note>
+                    </person>
+                    <person xml:id="laozi">
+                        <persName>Laozi</persName>
+                        <note>Ancient Chinese philosopher, traditionally considered the founder of Taoism</note>
+                    </person>
+                    <person xml:id="sakyamuni">
+                        <persName>Sakyamuni</persName>
+                        <note>Another name for Gautama Buddha, the historical Buddha</note>
+                    </person>
+                    <person xml:id="liezi">
+                        <persName>Liezi</persName>
+                        <note>Chinese Taoist philosopher</note>
+                    </person>
+                    <person xml:id="rikiu">
+                        <persName>Rikiu</persName>
+                        <note>Famous Japanese tea-master</note>
+                    </person>
+                    <person xml:id="taiko-hideyoshi">
+                        <persName>Taiko-Hideyoshi</persName>
+                        <note>Historical Japanese figure Toyotomi Hideyoshi, a powerful daimyo and tea ceremony patron</note>
+                    </person>
+                    <person xml:id="taiko">
+                        <persName>Taiko</persName>
+                        <note>Honorific title often used for Hideyoshi</note>
+                    </person>
+                    <person xml:id="hideyoshi">
+                        <persName>Hideyoshi</persName>
+                        <note>Toyotomi Hideyoshi</note>
+                    </person>
+                </listPerson>
+            </particDesc>
+
+            <settingDesc>
+                <listPlace>
+                    <place xml:id="china">
+                        <placeName>China</placeName>
+                        <idno type="geonames">https://sws.geonames.org/1814991/</idno>
+                    </place>
+                    
+                    <place xml:id="japan">
+                        <placeName>Japan</placeName>
+                        <idno type="geonames">https://sws.geonames.org/1861060/</idno>
+                    </place>
+                </listPlace>
+            </settingDesc>
+
+            <!--<term type="concept"> in <text> refer to these keywords related to the japanese tea ceremony - topic of aLODofTEA -->
+            <textClass >
+                <!-- LCSH (library of congress subject headings) URI:http://id.loc.gov/authorities/subjects/sh85069725 -->
+                <classCode scheme="LCSH">Japanese Tea Ceremony</classCode>
+                    <keywords>
+                        <term>tea culture</term>
+                        <term>chanoyu</term>
+                        <term>wabi-sabi</term>
+                        <term>Zen Buddhism</term>
+                        <term>Japanese aesthetics</term>
+                        <term>traditional rituals</term>
+                        <term>Okakura Kakuzō</term>
+                        <term>art philosophy</term>
+                        <term>spiritual harmony</term>
+                        <term>cultural heritage</term>
+                    </keywords>
+                </textClass>
+        </profileDesc>
+    </teiHeader>
+
+    <text xml:lang="en">
+        <body>
+            <!--text of chapter 1 from p.6 to p.7 divided in paragraphs (first paragraphs of full-text)-->
+            <div type="chapter" n="1">
+
+                <!--chapter titles directly without div in TEI-->
+                <pb n="6"/>
+                <head rend="bold align(center)" type="main">I</head>
+                <head rend="align(center) case(allcaps)">The Cup of Humanity</head>
+
+                <!--paragraph 1-->
+                <pb n="6"/><!--page number in pdf-->
+                <div type="paragraph" n="1">
+                    <p>Tea began as a medicine and grew into a beverage. In <placeName ref="https://sws.geonames.org/1814991/">China</placeName>, in the <date from="0701" to="0800" type="century">eighth
+                    <lb/>century</date>, it entered the realm of poetry as one of the polite amusements. The
+                    <lb/><date from="1401" to="1500" type="century">fifteenth century</date> saw <placeName ref="https://sws.geonames.org/1861060/">Japan</placeName> ennoble it into a <term type="concept">religion of aestheticism—
+                    <lb/>Teaism</term><!--from Zen ritual-->. <term type="concept">Teaism</term> is a cult founded on the adoration of the beautiful among the
+                    <lb/>sordid facts of everyday existence. It inculcates purity and harmony, the
+                    <lb/>mystery of mutual charity, the romanticism of the social order. It is essentially
+                    <lb/>a <term type="concept">worship of the Imperfect</term><!--worship of the imperfect = concept of wabi-sabi-->, as it is a tender attempt to accomplish something
+                    <lb/>possible in this impossible thing we know as life.</p>
+                </div>
+
+                <!--paragraph 2-->
+                <pb n="6"/>
+                <div type="paragraph" n="2">
+                    <p><term type="concept">The Philosophy of Tea</term> is not mere <term type="concept">aestheticism</term> in the ordinary acceptance
+                    <lb/>of the term, for it expresses conjointly with ethics and religion our whole
+                    <lb/>point of view about man and nature. It is hygiene, for it enforces cleanliness;
+                    <lb/>it is economics, for it shows comfort in simplicity rather than in the complex
+                    <lb/>and costly; it is moral geometry, inasmuch as it defines our sense of
+                    <lb/>proportion to the universe. It represents the true spirit of Eastern democracy
+                    <lb/>by making all its votaries aristocrats in taste.</p>
+                </div>
+
+                <!--paragraph 3-->
+                <pb n="6"/>
+                <div type="paragraph" n="3">
+                    <p>The long isolation of <placeName ref="https://sws.geonames.org/1861060/">Japan</placeName> from the rest of the world, so conducive to
+                    <lb/>introspection, has been highly favourable to the development of <term type="concept">Teaism</term>. Our
+                    <lb/>home and habits, costume and cuisine, porcelain, lacquer, painting—our very
+                    <lb/>literature—all have been subject to its influence. No student of Japanese
+                    <lb/>culture could ever ignore its presence. It has permeated the elegance of noble
+                    <lb/>boudoirs, and entered the abode of the humble. Our peasants have learned to
+                    <lb/><term type="concept">arrange flowers</term><!--arrange flowers = Ikebana -->, our meanest labourer to offer his salutation to the rocks and
+                    <lb/>waters. In our common parlance we speak of the man <q>with no tea</q> in him,
+                    <lb/>when he is insusceptible to the seriocomic interests of the personal drama.
+                    <lb/>Again we stigmatise the untamed aesthete who, regardless of the mundane
+                    <lb/>tragedy, runs riot in the springtide of emancipated emotions, as one <q>with too
+                    <lb/>much tea</q> in him.</p>
+                </div>
+
+                <!--paragraph 4-->
+                <pb n="7"/>
+                <div type="paragraph" n="4">
+                    <p>The outsider may indeed wonder at this seeming much ado about nothing.
+                    <lb/><q>What a tempest in a teacup!</q> he will say. But when we consider how small
+                    <lb/>after all the cup of human enjoyment is, how soon overflowed with tears,
+                    <lb/>how easily drained to the dregs in our quenchless thirst for infinity, we shall
+                    <lb/>not blame ourselves for making so much of the teacup. Mankind has done
+                    <lb/>worse. In the worship of<term type="concept">Bacchus</term>, we have sacrificed too freely; and we
+                    <lb/>have even transfigured the gory image of <term type="concept">Mars</term>. Why not consecrate ourselves
+                    <lb/>to the <term type="concept">queen of the Camelias</term>, and revel in the warm stream of sympathy that
+                    <lb/>flows from her altar? In the liquid amber within the ivory-porcelain, the
+                    <lb/>initiated may touch the sweet reticence of <persName>Confucius</persName>, the piquancy of <persName>Laozi</persName>,
+                    <lb/>and the ethereal aroma of <persName>Sakyamuni</persName> himself.</p>   
+                </div>
+
+                <!--paragraph 5 (skipped other paragraphs after this one)-->
+                <pb n="7"/>
+                <div type="paragraph" n="5">
+                    <p>Those who cannot feel the <term type="concept">littleness of great things in themselves are apt to
+                    <lb/>overlook the greatness of little things in others</term><!--wabi-sabi-->. The average Westerner, in his
+                    <lb/>sleek complacency, will see in the <term type="activity">tea ceremony</term> but another instance of the
+                    <lb/>thousand and one oddities which constitute the quaintness and childishness of
+                    <lb/>the East to him. He was wont to regard <placeName ref="https://sws.geonames.org/1861060/">Japan</placeName> as barbarous while she
+                    <lb/>indulged in the gentle arts of peace: he calls her civilised since she began to
+                    <lb/>commit wholesale slaughter on Manchurian battlefields. Much comment has
+                    <lb/>been given lately to the <term type="concept">Code of the Samurai—the Art of Death</term> which makes
+                    <lb/>our soldiers exult in self-sacrifice; but scarcely any attention has been drawn
+                    <lb/>to <term type="concept">Teaism</term>, which represents so much of our <term type="concept">Art of Life</term>. Fain would we
+                    <lb/>remain barbarians, if our claim to civilisation were to be based on the
+                    <lb/>gruesome glory of war. Fain would we await the time when due respect shall
+                    <lb/>be paid to our art and ideals.</p>
+                </div>
+            </div>
+
+            <!--text of chapter 7 from p.48 to p.51 divided in paragraphs (last paragraphs of the full-text)-->
+            <div type="chapter" n="7">
+
+                <!--chapter titles directly without div in TEI-->
+                <pb n="49"/>
+                <head rend="bold align(center)" type="main">VII</head>
+                <head rend="align(center) case(allcaps)">Tea-Masters</head>
+
+                <!--paragraph 3 (skipped first 2 paragraphs)-->
+                <pb n="49"/>
+                <div type="paragraph" n="3">
+                    <p>Great as has been the influence of the tea-masters in the field of art, it is as
+                    <lb/>nothing compared to that which they have exerted on the conduct of life. Not
+                    <lb/>only in the usages of polite society, but also in the arrangement of all our
+                    <lb/>domestic details, do we feel the presence of the tea-masters. Many of our
+                    <lb/>delicate dishes, as well as our way of serving food, are their inventions.
+                    <lb/>They have taught us to dress only in garments of sober colors. They have
+                    <lb/>instructed us in the proper spirit in which to approach flowers. They have
+                    <lb/>given emphasis to our natural love of simplicity, and shown us the beauty of
+                    <lb/>humility. In fact, through their teachings tea has entered the life of the people.</p>
+                </div>
+
+                <!--paragraph 4-->
+                <pb n="49"/>
+                <div type="paragraph" n="4">
+                    <p>Those of us who know not the secret of properly regulating our own
+                    <lb/>existence on this tumultuous sea of foolish troubles which we call life are
+                    <lb/>constantly in a state of misery while vainly trying to appear happy and
+                    <lb/>contented. We stagger in the attempt to keep our moral <term type="concept">equilibrium</term>, and see
+                    <lb/>forerunners of the tempest in every cloud that floats on the horizon. Yet there
+                    <lb/>is <term type="concept">joy and beauty in the roll of billows as they sweep outward toward
+                    <lb/>eternity</term>. Why not enter into their spirit, or, like <persName>Liezi</persName><!--related to concept of Taoism-->, ride upon the hurricane
+                    <lb/>itself?</p>
+                </div>
+
+                <!--paragraph 5-->
+                <pb n="49"/>
+                <div type="paragraph" n="5">
+                    <p>He only who has lived with the beautiful can die beautifully. The last
+                    <lb/>moments of the great tea-masters were as full of exquisite refinement as had
+                    <lb/>been their lives. Seeking always to be in <term type="concept">harmony</term> with the great rhythm of the
+                    <lb/>universe, they were ever prepared to enter the unknown. The Last Tea of
+                    <lb/><persName>Rikiu</persName> will stand forth forever as the acme of tragic grandeur.</p>
+                </div>
+
+                <!--paragraph 6-->
+                <pb n="49-50"/>
+                <div type="paragraph" n="6">
+                    <p>Long had been the friendship between <persName>Rikiu</persName> and the <persName>Taiko-Hideyoshi</persName>, and
+                    <lb/>high the estimation in which the great warrior held the tea-master. But the
+                    <lb/>friendship of a despot is ever a dangerous honour. It was an age rife with
+                    <lb/>treachery, and men trusted not even their nearest kin. <persName>Rikiu</persName> was no servile
+                    <lb/>courtier, and had often dared to differ in argument with his fierce patron.
+                    <lb/>Taking advantage of the coldness which had for some time existed between
+                    <lb/>the <persName>Taiko</persName> and <persName>Rikiu</persName>, the enemies of the latter accused him of being
+                    <lb/>implicated in a conspiracy to poison the despot. It was whispered to
+                    <lb/><persName>Hideyoshi</persName> that the fatal potion was to be administered to him with a cup of
+                    <lb/>the green beverage prepared by the tea-master. With <persName>Hideyoshi</persName> suspicion
+                    <lb/>was sufficient ground for instant execution, and there was no appeal from the
+                    <lb/>will of the angry ruler. One privilege alone was granted to the condemned —
+                    <lb/>the honor of dying by his own hand.</p>
+                </div>
+
+                <!--paragraph 7-->
+                <pb n="50"/>
+                <div type="paragraph" n="7">
+                    <p>On the day destined for his self-immolation, <persName>Rikiu</persName> invited his chief
+                    <lb/>disciples to a last tea-ceremony. Mournfully at the appointed time the guests
+                    <lb/>met at the portico. As they look into the garden path the trees seem to
+                    <lb/>shudder, and in the rustling of their leaves are heard the whispers of
+                    <lb/>homeless ghosts. Like solemn sentinels before the gates of <rs type="mythicalPlace">Hades</rs> stand the
+                    <lb/>grey stone lanterns. A wave of rare incense is wafted from the tearoom; it is
+                    <lb/>the summons which bids the guests to enter. One by one they advance and
+                    <lb/>take their places. In the tokonoma hangs a kakemon—a wonderful writing by
+                    <lb/>an ancient monk dealing with the evanescence of all earthly things. The
+                    <lb/>singing kettle, as it boils over the brazier, sounds like some cicada pouring
+                    <lb/>forth his woes to departing summer. Soon the host enters the room. Each in
+                    <lb/>turn is served with tea, and each in turn silently drains his cup, the host last
+                    <lb/>of all. According to established etiquette, the chief guest now asks
+                    <lb/>permission to examine the tea-equipage. <persName>Rikiu</persName> places the various articles
+                    <lb/>before them, with the kakemono. After all have expressed admiration of their
+                    <lb/>beauty,<persName>Rikiu</persName> presents one of them to each of the assembled company as a
+                    <lb/>souvenir. The bowl alone he keeps. <q>Never again shall this cup, polluted by
+                    <lb/>the lips of misfortune, be used by man.</q> He speaks, and breaks the vessel
+                    <lb/>into fragments.</p>
+                </div>
+
+                <!--paragraph 8-->
+                <pb n="50-51"/>
+                <div type="paragraph" n="8">
+                    <p>The ceremony is over; the guests with difficulty restraining their tears, take
+                    <lb/>their last farewell and leave the room. One only, the nearest and dearest, is
+                    <lb/>requested to remain and witness the end. <persName>Rikiu</persName> then removes his tea-gown
+                    <lb/>and carefully folds it upon the mat, thereby disclosing the immaculate white
+                    <lb/>death robe which it had hitherto concealed. Tenderly he gazes on the shining
+                    <lb/>blade of the fatal dagger, and in exquisite verse thus addresses it:
+                    <lb/>
+                        <q>
+                            <lg type="quintain">
+                                <l>Welcome to thee,</l>
+                                <l>O sword of eternity!</l>
+                                <l>Through Buddha</l>
+                                <l>And through Dharuma alike</l>
+                                <l>Thou hast cleft thy way.</l>
+                            </lg>
+                        </q>
+                    <lb/>
+                    <lb/>With a smile upon his face <persName>Rikiu</persName> passed forth into the unknown.</p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
