@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:schema1="http://schema.org/"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://example.org/bookoftea/person/Laozi-mentioned">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Laozi</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/concept/cultural-heritage-keyword">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>cultural heritage</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/person/Rikiu">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Rikiu</foaf:name>
+    <skos:note>Famous Japanese tea-master</skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/the-book-of-tea-digital-edition">
+    <rdf:type rdf:resource="http://schema.org/Book"/>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Work"/>
+    <rdf:type rdf:resource="http://www.tei-c.org/ns/1.0TEIDocument"/>
+    <dc:creator rdf:resource="http://example.org/bookoftea/author/Kakuzo-Okakura"/>
+    <dc:creator rdf:resource="http://example.org/bookoftea/author/Tenshin-Okakura"/>
+    <dc:contributor rdf:resource="http://example.org/bookoftea/person/Fahmida-Islam"/>
+    <dc:publisher>University of Bologna</dc:publisher>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2025</dc:date>
+    <dc:rights rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <schema1:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dc:source rdf:nodeID="N3e63bb5c0bba4cff920455c035b862c1"/>
+    <dc:source rdf:nodeID="Nd680749ea9b647d4aa1e12739c326e07"/>
+    <dc:language>en</dc:language>
+    <dc:language>ja</dc:language>
+    <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/Japanese-Tea-Ceremony"/>
+    <dc:subject rdf:resource="http://example.org/bookoftea/concept/tea-culture-keyword"/>
+    <dc:subject rdf:resource="http://example.org/bookoftea/concept/chanoyu-keyword"/>
+    <dc:subject rdf:resource="http://example.org/bookoftea/concept/wabi-sabi-keyword"/>
+    <dc:subject rdf:resource="http://example.org/bookoftea/concept/zen-buddhism-keyword"/>
+    <dc:subject rdf:resource="http://example.org/bookoftea/concept/japanese-aesthetics-keyword"/>
+    <dc:subject rdf:resource="http://example.org/bookoftea/concept/traditional-rituals-keyword"/>
+    <dc:subject rdf:resource="http://example.org/bookoftea/concept/okakura-kakuzō-keyword"/>
+    <dc:subject rdf:resource="http://example.org/bookoftea/concept/art-philosophy-keyword"/>
+    <dc:subject rdf:resource="http://example.org/bookoftea/concept/spiritual-harmony-keyword"/>
+    <dc:subject rdf:resource="http://example.org/bookoftea/concept/cultural-heritage-keyword"/>
+    <schema1:keywords>tea culture</schema1:keywords>
+    <schema1:keywords>chanoyu</schema1:keywords>
+    <schema1:keywords>wabi-sabi</schema1:keywords>
+    <schema1:keywords>Zen Buddhism</schema1:keywords>
+    <schema1:keywords>Japanese aesthetics</schema1:keywords>
+    <schema1:keywords>traditional rituals</schema1:keywords>
+    <schema1:keywords>Okakura Kakuzō</schema1:keywords>
+    <schema1:keywords>art philosophy</schema1:keywords>
+    <schema1:keywords>spiritual harmony</schema1:keywords>
+    <schema1:keywords>cultural heritage</schema1:keywords>
+    <schema1:mentions rdf:resource="http://example.org/bookoftea/person/Confucius-mentioned"/>
+    <schema1:mentions rdf:resource="http://example.org/bookoftea/person/Laozi-mentioned"/>
+    <schema1:mentions rdf:resource="http://example.org/bookoftea/person/Sakyamuni-mentioned"/>
+    <schema1:mentions rdf:resource="http://example.org/bookoftea/person/Liezi-mentioned"/>
+    <schema1:mentions rdf:resource="http://example.org/bookoftea/person/Rikiu-mentioned"/>
+    <schema1:mentions rdf:resource="http://example.org/bookoftea/person/Taiko-Hideyoshi-mentioned"/>
+    <schema1:mentions rdf:resource="http://example.org/bookoftea/person/Taiko-mentioned"/>
+    <schema1:mentions rdf:resource="http://example.org/bookoftea/person/Hideyoshi-mentioned"/>
+    <schema1:mentions rdf:resource="https://sws.geonames.org/1814991/"/>
+    <schema1:mentions rdf:resource="https://sws.geonames.org/1861060/"/>
+    <schema1:about rdf:resource="http://example.org/bookoftea/term/religion-of-aestheticism—-intext"/>
+    <schema1:about rdf:resource="http://example.org/bookoftea/term/teaism-intext"/>
+    <schema1:about rdf:resource="http://example.org/bookoftea/term/worship-of-the-imperfect-intext"/>
+    <schema1:about rdf:resource="http://example.org/bookoftea/term/the-philosophy-of-tea-intext"/>
+    <schema1:about rdf:resource="http://example.org/bookoftea/term/aestheticism-intext"/>
+    <schema1:about rdf:resource="http://example.org/bookoftea/term/arrange-flowers-intext"/>
+    <schema1:about rdf:resource="http://example.org/bookoftea/term/bacchus-intext"/>
+    <schema1:about rdf:resource="http://example.org/bookoftea/term/mars-intext"/>
+    <schema1:about rdf:resource="http://example.org/bookoftea/term/queen-of-the-camelias-intext"/>
+    <schema1:about rdf:resource="http://example.org/bookoftea/term/littleness-of-great-things-in-themselves-are-apt-to-intext"/>
+    <schema1:about rdf:resource="http://example.org/bookoftea/term/tea-ceremony-intext"/>
+    <schema1:about rdf:resource="http://example.org/bookoftea/term/code-of-the-samurai—the-art-of-death-intext"/>
+    <schema1:about rdf:resource="http://example.org/bookoftea/term/art-of-life-intext"/>
+    <schema1:about rdf:resource="http://example.org/bookoftea/term/equilibrium-intext"/>
+    <schema1:about rdf:resource="http://example.org/bookoftea/term/joy-and-beauty-in-the-roll-of-billows-as-they-sweep-outward-toward-intext"/>
+    <schema1:about rdf:resource="http://example.org/bookoftea/term/harmony-intext"/>
+    <schema1:hasPart rdf:resource="http://example.org/bookoftea/chapter/1"/>
+    <schema1:hasPart rdf:resource="http://example.org/bookoftea/chapter/7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/person/Confucius">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Confucius</foaf:name>
+    <skos:note>Chinese philosopher and teacher, active ca</skos:note>
+    <schema1:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">0401</schema1:birthDate>
+    <schema1:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">0600</schema1:deathDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/paragraph/4">
+    <rdf:type rdf:resource="http://schema.org/Paragraph"/>
+    <dc:identifier>4</dc:identifier>
+    <schema1:text>The outsider may indeed wonder at this seeming much ado about nothing.
+                    What a tempest in a teacup! he will say. But when we consider how small
+                    after all the cup of human enjoyment is, how soon overflowed with tears,
+                    how easily drained to the dregs in our quenchless thirst for infinity, we shall
+                    not blame ourselves for making so much of the teacup. Mankind has done
+                    worse. In the worship ofBacchus, we have sacrificed too freely; and we
+                    have even transfigured the gory image of Mars. Why not consecrate ourselves
+                    to the queen of the Camelias, and revel in the warm stream of sympathy that
+                    flows from her altar? In the liquid amber within the ivory-porcelain, the
+                    initiated may touch the sweet reticence of Confucius, the piquancy of Laozi,
+                    and the ethereal aroma of Sakyamuni himself.</schema1:text>
+    <schema1:text>Those of us who know not the secret of properly regulating our own
+                    existence on this tumultuous sea of foolish troubles which we call life are
+                    constantly in a state of misery while vainly trying to appear happy and
+                    contented. We stagger in the attempt to keep our moral equilibrium, and see
+                    forerunners of the tempest in every cloud that floats on the horizon. Yet there
+                    is joy and beauty in the roll of billows as they sweep outward toward
+                    eternity. Why not enter into their spirit, or, like Liezi, ride upon the hurricane
+                    itself?</schema1:text>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/term/religion-of-aestheticism—-intext">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type>concept</rdf:type>
+    <skos:prefLabel>religion of aestheticism—</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/concept/japanese-aesthetics-keyword">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Japanese aesthetics</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/concept/spiritual-harmony-keyword">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>spiritual harmony</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/chapter/1">
+    <rdf:type rdf:resource="http://schema.org/Chapter"/>
+    <dc:identifier>1</dc:identifier>
+    <dc:title>The Cup of Humanity</dc:title>
+    <schema1:hasPart rdf:resource="http://example.org/bookoftea/paragraph/1"/>
+    <schema1:hasPart rdf:resource="http://example.org/bookoftea/paragraph/2"/>
+    <schema1:hasPart rdf:resource="http://example.org/bookoftea/paragraph/3"/>
+    <schema1:hasPart rdf:resource="http://example.org/bookoftea/paragraph/4"/>
+    <schema1:hasPart rdf:resource="http://example.org/bookoftea/paragraph/5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/person/Taiko-mentioned">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Taiko</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/Japanese-Tea-Ceremony">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Japanese Tea Ceremony</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/person/Fahmida-Islam">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:givenName>Fahmida</foaf:givenName>
+    <foaf:familyName>Islam</foaf:familyName>
+    <schema1:roleName>compiler</schema1:roleName>
+    <foaf:name>Fahmida Islam</foaf:name>
+    <schema1:occupation>student, annotator</schema1:occupation>
+    <foaf:homepage rdf:resource="https://github.com/Fahmyrose"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/term/littleness-of-great-things-in-themselves-are-apt-to-intext">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type>concept</rdf:type>
+    <skos:prefLabel>littleness of great things in themselves are apt to</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd680749ea9b647d4aa1e12739c326e07">
+    <rdf:type rdf:resource="http://schema.org/CreativeWork"/>
+    <dc:title xml:lang="en">The Book of Tea</dc:title>
+    <dc:creator rdf:resource="http://example.org/bookoftea/author/Kakuzo-Okakura"/>
+    <dc:publisher>Project Gutenberg / Library of Congress</dc:publisher>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-24</dc:date>
+    <schema1:url rdf:resource="https://www.loc.gov/resource/gdcebookspublic.2019299129/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/concept/chanoyu-keyword">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>chanoyu</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/author/Tenshin-Okakura">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:givenName>Tenshin</foaf:givenName>
+    <foaf:familyName>Okakura</foaf:familyName>
+    <skos:altLabel>岡倉 天心</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/author/Kakuzo-Okakura">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:givenName>Kakuzo</foaf:givenName>
+    <foaf:familyName>Okakura</foaf:familyName>
+    <skos:altLabel>岡倉 覚三</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/concept/zen-buddhism-keyword">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Zen Buddhism</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/concept/traditional-rituals-keyword">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>traditional rituals</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/paragraph/6">
+    <rdf:type rdf:resource="http://schema.org/Paragraph"/>
+    <dc:identifier>6</dc:identifier>
+    <schema1:text>Long had been the friendship between Rikiu and the Taiko-Hideyoshi, and
+                    high the estimation in which the great warrior held the tea-master. But the
+                    friendship of a despot is ever a dangerous honour. It was an age rife with
+                    treachery, and men trusted not even their nearest kin. Rikiu was no servile
+                    courtier, and had often dared to differ in argument with his fierce patron.
+                    Taking advantage of the coldness which had for some time existed between
+                    the Taiko and Rikiu, the enemies of the latter accused him of being
+                    implicated in a conspiracy to poison the despot. It was whispered to
+                    Hideyoshi that the fatal potion was to be administered to him with a cup of
+                    the green beverage prepared by the tea-master. With Hideyoshi suspicion
+                    was sufficient ground for instant execution, and there was no appeal from the
+                    will of the angry ruler. One privilege alone was granted to the condemned —
+                    the honor of dying by his own hand.</schema1:text>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/paragraph/1">
+    <rdf:type rdf:resource="http://schema.org/Paragraph"/>
+    <dc:identifier>1</dc:identifier>
+    <schema1:text>Tea began as a medicine and grew into a beverage. In China, in the eighth
+                    century, it entered the realm of poetry as one of the polite amusements. The
+                    fifteenth century saw Japan ennoble it into a religion of aestheticism—
+                    Teaism. Teaism is a cult founded on the adoration of the beautiful among the
+                    sordid facts of everyday existence. It inculcates purity and harmony, the
+                    mystery of mutual charity, the romanticism of the social order. It is essentially
+                    a worship of the Imperfect, as it is a tender attempt to accomplish something
+                    possible in this impossible thing we know as life.</schema1:text>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/paragraph/5">
+    <rdf:type rdf:resource="http://schema.org/Paragraph"/>
+    <dc:identifier>5</dc:identifier>
+    <schema1:text>Those who cannot feel the littleness of great things in themselves are apt to
+                    overlook the greatness of little things in others. The average Westerner, in his
+                    sleek complacency, will see in the tea ceremony but another instance of the
+                    thousand and one oddities which constitute the quaintness and childishness of
+                    the East to him. He was wont to regard Japan as barbarous while she
+                    indulged in the gentle arts of peace: he calls her civilised since she began to
+                    commit wholesale slaughter on Manchurian battlefields. Much comment has
+                    been given lately to the Code of the Samurai—the Art of Death which makes
+                    our soldiers exult in self-sacrifice; but scarcely any attention has been drawn
+                    to Teaism, which represents so much of our Art of Life. Fain would we
+                    remain barbarians, if our claim to civilisation were to be based on the
+                    gruesome glory of war. Fain would we await the time when due respect shall
+                    be paid to our art and ideals.</schema1:text>
+    <schema1:text>He only who has lived with the beautiful can die beautifully. The last
+                    moments of the great tea-masters were as full of exquisite refinement as had
+                    been their lives. Seeking always to be in harmony with the great rhythm of the
+                    universe, they were ever prepared to enter the unknown. The Last Tea of
+                    Rikiu will stand forth forever as the acme of tragic grandeur.</schema1:text>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/term/arrange-flowers-intext">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type>concept</rdf:type>
+    <skos:prefLabel>arrange flowers</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/person/Liezi">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Liezi</foaf:name>
+    <skos:note>Chinese Taoist philosopher</skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/concept/tea-culture-keyword">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>tea culture</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/term/art-of-life-intext">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type>concept</rdf:type>
+    <skos:prefLabel>Art of Life</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/concept/art-philosophy-keyword">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>art philosophy</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/person/Taiko">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Taiko</foaf:name>
+    <skos:note>Honorific title often used for Hideyoshi</skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/person/Taiko-Hideyoshi-mentioned">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Taiko-Hideyoshi</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/term/worship-of-the-imperfect-intext">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type>concept</rdf:type>
+    <skos:prefLabel>worship of the Imperfect</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/paragraph/8">
+    <rdf:type rdf:resource="http://schema.org/Paragraph"/>
+    <dc:identifier>8</dc:identifier>
+    <schema1:text>The ceremony is over; the guests with difficulty restraining their tears, take
+                    their last farewell and leave the room. One only, the nearest and dearest, is
+                    requested to remain and witness the end. Rikiu then removes his tea-gown
+                    and carefully folds it upon the mat, thereby disclosing the immaculate white
+                    death robe which it had hitherto concealed. Tenderly he gazes on the shining
+                    blade of the fatal dagger, and in exquisite verse thus addresses it:
+                    
+                        
+                            
+                                Welcome to thee,
+                                O sword of eternity!
+                                Through Buddha
+                                And through Dharuma alike
+                                Thou hast cleft thy way.
+                            
+                        
+                    
+                    With a smile upon his face Rikiu passed forth into the unknown.</schema1:text>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3e63bb5c0bba4cff920455c035b862c1">
+    <rdf:type rdf:resource="http://schema.org/CreativeWork"/>
+    <dc:title>The Book of Tea</dc:title>
+    <dc:creator rdf:resource="http://example.org/bookoftea/author/Kakuzo-Okakura"/>
+    <dc:publisher>Putnam’s Sons</dc:publisher>
+    <schema1:location>New York</schema1:location>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1906</dc:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/term/teaism-intext">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type>concept</rdf:type>
+    <skos:prefLabel>Teaism</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/term/equilibrium-intext">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type>concept</rdf:type>
+    <skos:prefLabel>equilibrium</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/term/harmony-intext">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type>concept</rdf:type>
+    <skos:prefLabel>harmony</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/concept/wabi-sabi-keyword">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>wabi-sabi</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/person/Sakyamuni-mentioned">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Sakyamuni</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/person/Sakyamuni">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Sakyamuni</foaf:name>
+    <skos:note>Another name for Gautama Buddha, the historical Buddha</skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/paragraph/2">
+    <rdf:type rdf:resource="http://schema.org/Paragraph"/>
+    <dc:identifier>2</dc:identifier>
+    <schema1:text>The Philosophy of Tea is not mere aestheticism in the ordinary acceptance
+                    of the term, for it expresses conjointly with ethics and religion our whole
+                    point of view about man and nature. It is hygiene, for it enforces cleanliness;
+                    it is economics, for it shows comfort in simplicity rather than in the complex
+                    and costly; it is moral geometry, inasmuch as it defines our sense of
+                    proportion to the universe. It represents the true spirit of Eastern democracy
+                    by making all its votaries aristocrats in taste.</schema1:text>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/person/Taiko-Hideyoshi">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Taiko-Hideyoshi</foaf:name>
+    <skos:note>Historical Japanese figure Toyotomi Hideyoshi, a powerful daimyo and tea ceremony patron</skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/person/Hideyoshi">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Hideyoshi</foaf:name>
+    <skos:note>Toyotomi Hideyoshi</skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/term/tea-ceremony-intext">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type>activity</rdf:type>
+    <skos:prefLabel>tea ceremony</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://sws.geonames.org/1861060/">
+    <rdf:type rdf:resource="http://schema.org/Place"/>
+    <schema1:name>Japan</schema1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/person/Laozi">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Laozi</foaf:name>
+    <skos:note>Ancient Chinese philosopher, traditionally considered the founder of Taoism</skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/person/Hideyoshi-mentioned">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Hideyoshi</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/chapter/7">
+    <rdf:type rdf:resource="http://schema.org/Chapter"/>
+    <dc:identifier>7</dc:identifier>
+    <dc:title>Tea-Masters</dc:title>
+    <schema1:hasPart rdf:resource="http://example.org/bookoftea/paragraph/3"/>
+    <schema1:hasPart rdf:resource="http://example.org/bookoftea/paragraph/4"/>
+    <schema1:hasPart rdf:resource="http://example.org/bookoftea/paragraph/5"/>
+    <schema1:hasPart rdf:resource="http://example.org/bookoftea/paragraph/6"/>
+    <schema1:hasPart rdf:resource="http://example.org/bookoftea/paragraph/7"/>
+    <schema1:hasPart rdf:resource="http://example.org/bookoftea/paragraph/8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/paragraph/3">
+    <rdf:type rdf:resource="http://schema.org/Paragraph"/>
+    <dc:identifier>3</dc:identifier>
+    <schema1:text>The long isolation of Japan from the rest of the world, so conducive to
+                    introspection, has been highly favourable to the development of Teaism. Our
+                    home and habits, costume and cuisine, porcelain, lacquer, painting—our very
+                    literature—all have been subject to its influence. No student of Japanese
+                    culture could ever ignore its presence. It has permeated the elegance of noble
+                    boudoirs, and entered the abode of the humble. Our peasants have learned to
+                    arrange flowers, our meanest labourer to offer his salutation to the rocks and
+                    waters. In our common parlance we speak of the man with no tea in him,
+                    when he is insusceptible to the seriocomic interests of the personal drama.
+                    Again we stigmatise the untamed aesthete who, regardless of the mundane
+                    tragedy, runs riot in the springtide of emancipated emotions, as one with too
+                    much tea in him.</schema1:text>
+    <schema1:text>Great as has been the influence of the tea-masters in the field of art, it is as
+                    nothing compared to that which they have exerted on the conduct of life. Not
+                    only in the usages of polite society, but also in the arrangement of all our
+                    domestic details, do we feel the presence of the tea-masters. Many of our
+                    delicate dishes, as well as our way of serving food, are their inventions.
+                    They have taught us to dress only in garments of sober colors. They have
+                    instructed us in the proper spirit in which to approach flowers. They have
+                    given emphasis to our natural love of simplicity, and shown us the beauty of
+                    humility. In fact, through their teachings tea has entered the life of the people.</schema1:text>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/concept/okakura-kakuzō-keyword">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Okakura Kakuzō</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/term/bacchus-intext">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type>concept</rdf:type>
+    <skos:prefLabel>Bacchus</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/person/Confucius-mentioned">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Confucius</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/term/queen-of-the-camelias-intext">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type>concept</rdf:type>
+    <skos:prefLabel>queen of the Camelias</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/term/mars-intext">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type>concept</rdf:type>
+    <skos:prefLabel>Mars</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/term/the-philosophy-of-tea-intext">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type>concept</rdf:type>
+    <skos:prefLabel>The Philosophy of Tea</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/term/aestheticism-intext">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type>concept</rdf:type>
+    <skos:prefLabel>aestheticism</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/term/code-of-the-samurai—the-art-of-death-intext">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type>concept</rdf:type>
+    <skos:prefLabel>Code of the Samurai—the Art of Death</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/term/joy-and-beauty-in-the-roll-of-billows-as-they-sweep-outward-toward-intext">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type>concept</rdf:type>
+    <skos:prefLabel>joy and beauty in the roll of billows as they sweep outward toward</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/paragraph/7">
+    <rdf:type rdf:resource="http://schema.org/Paragraph"/>
+    <dc:identifier>7</dc:identifier>
+    <schema1:text>On the day destined for his self-immolation, Rikiu invited his chief
+                    disciples to a last tea-ceremony. Mournfully at the appointed time the guests
+                    met at the portico. As they look into the garden path the trees seem to
+                    shudder, and in the rustling of their leaves are heard the whispers of
+                    homeless ghosts. Like solemn sentinels before the gates of Hades stand the
+                    grey stone lanterns. A wave of rare incense is wafted from the tearoom; it is
+                    the summons which bids the guests to enter. One by one they advance and
+                    take their places. In the tokonoma hangs a kakemon—a wonderful writing by
+                    an ancient monk dealing with the evanescence of all earthly things. The
+                    singing kettle, as it boils over the brazier, sounds like some cicada pouring
+                    forth his woes to departing summer. Soon the host enters the room. Each in
+                    turn is served with tea, and each in turn silently drains his cup, the host last
+                    of all. According to established etiquette, the chief guest now asks
+                    permission to examine the tea-equipage. Rikiu places the various articles
+                    before them, with the kakemono. After all have expressed admiration of their
+                    beauty,Rikiu presents one of them to each of the assembled company as a
+                    souvenir. The bowl alone he keeps. Never again shall this cup, polluted by
+                    the lips of misfortune, be used by man. He speaks, and breaks the vessel
+                    into fragments.</schema1:text>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/person/Liezi-mentioned">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Liezi</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bookoftea/person/Rikiu-mentioned">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Rikiu</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://sws.geonames.org/1814991/">
+    <rdf:type rdf:resource="http://schema.org/Place"/>
+    <schema1:name>China</schema1:name>
+  </rdf:Description>
+</rdf:RDF>
