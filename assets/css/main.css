@@ -1,6 +1,6 @@
 /**
 * Template Name: DevFolio
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+* Template URL: https://bootstrapmade.com/devfolio-bootstrap-items-html-template/
 * Updated: Aug 07 2024 with Bootstrap v5.3.3
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -493,38 +493,43 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Preloader
+# Preloader - the teacup style
 --------------------------------------------------------------*/
-#preloader {
+
+.preloader {
+  width: 100%;
+  height: 100vh;
   position: fixed;
-  inset: 0;
-  z-index: 999999;
-  overflow: hidden;
-  background: var(--background-color);
-  transition: all 0.6s ease-out;
+  top: 0; 
+  left: 0;
+  z-index: 10000;
+  background: var(--bs-dark, #222);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #ffffff;
-  border-color: var(--accent-color) transparent var(--accent-color) transparent;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: animate-preloader 1.5s linear infinite;
+.dot {
+  display: inline-block;
+  margin: 0 10px;
 }
 
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
+@keyframes loadingInner {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
 
-  100% {
-    transform: rotate(360deg);
-  }
+.loader .dot:nth-child(1) {
+  animation: loadingInner 0.6s 0.1s linear infinite;
+}
+
+.loader .dot:nth-child(2) {
+  animation: loadingInner 0.6s 0.3s linear infinite;
+}
+
+.loader .dot:nth-child(3) {
+  animation: loadingInner 0.6s 0.5s linear infinite;
 }
 
 /*--------------------------------------------------------------
@@ -726,19 +731,19 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about .container {
+.intro .container {
   background-color: var(--surface-color);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
 }
 
-.about .skills-content h5 {
+.intro .skills-content h5 {
   font-size: 18px;
   font-weight: 700;
   margin: 30px 0 15px 0;
 }
 
-.about .progress {
+.intro .progress {
   height: 36px;
   display: block;
   background: none;
@@ -746,7 +751,7 @@ section,
   margin-top: 15px;
 }
 
-.about .progress .skill {
+.intro .progress .skill {
   color: var(--default-color);
   padding: 0;
   margin: 0 0 6px 0;
@@ -756,24 +761,24 @@ section,
   font-family: var(--heading-font);
 }
 
-.about .progress .skill .val {
+.intro .progress .skill .val {
   float: right;
   font-style: normal;
 }
 
-.about .progress-bar-wrap {
+.intro .progress-bar-wrap {
   background: color-mix(in srgb, var(--default-color), transparent 90%);
   height: 10px;
 }
 
-.about .progress-bar {
+.intro .progress-bar {
   width: 1px;
   height: 10px;
   transition: 0.9s;
   background-color: var(--accent-color);
 }
 
-.about .about-me h4 {
+.intro .intro-me h4 {
   font-size: 28px;
   position: relative;
   padding-bottom: 10px;
@@ -781,7 +786,7 @@ section,
   font-weight: 700;
 }
 
-.about .about-me h4:after {
+.intro .intro-me h4:after {
   content: "";
   position: absolute;
   display: block;
@@ -793,7 +798,7 @@ section,
   margin: auto;
 }
 
-.about .about-me p {
+.intro .intro-me p {
   font-size: 18px;
 }
 
@@ -857,9 +862,9 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Services Section
+# Knowledge Organization Section
 --------------------------------------------------------------*/
-.services .service-item {
+.organization .organization-item {
   background-color: var(--surface-color);
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
   padding: 60px 30px;
@@ -869,7 +874,7 @@ section,
   height: 100%;
 }
 
-.services .service-item .icon {
+.organization .organization-item .icon {
   color: var(--contrast-color);
   background: var(--accent-color);
   margin: 0;
@@ -884,26 +889,26 @@ section,
   transition: ease-in-out 0.3s;
 }
 
-.services .service-item h3 {
+.organization .organization-item h3 {
   font-weight: 700;
   margin: 10px 0 15px 0;
   font-size: 22px;
   transition: ease-in-out 0.3s;
 }
 
-.services .service-item p {
+.organization .organization-item p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
 @media (min-width: 1365px) {
-  .services .service-item:hover {
+  .organization .organization-item:hover {
     transform: translateY(-10px);
     border-color: var(--accent-color);
   }
 
-  .services .service-item:hover h3 {
+  .organization .organization-item:hover h3 {
     color: var(--accent-color);
   }
 }
@@ -961,16 +966,16 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Portfolio Section
+# Items Section
 --------------------------------------------------------------*/
-.portfolio .portfolio-filters {
+.items .items-filters {
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
 }
 
-.portfolio .portfolio-filters li {
+.items .items-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 0;
@@ -983,31 +988,31 @@ section,
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio .portfolio-filters li:hover,
-.portfolio .portfolio-filters li.filter-active {
+.items .items-filters li:hover,
+.items .items-filters li.filter-active {
   color: var(--accent-color);
 }
 
-.portfolio .portfolio-filters li:first-child {
+.items .items-filters li:first-child {
   margin-left: 0;
 }
 
-.portfolio .portfolio-filters li:last-child {
+.items .items-filters li:last-child {
   margin-right: 0;
 }
 
 @media (max-width: 575px) {
-  .portfolio .portfolio-filters li {
+  .items .items-filters li {
     font-size: 14px;
     margin: 0 5px;
   }
 }
 
-.portfolio .portfolio-item {
+.items .items-item {
   position: relative;
 }
 
-.portfolio .portfolio-item .portfolio-info {
+.items .items-item .items-info {
   opacity: 0;
   position: absolute;
   left: 30px;
@@ -1019,21 +1024,21 @@ section,
   padding: 15px;
 }
 
-.portfolio .portfolio-item .portfolio-info h4 {
+.items .items-item .items-info h4 {
   font-size: 18px;
   font-weight: 600;
   padding-right: 50px;
 }
 
-.portfolio .portfolio-item .portfolio-info p {
+.items .items-item .items-info p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   font-size: 14px;
   margin-bottom: 0;
   padding-right: 50px;
 }
 
-.portfolio .portfolio-item .portfolio-info .preview-link,
-.portfolio .portfolio-item .portfolio-info .details-link {
+.items .items-item .items-info .preview-link,
+.items .items-item .items-info .details-link {
   position: absolute;
   right: 50px;
   font-size: 24px;
@@ -1043,57 +1048,90 @@ section,
   line-height: 0;
 }
 
-.portfolio .portfolio-item .portfolio-info .preview-link:hover,
-.portfolio .portfolio-item .portfolio-info .details-link:hover {
+.items .items-item .items-info .preview-link:hover,
+.items .items-item .items-info .details-link:hover {
   color: var(--accent-color);
 }
 
-.portfolio .portfolio-item .portfolio-info .details-link {
+.items .items-item .items-info .details-link {
   right: 14px;
   font-size: 28px;
 }
 
-.portfolio .portfolio-item:hover .portfolio-info {
+.items .items-item:hover .items-info {
   opacity: 1;
   bottom: 20px;
 }
 
 /*--------------------------------------------------------------
-# Pricing Section
+# Metadata Section
 --------------------------------------------------------------*/
-.pricing .pricing-item {
+.metadata .metadata-item {
   border-bottom: 1px dashed color-mix(in srgb, var(--default-color), transparent 60%);
   width: 100%;
   height: 100%;
   padding: 0 0 15px 0;
 }
 
-.pricing .pricing-item h3 {
+.metadata .metadata-item h3 {
   margin: 0;
   font-size: 20px;
   font-weight: 600;
 }
 
-.pricing .pricing-item h4 {
+.metadata .metadata-item h4 {
   margin: 0;
   font-size: 18px;
   color: var(--accent-color);
 }
 
 /*--------------------------------------------------------------
-# Faq Section
+# Custom Table for metadata
 --------------------------------------------------------------*/
-.faq .content h3 {
+.custom-table th{
+  vertical-align: middle;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--heading-font)
+  
+}
+.custom-table td {
+  vertical-align: middle;
+  text-align: left;
+  font-family: var(--heading-font)
+  
+}
+
+/* Adjust row width */
+.custom-table th:nth-child(1),
+.custom-table td:nth-child(1) {
+  width: 25%;
+  font-weight: 500;
+}
+
+.custom-table th:nth-child(n+2),
+.custom-table td:nth-child(n+2) {
+  width: 18.75%; /* split the 75% of the table for the rest */
+  word-break: break-word;
+}
+
+
+
+/*--------------------------------------------------------------
+# Knowledge Representation Section
+--------------------------------------------------------------*/
+.representation .content h3 {
   font-weight: 400;
   font-size: 34px;
 }
 
-.faq .content p {
+.representation .content p {
   font-size: 15px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
-.faq .faq-container .faq-item {
+.representation .representation-container .representation-item {
   background-color: var(--surface-color);
   position: relative;
   padding: 20px;
@@ -1102,11 +1140,11 @@ section,
   overflow: hidden;
 }
 
-.faq .faq-container .faq-item:last-child {
+.representation .representation-container .representation-item:last-child {
   margin-bottom: 0;
 }
 
-.faq .faq-container .faq-item h3 {
+.representation .representation-container .representation-item h3 {
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
@@ -1117,16 +1155,16 @@ section,
   align-items: flex-start;
 }
 
-.faq .faq-container .faq-item h3 .num {
+.representation .representation-container .representation-item h3 .num {
   color: var(--accent-color);
   padding-right: 5px;
 }
 
-.faq .faq-container .faq-item h3:hover {
+.representation .representation-container .representation-item h3:hover {
   color: var(--accent-color);
 }
 
-.faq .faq-container .faq-item .faq-content {
+.representation .representation-container .representation-item .representation-content {
   display: grid;
   grid-template-rows: 0fr;
   transition: 0.3s ease-in-out;
@@ -1134,12 +1172,12 @@ section,
   opacity: 0;
 }
 
-.faq .faq-container .faq-item .faq-content p {
+.representation .representation-container .representation-item .representation-content p {
   margin-bottom: 0;
   overflow: hidden;
 }
 
-.faq .faq-container .faq-item .faq-toggle {
+.representation .representation-container .representation-item .representation-toggle {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -1149,22 +1187,22 @@ section,
   cursor: pointer;
 }
 
-.faq .faq-container .faq-item .faq-toggle:hover {
+.representation .representation-container .representation-item .representation-toggle:hover {
   color: var(--accent-color);
 }
 
-.faq .faq-container .faq-active h3 {
+.representation .representation-container .representation-active h3 {
   color: var(--accent-color);
 }
 
-.faq .faq-container .faq-active .faq-content {
+.representation .representation-container .representation-active .representation-content {
   grid-template-rows: 1fr;
   visibility: visible;
   opacity: 1;
   padding-top: 10px;
 }
 
-.faq .faq-container .faq-active .faq-toggle {
+.representation .representation-container .representation-active .representation-toggle {
   transform: rotate(90deg);
   color: var(--accent-color);
 }
@@ -1381,24 +1419,24 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details Section
+# Items Details Section
 --------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
+.items-details .items-details-slider img {
   width: 100%;
 }
 
-.portfolio-details .swiper-wrapper {
+.items-details .swiper-wrapper {
   height: auto;
 }
 
-.portfolio-details .swiper-button-prev,
-.portfolio-details .swiper-button-next {
+.items-details .swiper-button-prev,
+.items-details .swiper-button-next {
   width: 48px;
   height: 48px;
 }
 
-.portfolio-details .swiper-button-prev:after,
-.portfolio-details .swiper-button-next:after {
+.items-details .swiper-button-prev:after,
+.items-details .swiper-button-next:after {
   color: rgba(255, 255, 255, 0.8);
   background-color: rgba(0, 0, 0, 0.15);
   font-size: 24px;
@@ -1411,36 +1449,36 @@ section,
   transition: 0.3s;
 }
 
-.portfolio-details .swiper-button-prev:hover:after,
-.portfolio-details .swiper-button-next:hover:after {
+.items-details .swiper-button-prev:hover:after,
+.items-details .swiper-button-next:hover:after {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 575px) {
 
-  .portfolio-details .swiper-button-prev,
-  .portfolio-details .swiper-button-next {
+  .items-details .swiper-button-prev,
+  .items-details .swiper-button-next {
     display: none;
   }
 }
 
-.portfolio-details .swiper-pagination {
+.items-details .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.portfolio-details .swiper-pagination .swiper-pagination-bullet {
+.items-details .swiper-pagination .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
   opacity: 1;
 }
 
-.portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
+.items-details .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
 
-.portfolio-details .portfolio-info h3 {
+.items-details .items-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -1448,7 +1486,7 @@ section,
   position: relative;
 }
 
-.portfolio-details .portfolio-info h3:after {
+.items-details .items-info h3:after {
   content: "";
   position: absolute;
   display: block;
@@ -1459,26 +1497,26 @@ section,
   bottom: 0;
 }
 
-.portfolio-details .portfolio-info ul {
+.items-details .items-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li {
+.items-details .items-info ul li {
   display: flex;
   flex-direction: column;
   padding-bottom: 15px;
 }
 
-.portfolio-details .portfolio-info ul strong {
+.items-details .items-info ul strong {
   text-transform: uppercase;
   font-weight: 400;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
   font-size: 14px;
 }
 
-.portfolio-details .portfolio-info .btn-visit {
+.items-details .items-info .btn-visit {
   padding: 8px 40px;
   background: var(--accent-color);
   color: var(--contrast-color);
@@ -1486,28 +1524,28 @@ section,
   transition: 0.3s;
 }
 
-.portfolio-details .portfolio-info .btn-visit:hover {
+.items-details .items-info .btn-visit:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
-.portfolio-details .portfolio-description h2 {
+.items-details .items-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.items-details .items-description p {
   padding: 0;
 }
 
-.portfolio-details .portfolio-description .testimonial-item {
+.items-details .items-description .testimonial-item {
   padding: 30px 30px 0 30px;
   position: relative;
   background: color-mix(in srgb, var(--default-color), transparent 97%);
   margin-bottom: 50px;
 }
 
-.portfolio-details .portfolio-description .testimonial-item .testimonial-img {
+.items-details .items-description .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 50px;
   border: 6px solid var(--background-color);
@@ -1515,33 +1553,33 @@ section,
   margin: 0 10px 0 0;
 }
 
-.portfolio-details .portfolio-description .testimonial-item h3 {
+.items-details .items-description .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 15px 0 5px 0;
   padding-top: 20px;
 }
 
-.portfolio-details .portfolio-description .testimonial-item h4 {
+.items-details .items-description .testimonial-item h4 {
   font-size: 14px;
   color: #6c757d;
   margin: 0;
 }
 
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-left,
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
+.items-details .items-description .testimonial-item .quote-icon-left,
+.items-details .items-description .testimonial-item .quote-icon-right {
   color: color-mix(in srgb, var(--accent-color), transparent 50%);
   font-size: 26px;
   line-height: 0;
 }
 
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-left {
+.items-details .items-description .testimonial-item .quote-icon-left {
   display: inline-block;
   left: -5px;
   position: relative;
 }
 
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
+.items-details .items-description .testimonial-item .quote-icon-right {
   display: inline-block;
   right: -5px;
   position: relative;
@@ -1549,7 +1587,7 @@ section,
   transform: scale(-1, -1);
 }
 
-.portfolio-details .portfolio-description .testimonial-item p {
+.items-details .items-description .testimonial-item p {
   font-style: italic;
   margin: 0 0 15px 0 0 0;
   padding: 0;
@@ -1558,14 +1596,14 @@ section,
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
-.service-details .services-list {
+.organization-details .organization-list {
   background-color: var(--surface-color);
   padding: 10px 30px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   margin-bottom: 20px;
 }
 
-.service-details .services-list a {
+.organization-details .organization-list a {
   display: block;
   line-height: 1;
   padding: 8px 0 8px 15px;
@@ -1575,47 +1613,47 @@ section,
   transition: 0.3s;
 }
 
-.service-details .services-list a.active {
+.organization-details .organization-list a.active {
   color: var(--heading-color);
   font-weight: 700;
   border-color: var(--accent-color);
 }
 
-.service-details .services-list a:hover {
+.organization-details .organization-list a:hover {
   border-color: var(--accent-color);
 }
 
-.service-details .services-img {
+.organization-details .organization-img {
   margin-bottom: 20px;
 }
 
-.service-details h3 {
+.organization-details h3 {
   font-size: 26px;
   font-weight: 700;
 }
 
-.service-details h4 {
+.organization-details h4 {
   font-size: 20px;
   font-weight: 700;
 }
 
-.service-details p {
+.organization-details p {
   font-size: 15px;
 }
 
-.service-details ul {
+.organization-details ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.service-details ul li {
+.organization-details ul li {
   padding: 5px 0;
   display: flex;
   align-items: center;
 }
 
-.service-details ul i {
+.organization-details ul i {
   font-size: 20px;
   margin-right: 8px;
   color: var(--accent-color);

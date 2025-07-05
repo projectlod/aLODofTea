@@ -502,7 +502,7 @@
         "odrl": "http://www.w3.org/ns/odrl/2/",
         "cc": "http://creativecommons.org/ns#",
         "ore": "http://www.openarchives.org/ore/terms/",
-        "svcs": "http://rdfs.org/sioc/services#",
+        "svcs": "http://rdfs.org/sioc/organization#",
         "oa": "http://www.w3.org/ns/oa#",
         "dqv": "http://www.w3.org/ns/dqv#"
     }

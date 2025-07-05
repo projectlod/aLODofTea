@@ -1,0 +1,201 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tea: <https://w3id.org/a-lod-of-tea#> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+
+tea:item_book-of-tea a bf:Text ;
+    bf:date "1906" ;
+    bf:subject tea:acitivity_ikebana,
+        tea:acitivity_tea-ceremony,
+        tea:concept_wabisabi,
+        tea:concept_zen,
+        tea:place_tearoom ;
+    bf:title "The book of tea" ;
+    dcterms:creator tea:person_okakura-kakuzo ;
+    dcterms:publisher bf:Agent ;
+    dcterms:source <https://www.loc.gov/resource/gdcebookspublic.2019299129/> ;
+    dcterms:spacial gn:1861060 ;
+    owl:sameAs wd:Q7719311 ;
+    skos:related wd:Q11899 ;
+    schema:mentions tea:person_honami-koetsu,
+        tea:person_sen-no-rikyu .
+
+tea:item_ikebana-book a bf:Archival ;
+    bf:date "1600" ;
+    bf:subject tea:acitivity_ikebana ;
+    bf:title "Ikebana hinagata densho" ;
+    dcterms:publisher bf:Agent ;
+    dcterms:source <https://archive.org/details/ikebanahinagata00> ;
+    dcterms:spatial gn:1861060 ;
+    dcterms:temporal wd:Q184963 .
+
+tea:item_japanese-bridge a crm:E22_Human-Made_Object ;
+    dcterms:date "1899" ;
+    dcterms:isPartOf wd:Q11899 ;
+    dcterms:medium crm:E57_Material ;
+    dcterms:source <https://www.nga.gov/artworks/74796-japanese-footbridge> ;
+    dcterms:spatial crm:E53_Place ;
+    crm:P102_has_title "The Japanese Footbridge" ;
+    crm:P190_has_symbolic_content skos:Concept ;
+    crm:P50_has_current_keeper foaf:Organization ;
+    crm:P94i_was_created_by wd:Q926 ;
+    owl:sameAs wd:Q12858617 .
+
+tea:item_kimono a crm:E22_Human-Made_Object ;
+    dcterms:medium crm:E57_Material ;
+    dcterms:source <https://collections.mfa.org/objects/28742/kimono-hitoe> ;
+    dcterms:spatial gn:1861060 ;
+    dcterms:temporal wd:Q184963 ;
+    crm:P102_has_title "Kimono (hitoe)" ;
+    crm:P2_has_type wd:Q483444 ;
+    crm:P4_has_time-span "1750-1799" ;
+    crm:P50_has_current_keeper wd:Q49133 .
+
+tea:item_rikyu-portrait a crm:E22_Human-Made_Object ;
+    dcterms:medium crm:E57_Material ;
+    dcterms:source <https://www.metmuseum.org/art/collection/search/845141> ;
+    dcterms:spatial gn:1861060 ;
+    dcterms:temporal wd:Q184963 ;
+    crm:P102_has_title "Portrait of Sen no Rikyū with his Death Poem" ;
+    crm:P129_is_about tea:person_sen-no-rikyu ;
+    crm:P4_has_time-span "1600-1633" ;
+    crm:P50_has_current_keeper wd:Q160236 ;
+    owl:sameAs wd:Q126119266 .
+
+tea:item_samurai-woodblock a crm:E22_Human-Made_Object ;
+    dcterms:date "1755" ;
+    dcterms:medium crm:E57_Material ;
+    dcterms:source <https://www.britishmuseum.org/collection/object/A_1907-0531-0-3> ;
+    dcterms:spatial gn:1861060 ;
+    dcterms:temporal wd:Q184963 ;
+    crm:P50_has_current_keeper foaf:Organization ;
+    foaf:depicts tea:acitivity_tea-ceremony,
+        wd:Q38142 .
+
+tea:item_tea-ceremony-painting a edm:ProvidedCHO ;
+    dcterms:contributor edm:Agent ;
+    dcterms:medium crm:E57_Material ;
+    dcterms:source <https://www.europeana.eu/en/item/15514/BI_17444_11_9> ;
+    dcterms:spacial gn:1861060 ;
+    dcterms:title "Invitation to a tea ceremony; Mirror of instructions for women (Serientitel)" ;
+    edm:dataProvider foaf:Organization ;
+    edm:timespan "1881" ;
+    foaf:depicts tea:acitivity_tea-ceremony,
+        tea:person_sen-no-rikyu,
+        tea:place_roji,
+        wd:Q483444 .
+
+tea:item_teabowl a crm:E22_Human-Made_Object ;
+    dcterms:medium crm:E57_Material ;
+    dcterms:source <https://www.metmuseum.org/art/collection/search/62879> ;
+    dcterms:spatial gn:1861060 ;
+    dcterms:temporal wd:Q184963 ;
+    crm:P102_has_title "Teabowl" ;
+    crm:P2_has_type wd:Q95965973 ;
+    crm:P33_used_specific_technique wd:Q2740942 ;
+    crm:P4_has_time-span "1590-1610" ;
+    crm:P50_has_current_keeper wd:Q160236 ;
+    crm:P94i_was_created_by tea:person_honami-koetsu .
+
+tea:item_teascoop a crm:E22_Human-Made_Object ;
+    dcterms:medium crm:E57_Material ;
+    dcterms:source <https://www.metmuseum.org/art/collection/search/752041> ;
+    dcterms:spatial gn:1861060 ;
+    crm:P102_has_title "Tea Scoop (Chashaku)" ;
+    crm:P2_has_type wd:Q3006804 ;
+    crm:P4_has_time-span "1580-1589" ;
+    crm:P50_has_current_keeper wd:Q160236 ;
+    crm:P94i_was_created_by tea:person_sen-no-rikyu .
+
+tea:concept_taoism a skos:Concept ;
+    rdfs:label "Taoism" ;
+    crm:P15_influenced tea:acitivity_tea-ceremony ;
+    owl:sameAs wd:Q9598 .
+
+tea:concept_zen a skos:Concept ;
+    rdfs:label "zen" ;
+    crm:P15_influenced tea:acitivity_tea-ceremony,
+        tea:place_tearoom ;
+    owl:sameAs wd:Q7953 ;
+    skos:related tea:concept_taoism,
+        tea:concept_wabisabi .
+
+tea:person_okakura-kakuzo a foaf:Person ;
+    rdfs:label "Okakura Kakuzo" ;
+    owl:sameAs wd:Q942995 ;
+    foaf:member wd:Q49133 .
+
+tea:place_roji a crm:E53_Place ;
+    rdfs:label "roji (tea garden)" ;
+    owl:sameAs wd:Q402729 ;
+    schema:isPartOf tea:acitivity_tea-ceremony .
+
+wd:Q2740942 a crm:E29_Design_or_Procedure ;
+    rdfs:label "kintsugi" ;
+    dcterms:contributor tea:person_sen-no-rikyu .
+
+wd:Q3006804 schema:usedIn tea:acitivity_tea-ceremony .
+
+wd:Q38142 rdfs:label "samurai" .
+
+wd:Q926 a foaf:Person ;
+    rdfs:label "Claude Monet" ;
+    crm:P91_has_created wd:Q11899 .
+
+wd:Q95965973 schema:usedIn tea:acitivity_tea-ceremony .
+
+tea:concept_wabisabi a skos:Concept ;
+    rdfs:label "wabi sabi" ;
+    crm:P15_influenced tea:acitivity_ikebana ;
+    owl:sameAs wd:Q1142664 .
+
+tea:person_honami-koetsu a foaf:Person ;
+    rdfs:label "Honami K?etsu" ;
+    owl:sameAs wd:Q3139920 .
+
+wd:Q483444 crm:P101_had_as_general_use tea:acitivity_tea-ceremony .
+
+wd:Q49133 a foaf:Organization ;
+    rdfs:label "Museum of Fine Arts Boston" .
+
+tea:acitivity_ikebana a crm:E7_Activity ;
+    rdfs:label "ikebana (japanese flower arrangement)" ;
+    owl:sameAs wd:Q178459 ;
+    skos:related tea:acitivity_tea-ceremony .
+
+tea:place_tearoom a crm:E53_Place ;
+    rdfs:label "chashitsu(tea room)" ;
+    crm:P89_falls_within tea:place_tearoom ;
+    owl:sameAs wd:Q402729 ;
+    schema:isPartOf tea:acitivity_tea-ceremony .
+
+wd:Q11899 a crm:E78_Collection ;
+    rdfs:label "Water Lilies" ;
+    crm:P190_has_symbolic_content skos:Concept .
+
+wd:Q160236 a foaf:Organization ;
+    rdfs:label "Metropolitan Museum of Art" .
+
+wd:Q184963 a crm:E4_Period ;
+    rdfs:label "Edo Period (1603-1868)" .
+
+tea:person_sen-no-rikyu a foaf:Person ;
+    rdfs:label "Sen no Riky?" ;
+    owl:sameAs wd:Q305477 ;
+    schema:hasRole "Japanese tea master" .
+
+gn:1861060 a dcterms:Location ;
+    rdfs:label "Japan" .
+
+tea:acitivity_tea-ceremony a crm:E7_Activity ;
+    dcterms:contributor tea:person_sen-no-rikyu ;
+    owl:sameAs wd:Q202298 .
+

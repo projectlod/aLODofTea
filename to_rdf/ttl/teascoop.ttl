@@ -1,0 +1,16 @@
+﻿@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix tea: <https://w3id.org/a-lod-of-tea#> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+
+tea:item_teascoop a crm:E22_Human-Made_Object ;
+    dcterms:medium crm:E57_Material ;
+    dcterms:source <https://www.metmuseum.org/art/collection/search/752041> ;
+    dcterms:spatial gn:1861060 ;
+    crm:P102_has_title "Tea Scoop (Chashaku)" ;
+    crm:P2_has_type wd:Q3006804 ;
+    crm:P4_has_time-span "1580-1589" ;
+    crm:P50_has_current_keeper wd:Q160236 ;
+    crm:P94i_was_created_by tea:person_sen-no-rikyu .
+

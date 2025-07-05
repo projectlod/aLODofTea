@@ -1,0 +1,26 @@
+﻿@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tea: <https://w3id.org/a-lod-of-tea#> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+
+tea:item_book-of-tea a bf:Text ;
+    bf:date "1906" ;
+    bf:subject tea:acitivity_ikebana,
+        tea:acitivity_tea-ceremony,
+        tea:concept_wabisabi,
+        tea:concept_zen,
+        tea:place_tearoom ;
+    bf:title "The book of tea" ;
+    dcterms:creator tea:person_okakura-kakuzo ;
+    dcterms:publisher bf:Agent ;
+    dcterms:source <https://www.loc.gov/resource/gdcebookspublic.2019299129/> ;
+    dcterms:spacial gn:1861060 ;
+    owl:sameAs wd:Q7719311 ;
+    skos:related wd:Q11899 ;
+    schema:mentions tea:person_honami-koetsu,
+        tea:person_sen-no-rikyu .
+

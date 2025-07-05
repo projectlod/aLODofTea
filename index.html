@@ -10,7 +10,7 @@
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -29,7 +29,7 @@
 
   <!-- =======================================================
   * Template Name: DevFolio
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-items-html-template/
   * Updated: Aug 07 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
@@ -37,26 +37,39 @@
 </head>
 
 <body class="index-page">
+  <svg style="display: none;">
+    <symbol xmlns="http://www.w3.org/2000/svg" id="cup" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+        <path d="M17 11.6V15a6 6 0 0 1-6 6H9a6 6 0 0 1-6-6v-3.4a.6.6 0 0 1 .6-.6h12.8a.6.6 0 0 1 .6.6ZM12 9c0-1 .714-2 2.143-2v0A2.857 2.857 0 0 0 17 4.143V3.5M8 9v-.5a3 3 0 0 1 3-3v0a2 2 0 0 0 2-2V3"/><path d="M16 11h2.5a2.5 2.5 0 0 1 0 5H17"/>
+      </g>
+    </symbol>
+  </svg>
+
+
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">DevFolio</h1>
+        <img src="assets/img/favicon.png" alt=""> 
+        <h1 class="sitename">A LOD of TEA</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home<br></a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#hero" class="active"><span>Home</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li><a href="#intro">Introduction</a></li>
+              <li><a href="#items">Items</a></li>
+              <li><a href="#metadata">Metadata Analysis</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="#organization"><span>Knowledge Organization</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Theoretical Model</a></li>
+              <!--<li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="#">Deep Dropdown 1</a></li>
                   <li><a href="#">Deep Dropdown 2</a></li>
@@ -64,13 +77,26 @@
                   <li><a href="#">Deep Dropdown 4</a></li>
                   <li><a href="#">Deep Dropdown 5</a></li>
                 </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              </li>-->
+              <li><a href="#">Conceptual Model</a></li>
+              <li><a href="#">Knowledge Graph</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact</a></li>
+
+          <li class="dropdown"><a href="#representation"><span>Knowledge Representation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Full Text Analysis</a></li>
+
+              <li><a href="#">RDF Production</a></li>
+              <li><a href="#">RDF Visualisation</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Team</a></li>
+            </ul>
+          </li>          
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -81,38 +107,59 @@
   <main class="main">
 
     <!-- Hero Section -->
+     
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-img.jpg" alt="" data-aos="fade-in">
+      <img src="assets/img/teacover-img.jpg" alt="" data-aos="fade-in">
 
       <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
-        <h2>I am Morgan Freeman</h2>
-        <p><span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+        <h2> a LOD of Tea Project</h2>
+        <p>Tea is ... <span class="typed" data-typed-items=" the essence of wabi sabi, a path to harmony, nature held in a cup"></span></p>
       </div>
 
     </section><!-- /Hero Section -->
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+    <!-- Intro Section -->
+
+    <section id="intro" class="intro section">
+      <!-- Section Title -->
+      <section id="intro" class="intro section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Our Project</h2>
+
+          <p>
+            This project explores how digital technologies such as Linked Open Data and metadata modeling
+            can be used to preserve and interpret cultural knowledge. 
+          </p>
+          <p>
+            Our focus is the <strong>Japanese Tea Ceremony (茶道 / sadō)</strong> — a centuries-old tradition
+            that embodies harmony, respect, purity, and tranquility. 
+          </p>
+          <p>
+            This is a linked open data project that aims to create a comprehensive representation. 
+          </p>
+        </div>
+      </section>
+    
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
-          <div class="col-md-6">
+          <div class="col-md-4">
 
             <div class="row justify-content-between gy-4">
-              <div class="col-lg-5">
+              <div class="col-lg-12">
                 <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
               </div>
-              <div class="col-lg-7 about-info">
+              <!-- <div class="col-lg-7 intro-info">
                 <p><strong>Name: </strong> <span>Morgan Freeman</span></p>
                 <p><strong>Profile: </strong> <span>full stack developer</span></p>
                 <p><strong>Email: </strong> <span>contact@example.com</span></p>
                 <p><strong>Phone: </strong> <span>(617) 557-0089</span></p>
-              </div>
+              </div> -->
             </div>
 
-            <div class="skills-content skills-animation">
+            <!-- <div class="skills-content skills-animation">
 
               <h5>Skills</h5>
 
@@ -121,35 +168,34 @@
                 <div class="progress-bar-wrap">
                   <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-              </div><!-- End Skills Item -->
-
+              </div>
               <div class="progress">
                 <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
                 <div class="progress-bar-wrap">
                   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-              </div><!-- End Skills Item -->
+              </div>
 
               <div class="progress">
                 <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
                 <div class="progress-bar-wrap">
                   <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-              </div><!-- End Skills Item -->
+              </div>
 
               <div class="progress">
                 <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
                 <div class="progress-bar-wrap">
                   <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-              </div><!-- End Skills Item -->
+              </div>
 
-            </div>
-          </div>
+            </div> -->
+          </div> 
 
-          <div class="col-md-6">
-            <div class="about-me">
-              <h4>About me</h4>
+          <div class="col-md-8">
+            <div class="intro-me">
+              <h4>The Japanese Tea Ceremony (茶道 / sadō)</h4>
               <p>
                 Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
                 imperdiet et, porttitor
@@ -172,91 +218,253 @@
 
       </div>
 
-    </section><!-- /About Section -->
+    </section><!-- /Intro Section -->
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
+    <!-- Items Section -->
+    <section id="items" class="items section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
+        <h2>Items</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
-        <div class="row">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        
+        <!-- Filtering commented out for now
+          <ul class="items-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-product">Product</li>
+            <li data-filter=".filter-branding">Branding</li>
+            <li data-filter=".filter-books">Books</li>
+          </ul>  -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
+            <div class="col-lg-4 col-md-6 items-item isotope-item filter-app">
+              <img src="assets/img/items/the-book-of-tea.gif" class="img-fluid" alt="">
+              <div class="items-info">
+                <h4>The Book of Tea</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/items/the-book-of-tea.gif" title="The Book of Tea" data-gallery="items-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="items-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Items Item -->
 
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div><!-- Edn Resume Item -->
+            <div class="col-lg-4 col-md-6 items-item isotope-item filter-product">
+              <img src="assets/img/items/rikyu-portrait.jpg" class="img-fluid" alt="">
+              <div class="items-info">
+                <h4>Portrait of Sen no Rikyu</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/items/rikyu-portrait.jpg" title="Portrait of Sen no Rikyu" data-gallery="items-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="items-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>  
+            </div><!-- End Items Item -->
 
-            <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-            </div><!-- Edn Resume Item -->
+            <div class="col-lg-4 col-md-6 items-item isotope-item filter-branding">
+              <img src="assets/img/items/invitation.png" class="img-fluid" alt="">
+              <div class="items-info">
+                <h4>Invitation to a Tea Ceremony</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/items/invitation.png" title="Invitation to a Tea Ceremony" data-gallery="items-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="items-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Items Item -->
 
-          </div>
+            <div class="col-lg-4 col-md-6 items-item isotope-item filter-books">
+              <img src="assets/img/items/kimono.jpg" class="img-fluid" alt="">
+              <div class="items-info">
+                <h4>Kimono</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/items/kimono.jpg" title="Kimono" data-gallery="items-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="items-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Items Item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
+            <div class="col-lg-4 col-md-6 items-item isotope-item filter-app">
+              <img src="assets/img/items/ikebanahinagata00_0006.jpg" class="img-fluid" alt="">
+              <div class="items-info">
+                <h4>Ikebana Hinagata Densho</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/items/ikebanahinagata00_0006.jpg" title="Ikebana Hinagata Densho" data-gallery="items-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="items-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Items Item -->
 
-            <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
+            <div class="col-lg-4 col-md-6 items-item isotope-item filter-product">
+              <img src="assets/img/items/samurai-woodblock.jpg" class="img-fluid" alt="">
+              <div class="items-info">
+                <h4>Woodblock of Samurais</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/items/samurai-woodblock.jpg" title="Woodblock of Samurais" data-gallery="items-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="items-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Items Item -->
 
-          </div>
+            <div class="col-lg-4 col-md-6 items-item isotope-item filter-branding">
+              <img src="assets/img/items/teabowl.jpg" class="img-fluid" alt="">
+              <div class="items-info">
+                <h4>Teabowl</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/items/teabowl.jpg" title="Teabowl" data-gallery="items-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="items-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Items Item -->
 
-        </div>
+            <div class="col-lg-4 col-md-6 items-item isotope-item filter-books">
+              <img src="assets/img/items/teascoop.jpg" class="img-fluid" alt="">
+              <div class="items-info">
+                <h4>Teascoop</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/items/teascoop.jpg" title="Teascoop" data-gallery="items-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="items-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Items Item -->
+
+            <div class="col-lg-4 col-md-6 items-item isotope-item filter-product">
+              <img src="assets/img/items/the_japanese_footbridge_1992.9.1.jpg" class="img-fluid" alt="">
+              <div class="items-info">
+                <h4>The Japanese Footbridge</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/items/the_japanese_footbridge_1992.9.1.jpg" title="The Japanese Footbridge" data-gallery="items-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="items-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 items-item isotope-item filter-app">
+              <img src="assets/img/items/mysterious-japan.jpg" class="img-fluid" alt="">
+              <div class="items-info">
+                <h4>Mysterious Japan</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/items/mysterious-japan.jpg" title="Mysterious Japan" data-gallery="items-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="items-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Items Item -->
+
+<!-- End Items Item -->
+          </div><!-- End Items Container -->
+
+        </div> 
 
       </div>
 
-    </section><!-- /Resume Section -->
+    </section><!-- /Items Section --> 
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
+    <!-- Metadata Section -->
+    <section id="metadata" class="metadata section">
+
+      <!-- Section Title -->  
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Metadata Analysis</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <!-- Metadata Tables -->
+      <div class="table-responsive">
+  <table class="table table-bordered table-striped align-middle custom-table">
+    <thead class="table-light text-center">
+      <tr>
+        <th>Item</th>
+        <th>Item Type</th>
+        <th>Institution</th>
+        <th>Metadata Standard Provided by the Institution</th>
+        <th>Chosen Metadata Standard</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Book of Tea</td>
+        <td>Book</td>
+        <td>Library of Congress</td>
+        <td>MODS<br>DC<br>MARCXML</td>
+        <td>BIBFRAME</td>
+      </tr>
+      <tr>
+        <td>Portrait of Sen no Rikyu</td>
+        <td>Hanging scroll</td>
+        <td>Metropolitan Museum of Art</td>
+        <td>-</td>
+        <td>CIDOC-CRM</td>
+      </tr>
+      <tr>
+        <td>The Tea Scoop of Rikyu</td>
+        <td>Bamboo</td>
+        <td>Metropolitan Museum of Art</td>
+        <td>-</td>
+        <td>CIDOC-CRM</td>
+      </tr>
+      <tr>
+        <td>Invitation to a Tea Ceremony</td>
+        <td>Painting</td>
+        <td>Europeana</td>
+        <td>EDM<br>(Europeana Data Model)</td>
+        <td>EDM</td>
+      </tr>
+      <tr>
+        <td>Woodblock Print of Samurai in Tea Ceremony</td>
+        <td>Woodblock print</td>
+        <td>British Museum</td>
+        <td>-</td>
+        <td>CIDOC-CRM</td>
+      </tr>
+      <tr>
+        <td>Kimono (hitoe)</td>
+        <td>Costume</td>
+        <td>Museum of Fine Arts Boston</td>
+        <td>-</td>
+        <td>CIDOC-CRM</td>
+      </tr>
+      <tr>
+        <td>Ikebana Hinagata Densho</td>
+        <td>Illustrated Book</td>
+        <td>Internet Archive</td>
+        <td>MARCXML</td>
+        <td>BIBFRAME</td>
+      </tr>
+      <tr>
+        <td>Mysterious Japan</td>
+        <td>Book</td>
+        <td>Internet Archive</td>
+        <td>MARCXML</td>
+        <td>BIBFRAME</td>
+      </tr>
+      <tr>
+        <td>Tea Bowl</td>
+        <td>Ceramic</td>
+        <td>The Metropolitan Museum of Art</td>
+        <td>-</td>
+        <td>CIDOC-CRM</td>
+      </tr>
+      <tr>
+        <td>The Japanese Footbridge</td>
+        <td>Painting</td>
+        <td>National Gallery of Art</td>
+        <td>-</td>
+        <td>CIDOC-CRM</td>
+      </tr>
+    </tbody>
+  </table>
+      </div>
+
+  
+
+
+      </div>
+
+    </section><!-- /Metadata Section -->
+
+
+    <!-- Knowledge Organization Section -->
+    <section id="organization" class="organization section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
+        <h2>Knowledge Organization</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
@@ -265,7 +473,7 @@
         <div class="row gy-4">
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
+            <div class="organization-item  position-relative">
               <div class="icon">
                 <i class="bi bi-activity"></i>
               </div>
@@ -277,7 +485,7 @@
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
+            <div class="organization-item position-relative">
               <div class="icon">
                 <i class="bi bi-broadcast"></i>
               </div>
@@ -289,7 +497,7 @@
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
+            <div class="organization-item position-relative">
               <div class="icon">
                 <i class="bi bi-easel"></i>
               </div>
@@ -301,7 +509,7 @@
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
+            <div class="organization-item position-relative">
               <div class="icon">
                 <i class="bi bi-bounding-box-circles"></i>
               </div>
@@ -314,7 +522,7 @@
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
+            <div class="organization-item position-relative">
               <div class="icon">
                 <i class="bi bi-calendar4-week"></i>
               </div>
@@ -327,7 +535,7 @@
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
+            <div class="organization-item position-relative">
               <div class="icon">
                 <i class="bi bi-chat-square-text"></i>
               </div>
@@ -343,10 +551,10 @@
 
       </div>
 
-    </section><!-- /Services Section -->
+    </section><!-- /Knowledge Organization Section -->
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats section accent-background">
+    <!-- Stats Section Commented out-->
+    <!-- <section id="stats" class="stats section accent-background">
 
       <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
 
@@ -359,305 +567,99 @@
               <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter">232</span>
               <p>Clients</p>
             </div>
-          </div><!-- End Stats Item -->
+          </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0" class="purecounter">521</span>
               <p>Projects</p>
             </div>
-          </div><!-- End Stats Item -->
+          </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="0" class="purecounter">1453</span>
               <p>Hours Of Support</p>
             </div>
-          </div><!-- End Stats Item -->
+          </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter">32</span>
               <p>Awards</p>
             </div>
-          </div><!-- End Stats Item -->
+          </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Stats Section -->
+    </section> -->
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
 
-      <!-- Section Title -->
+    <!-- Knowledge Representation Section -->
+    <section id="representation" class="representation section">
+    <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
+        <h2>Knowledge Representation</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Books 1</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Books 2</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Books 3</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 gx-lg-5">
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Portrait Photography</h3>
-              <h4>$160.00</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Fashion Photography</h3>
-              <h4>$300.00</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Sports Photography</h3>
-              <h4>$200.00</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Still Life Photography</h3>
-              <h4>$120.00</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Wedding Photography</h3>
-              <h4>$500.00</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Photojournalism</h3>
-              <h4>$200.00</h4>
-            </div>
-          </div><!-- End Pricing Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Pricing Section -->
-
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
 
       <div class="container">
 
         <div class="row gy-4">
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <!-- <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="content px-xl-5">
               <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
               </p>
             </div>
-          </div>
+          </div> -->
 
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="faq-container">
-              <div class="faq-item faq-active">
+            <div class="representation-container">
+              <div class="representation-item representation-active">
                 <h3><span class="num">1.</span> <span>Non consectetur a erat nam at lectus urna duis?</span></h3>
-                <div class="faq-content">
+                <div class="representation-content">
                   <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
                 </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+                <i class="representation-toggle bi bi-chevron-right"></i>
+              </div><!-- End Knowledge Representation item-->
 
-              <div class="faq-item">
+              <div class="representation-item">
                 <h3><span class="num">2.</span> <span>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</span></h3>
-                <div class="faq-content">
+                <div class="representation-content">
                   <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
                 </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+                <i class="representation-toggle bi bi-chevron-right"></i>
+              </div><!-- End Knowledge Representation item-->
 
-              <div class="faq-item">
+              <div class="representation-item">
                 <h3><span class="num">3.</span> <span>Dolor sit amet consectetur adipiscing elit pellentesque?</span></h3>
-                <div class="faq-content">
+                <div class="representation-content">
                   <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
                 </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+                <i class="representation-toggle bi bi-chevron-right"></i>
+              </div><!-- End Knowledge Representation item-->
 
-              <div class="faq-item">
+              <div class="representation-item">
                 <h3><span class="num">4.</span> <span>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</span></h3>
-                <div class="faq-content">
+                <div class="representation-content">
                   <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
                 </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+                <i class="representation-toggle bi bi-chevron-right"></i>
+              </div><!-- End Knowledge Representation item-->
 
-              <div class="faq-item">
+              <div class="representation-item">
                 <h3><span class="num">5.</span> <span>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</span></h3>
-                <div class="faq-content">
+                <div class="representation-content">
                   <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
                 </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+                <i class="representation-toggle bi bi-chevron-right"></i>
+              </div><!-- End Knowledge Representation item-->
 
             </div>
 
@@ -666,201 +668,10 @@
 
       </div>
 
-    </section><!-- /Faq Section -->
+    </section><!-- /Knowledge Representation Section -->
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section accent-background">
 
-      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
-          <div class="row gy-5">
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
-                </div>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Us</h3>
-                  <p>info@example.com</p>
-                </div>
-              </div>
-            </div><!-- End Info Item -->
-
-          </div>
-        </div>
-
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
-          <div class="row gy-4">
-
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-            </div>
-
-            <div class="col-md-6 ">
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-            </div>
-
-            <div class="col-md-12">
-              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-            </div>
-
-            <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-
-              <button type="submit">Send Message</button>
-            </div>
-
-          </div>
-        </form><!-- End Contact Form -->
-
-      </div>
-
-    </section><!-- /Contact Section -->
 
   </main>
 
@@ -891,7 +702,26 @@
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
-  <div id="preloader"></div>
+  <div class="preloader">
+  <div class="loader">
+    <div class="dot">
+      <svg class="cup svg-primary" width="40" height="40">
+        <use xlink:href="#cup"></use>
+      </svg>
+    </div>
+    <div class="dot">
+      <svg class="cup svg-primary" width="40" height="40">
+        <use xlink:href="#cup"></use>
+      </svg>
+    </div>
+    <div class="dot">
+      <svg class="cup svg-primary" width="40" height="40">
+        <use xlink:href="#cup"></use>
+      </svg>
+    </div>
+  </div>
+</div>
+
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -50,10 +50,10 @@ NAMESPACE_MAP = {
 }
 
 # File paths - chang these according to your local environment
-input_file = r"C:\Users\shiho\Documents\Study\Unibo\LOD\aLODofTea\to_rdf\csv\other.csv"
+input_file = r"C:\Users\shiho\Documents\Study\Unibo\LOD\aLODofTea\to_rdf\csv\book-of-tea.csv"
 
 # save under /to_rdf/ttl, with the name of the item. if it already exists, it will be overwritten
-output_file = r"C:\Users\shiho\Documents\Study\Unibo\LOD\aLODofTea\to_rdf\ttl\other.ttl"  
+output_file = r"C:\Users\shiho\Documents\Study\Unibo\LOD\aLODofTea\to_rdf\ttl\book-of-tea.ttl"  
 
 # Convert CSV to RDF
 print("Converting CSV to RDF...")

@@ -1,6 +1,6 @@
 /**
 * Template Name: DevFolio
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+* Template URL: https://bootstrapmade.com/devfolio-bootstrap-items-html-template/
 * Updated: Aug 07 2024 with Bootstrap v5.3.3
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -61,7 +61,7 @@
   /**
    * Preloader
    */
-  const preloader = document.querySelector('#preloader');
+  const preloader = document.querySelector('.preloader');
   if (preloader) {
     window.addEventListener('load', () => {
       preloader.remove();
@@ -183,9 +183,9 @@
   /**
    * Frequently Asked Questions Toggle
    */
-  document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
-    faqItem.addEventListener('click', () => {
-      faqItem.parentNode.classList.toggle('faq-active');
+  document.querySelectorAll('.representation-item h3, .representation-item .representation-toggle').forEach((representationItem) => {
+    representationItem.addEventListener('click', () => {
+      representationItem.parentNode.classList.toggle('representation-active');
     });
   });
 
