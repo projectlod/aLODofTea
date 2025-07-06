@@ -104,18 +104,16 @@
       <img src="assets/img/teacover-img.jpg" alt="" data-aos="fade-in">
 
       <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
-        <h2> a LOD of Tea Project</h2>
-        <p>Tea is ... <span class="typed" data-typed-items=" the essence of wabi sabi, a path to harmony, nature held in a cup"></span></p>
+        <h2> a LOD of TEA Project</h2>
+        <p>Tea ... <span class="typed" data-typed-items="a path to harmony, the essence of wabi-sabi, nature held in a cup"></span></p>
       </div>
 
     </section><!-- /Hero Section -->
 
     <!-- Intro Section -->
 
-    <section id="intro" class="intro section">
-      <!-- Section Title -->
-      <section id="intro" class="intro section">
-        <div class="container section-title" data-aos="fade-up">
+    <section id="intro" class="item section">
+        <div class="container section-title mt-4" data-aos="fade-up">
           <h2>Our Project</h2>
           <div class="col">
           <p>
@@ -131,9 +129,9 @@
           </p>
           </div>
         </div>
-      </section>
+      </section>  
     
-
+    <section id="intro" class="intro section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
@@ -309,7 +307,7 @@
       <!-- Section Title -->  
       <div class="container section-title" data-aos="fade-up">
         <h2>Metadata Analysis</h2>
-         <p class="container">In this section, we investigated the availability and structure of metadata across the different institutions that store the selected items. Europeana provides metadata compliant with the official EDM (Europeana Data Model) standard, enabling consistent integration. In contrast, while The Met offers downloadable metadata through its API, it does not follow a specific metadata standard. To ensure interoperability, we chose to express its data using CIDOC-CRM, a widely used ontology for cultural heritage. Other museums, such as the Museum of Fine Arts, Boston and the National Gallery of Art, provide descriptive texts on their websites, but no downloadable metadata or standardized format could be identified. For books and archival materials, MARCXML-formatted metadata was available; however, due to its complexity and limited human readability, we applied the BIBFRAME model to represent relationships and connections more effectively.</p></div>
+         <p class="container">We investigated the availability and structure of metadata across the different institutions that store the selected items. Europeana provides metadata compliant with the official EDM (Europeana Data Model) standard, enabling consistent integration. In contrast, while The Met offers downloadable metadata through its API, it does not follow a specific metadata standard. To ensure interoperability, we chose to express its data using CIDOC-CRM, a widely used ontology for cultural heritage. Other museums, such as the Museum of Fine Arts, Boston and the National Gallery of Art, provide descriptive texts on their websites, but no downloadable metadata or standardized format could be identified. For books and archival materials, MARCXML-formatted metadata was available; however, due to its complexity and limited human readability, we applied the BIBFRAME model to represent relationships and connections more effectively.</p></div>
       </div><!-- End Section Title -->
 
       
@@ -415,7 +413,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2><a href="knowledge_organization.html">Knowledge Organization</a></h2>
-        <p>  This section explores the organization of knowledge surrounding each item. Starting from the basic metadata and descriptive information, we developed a <strong>Theoretical Model</strong> using natural language to highlight each object's connection to the theme of <em>sadō</em> and its relationships to other items in the collection.</p><p>  Building on this, the <strong>Conceptual Model</strong> abstracts the objects further—representing them through URIs and defining their relationships using ontology-based schemas. Details can be viewed on the dedicated page by clicking below.
+        <p>  Starting from the basic metadata and descriptive information, we developed a <strong>Theoretical Model</strong> using natural language to highlight each object's connection to the theme of <em>sadō</em> and its relationships to other items in the collection.</p><p>  Building on this, the <strong>Conceptual Model</strong> abstracts the objects further—representing them through URIs and defining their relationships using ontology-based schemas. Details can be viewed on the dedicated page by clicking below.
 </p>
 </p>
       </div><!-- End Section Title -->
@@ -535,51 +533,51 @@
       <div class="container section-title" data-aos="fade-up">
         <!--i put the link to the html page for now on the title h2-->
         <h2><a href="knowledge_representation.html">Knowledge Representation</a></h2>
-        <p> In this section, we explore how knowledge about each cultural heritage object can be formally structured and shared. Starting from the conceptual model, we translated item descriptions into machine-readable statements using established ontologies. By mapping cultural meanings and relationships into triples, we aimed to make implicit connections explicit and interoperable across systems.
-</p>
-<p>
-  The representation follows semantic web principles, allowing each entity—whether a person, place, object, or concept—to be identified with a URI and linked meaningfully to others. This approach not only enriches discoverability but also supports future reuse in digital cultural heritage initiatives.
-</p>
+        <p> We finally explored how knowledge about each cultural heritage object can be formally structured. We translated item descriptions into triple statements using established ontologies. By mapping cultural meanings and relationships into triples, we aimed to make implicit connections.
+        </p>
+        <p>
+          The representation follows semantic web principles, allowing each entity—whether a person, place, object, or concept—to be identified with a URI and linked meaningfully to others.</p>
 
       </div><!-- End Section Title -->
 
+      <!-- Container of brief explanation -->
+        <div class="container-fluid d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-9  col-xl-9">
+            <div class="representation-container">
+              <div class="representation-item">
+                <!-- first row -->
+                <div class="row row-border">
+                  <div class="col-md-3 heading-col text-center">Full Text Analysis</div>
+                  <div class="col-md-9 content-col">An analysis of text extracts from The Book of Tea. TEI encoding, transformation using XSLT, and HTML production using python. </div>
+                </div>
 
-  <div class="container-fluid d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-    <div class="col-lg-9  col-xl-9">
-      <div class="representation-container">
-        <div class="representation-item">
-          <div class="row row-border">
-            <div class="col-md-3 heading-col text-center">Full Text Analysis</div>
-            <div class="col-md-9 content-col">An analysis of text extracts from The Book of Tea. TEI encoding, transformation using XSLT, and HTML production using python. </div>
-          </div>
+                <!-- second row -->
+                <div class="row row-border">
+                  <div class="col-md-3 heading-col text-center">RDF Production</div>
+                  <div class="col-md-9 content-col">sing Python, we converted both the conceptual model and insights from The Book of Tea into RDF triples, making them ready for the semantic web.</div>
+                </div>
 
-          <!-- 2行目 -->
-          <div class="row row-border">
-            <div class="col-md-3 heading-col text-center">RDF Production</div>
-            <div class="col-md-9 content-col">sing Python, we converted both the conceptual model and insights from The Book of Tea into RDF triples, making them ready for the semantic web.</div>
-          </div>
+                <!-- third row -->
+                <div class="row row-border">
+                  <div class="col-md-3 heading-col text-center">RDF Visualization</div>
+                  <div class="col-md-9 content-col">We visualized the generated RDF data to highlight connections between concepts, entities, and their relationships in a semantic structure.</div>
+                </div>
 
-          <!-- 3行目 -->
-          <div class="row row-border">
-            <div class="col-md-3 heading-col text-center">RDF Visualization</div>
-            <div class="col-md-9 content-col">We visualized the generated RDF data to highlight connections between concepts, entities, and their relationships in a semantic structure.</div>
-          </div>
-
-          <!-- ボタン -->
-          <div class="row mb-4">
-            <div class="col text-center">
-              <a href="knowledge_representation.html" class="btn btn-primary">Details</a>
+                <!-- Button -->
+                <div class="row m-4">
+                  <div class="col text-center">
+                    <a href="knowledge_representation.html" class="btn btn-primary">Details</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
         </div>
 
       </div>
 
-    </section><!-- /Knowledge Representation Section -->
+    </section><!-- End of Knowledge Representation Section -->
 
 
 

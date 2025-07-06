@@ -71,9 +71,9 @@ Cards that will link to a bigger image and description
         <ul>
           <li class="dropdown"><a href="#hero" class="active"><span>Home</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#intro">Introduction</a></li>
-              <li><a href="#items">Items</a></li>
-              <li><a href="#metadata">Metadata Analysis</a></li>
+              <li><a href="index.html#intro">Introduction</a></li>
+              <li><a href="index.html#items">Items</a></li>
+              <li><a href="index.html#metadata">Metadata Analysis</a></li>
             </ul>
           </li>
 
@@ -107,97 +107,413 @@ Cards that will link to a bigger image and description
   </header>
 
   <main class="main">
+        
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Knowledge Representation</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Knowledge Representation</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
    <!--Full text analysis-->
       <section id="full-text" class="intro section">
-        <!-- Section Title -->
-        <section id="intro" class="intro section">
-          <div class="section-title" data-aos="fade-up">
-            <h2>Full-Text Analysis</h2>
-          </div>
+        <div class="container section-title" data-aos="fade-up">
+            <div class="section-title">
+              <h2>Full-Text Analysis</h2>          
+          
+              <div class="row justify-content-center">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed ea ut placeat eaque. Asperiores voluptas dolorem commodi cumque voluptatem tempore velit consequatur reiciendis veniam? Voluptas alias est blanditiis iure?</p>
 
-          <div class="row gy-4">
-          <div class="col-md-4">
+                <!--put here img and link to preview in index.html-->
 
-            <!--put here img and link to preview in index.html-->
-            <div class="row justify-content-between gy-4">
-              <div class="col-lg-12">
-                <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
                 <!--embed on emgithub.com-->
-                <iframe frameborder="0" scrolling="yes" style="width:800px; height:500px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fprojectlod%2FaLODofTea%2Fblob%2Fmain%2Ffull_text%2Ftei_book_of_tea.xml&style=night-owl&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe></div>
-              </div>
+                <div class="frame m-4"> 
+                  <iframe frameborder="0" scrolling="yes" style="width:800px; height:500px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fprojectlod%2FaLODofTea%2Fblob%2Fmain%2Ffull_text%2Ftei_book_of_tea.xml&style=night-owl&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>
+                </div>
+              
+                <!--Explain full text analysis-->  
+                <p>explain full text analysis. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugiat commodi quo aliquam officia dolor deleniti impedit dignissimos cumque, ratione incidunt qui fuga doloribus, repudiandae culpa vero? Placeat, obcaecati excepturi?</p>
 
+              </div>              
             </div>
-
-
           </div>
+      </section>
 
-          <!--Explain theoretical model-->
-          <div>
-            <p>Lorem ipsum</p>
-          </div>
-        </section>   
-      </section>  
-
-    <!--RDF production-->
+   <!--RDF production-->
+  
       <section id="rdf-production" class="intro section">
-        <!-- Section Title -->
-        <section id="intro" class="intro section">
-          <div class="section-title" data-aos="fade-up">
-            <h2>RDF production</h2>
-          </div>
+        <div class="container section-title" data-aos="fade-up">
+            <div class="section-title">
+              <h2>RDF Production</h2> 
 
-          <div class="row gy-4">
-          <div class="col-md-4">
+              <div class="row justify-content-center">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed ea ut placeat eaque. Asperiores voluptas dolorem commodi cumque voluptatem tempore velit consequatur reiciendis veniam? Voluptas alias est blanditiis iure?</p>
+                <br>
 
-            <!--put here img and link to preview in index.html-->
-            <div class="row justify-content-between gy-4">
-              <div class="col-lg-12">
-                <!---->
-              </div>
+                <!--put here tables of csv-->
+                <div id="tabContainer" class="mt-5">
+                    <button class="tab-button" onclick="showTable('Book of Tea')">Book of Tea</button>
+                    <button class="tab-button" onclick="showTable('Portrait')">Portrait</button>
+                    <button class="tab-button" onclick="showTable('Teabowl')">Teabowl</button>
+                    <button class="tab-button" onclick="showTable('Japanese Footbridge')">Japanese Footbridge</button>
+                    <button class="tab-button" onclick="showTable('Kimono')">Kimono</button><br>
+                    <button class="tab-button" onclick="showTable('Tea Ceremony Painting')">Tea Ceremony Painting</button>
+                    <button class="tab-button" onclick="showTable('Samurai Woodblock')">Samurai Woodblock</button>
+                    <button class="tab-button" onclick="showTable('Teagarden Book')">Teagarden Book</button>
+                    <button class="tab-button" onclick="showTable('Ikebana Book')">Ikebana Book</button>
+                    <button class="tab-button" onclick="showTable('Non-items')">Non-items</button>
+                </div>
+                
+                <div id="tableContainer">                    
+                    <div id="Portrait" class="table-section">
+                        <h2>Portrait</h2>
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Predicate</th>
+                                    <th>Object</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>tea:item_rikyu-portrait</td><td>rdf:type</td><td>crm:E22_Human-Made_Object</td></tr>
+                                <tr><td>tea:item_rikyu-portrait</td><td>owl:sameAs</td><td>wd:Q126119266</td></tr>
+                                <tr><td>tea:item_rikyu-portrait</td><td>crm:P102_has_title</td><td>Portrait of Sen no Riky? with his Death Poem</td></tr>
+                                <tr><td>tea:item_rikyu-portrait</td><td>crm:P4_has_time-span</td><td>1600-1633</td></tr>
+                                <tr><td>tea:item_rikyu-portrait</td><td>dcterms:temporal</td><td>wd:Q184963</td></tr>
+                                <tr><td>tea:item_rikyu-portrait</td><td>dcterms:spatial</td><td>gn:1861060</td></tr>
+                                <tr><td>tea:item_rikyu-portrait</td><td>dcterms:medium</td><td>crm:E57_Material</td></tr>
+                                <tr><td>tea:item_rikyu-portrait</td><td>crm:P50_has_current_keeper</td><td>wd:Q160236</td></tr>
+                                <tr><td>tea:item_rikyu-portrait</td><td>dcterms:source</td><td>https://www.metmuseum.org/art/collection/search/845141</td></tr>
+                                <tr><td>tea:item_rikyu-portrait</td><td>crm:P129_is_about</td><td>tea:person_sen-no-rikyu</td></tr>
+                            </tbody>
+                        </table>
+                    </div>                    
+                    <div id="Teabowl" class="table-section">
+                        <h2>Teabowl</h2>
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Predicate</th>
+                                    <th>Object</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>tea:item_teabowl</td><td>rdf:type</td><td>crm:E22_Human-Made_Object</td></tr>
+                                <tr><td>tea:item_teabowl</td><td>crm:P102_has_title</td><td>Teabowl</td></tr>
+                                <tr><td>tea:item_teabowl</td><td>crm:P4_has_time-span</td><td>1590-1610</td></tr>
+                                <tr><td>tea:item_teabowl</td><td>dcterms:temporal</td><td>wd:Q184963</td></tr>
+                                <tr><td>tea:item_teabowl</td><td>crm:P94i_was_created_by</td><td>tea:person_honami-koetsu</td></tr>
+                                <tr><td>tea:item_teabowl</td><td>dcterms:spatial</td><td>gn:1861060</td></tr>
+                                <tr><td>tea:item_teabowl</td><td>dcterms:medium</td><td>crm:E57_Material</td></tr>
+                                <tr><td>tea:item_teabowl</td><td>crm:P50_has_current_keeper</td><td>wd:Q160236</td></tr>
+                                <tr><td>tea:item_teabowl</td><td>dcterms:source</td><td>https://www.metmuseum.org/art/collection/search/62879</td></tr>
+                                <tr><td>tea:item_teabowl</td><td>crm:P2_has_type</td><td>wd:Q95965973</td></tr>
+                                <tr><td>tea:item_teabowl</td><td>crm:P33_used_specific_technique</td><td>wd:Q2740942</td></tr>
+                                <tr><td>tea:item_teascoop</td><td>rdf:type</td><td>crm:E22_Human-Made_Object</td></tr>
+                                <tr><td>tea:item_teascoop</td><td>crm:P102_has_title</td><td>Tea Scoop (Chashaku)</td></tr>
+                                <tr><td>tea:item_teascoop</td><td>crm:P4_has_time-span</td><td>1580-1589</td></tr>
+                                <tr><td>tea:item_teascoop</td><td>crm:P94i_was_created_by</td><td>tea:person_sen-no-rikyu</td></tr>
+                                <tr><td>tea:item_teascoop</td><td>dcterms:spatial</td><td>gn:1861060</td></tr>
+                                <tr><td>tea:item_teascoop</td><td>dcterms:medium</td><td>crm:E57_Material</td></tr>
+                                <tr><td>tea:item_teascoop</td><td>crm:P50_has_current_keeper</td><td>wd:Q160236</td></tr>
+                                <tr><td>tea:item_teascoop</td><td>dcterms:source</td><td>https://www.metmuseum.org/art/collection/search/752041</td></tr>
+                                <tr><td>tea:item_teascoop</td><td>crm:P2_has_type</td><td>wd:Q3006804</td></tr>
+                            </tbody>
+                        </table>
+                    </div>                    
+                    <div id="Japanese Footbridge" class="table-section">
+                        <h2>Japanese Footbridge</h2>
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Predicate</th>
+                                    <th>Object</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>tea:item_japanese-bridge</td><td>rdf:type</td><td>crm:E22_Human-Made_Object</td></tr>
+                                <tr><td>tea:item_japanese-bridge</td><td>owl:sameAs</td><td>wd:Q12858617</td></tr>
+                                <tr><td>tea:item_japanese-bridge</td><td>crm:P102_has_title</td><td>The Japanese Footbridge</td></tr>
+                                <tr><td>tea:item_japanese-bridge</td><td>dcterms:date</td><td>1899</td></tr>
+                                <tr><td>tea:item_japanese-bridge</td><td>crm:P94i_was_created_by</td><td>wd:Q926</td></tr>
+                                <tr><td>tea:item_japanese-bridge</td><td>dcterms:spatial</td><td>crm:E53_Place</td></tr>
+                                <tr><td>tea:item_japanese-bridge</td><td>dcterms:medium</td><td>crm:E57_Material</td></tr>
+                                <tr><td>tea:item_japanese-bridge</td><td>crm:P50_has_current_keeper</td><td>foaf:Organization</td></tr>
+                                <tr><td>tea:item_japanese-bridge</td><td>dcterms:source</td><td>https://www.nga.gov/artworks/74796-japanese-footbridge</td></tr>
+                                <tr><td>tea:item_japanese-bridge</td><td>crm:P190_has_symbolic_content</td><td>skos:Concept</td></tr>
+                                <tr><td>tea:item_japanese-bridge</td><td>dcterms:isPartOf</td><td>wd:Q11899</td></tr>
+                            </tbody>
+                        </table>
+                    </div>                    
+                    <div id="Kimono" class="table-section">
+                        <h2>Kimono</h2>
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Predicate</th>
+                                    <th>Object</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>tea:item_kimono</td><td>rdf:type</td><td>crm:E22_Human-Made_Object</td></tr>
+                                <tr><td>tea:item_kimono</td><td>crm:P102_has_title</td><td>Kimono (hitoe)</td></tr>
+                                <tr><td>tea:item_kimono</td><td>crm:P4_has_time-span</td><td>1750-1799</td></tr>
+                                <tr><td>tea:item_kimono</td><td>dcterms:temporal</td><td>wd:Q184963</td></tr>
+                                <tr><td>tea:item_kimono</td><td>dcterms:spatial</td><td>gn:1861060</td></tr>
+                                <tr><td>tea:item_kimono</td><td>dcterms:medium</td><td>crm:E57_Material</td></tr>
+                                <tr><td>tea:item_kimono</td><td>crm:P50_has_current_keeper</td><td>wd:Q49133</td></tr>
+                                <tr><td>tea:item_kimono</td><td>dcterms:source</td><td>https://collections.mfa.org/objects/28742/kimono-hitoe</td></tr>
+                                <tr><td>tea:item_kimono</td><td>crm:P2_has_type</td><td>wd:Q483444</td></tr>
+                            </tbody>
+                        </table>
+                    </div>                    
+                    <div id="Tea Ceremony Painting" class="table-section">
+                        <h2>Tea Ceremony Painting</h2>
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Predicate</th>
+                                    <th>Object</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>tea:item/tea-ceremony-painting</td><td>rdf:type</td><td>edm:ProvidedCHO</td></tr>
+                                <tr><td>tea:item/tea-ceremony-painting</td><td>dcterms:title</td><td>Invitation to a tea ceremony; Mirror of instructions for women (Serientitel)</td></tr>
+                                <tr><td>tea:item/tea-ceremony-painting</td><td>edm:timespan</td><td>1881</td></tr>
+                                <tr><td>tea:item/tea-ceremony-painting</td><td>dcterms:contributor</td><td>edm:Agent</td></tr>
+                                <tr><td>tea:item/tea-ceremony-painting</td><td>dcterms:spacial</td><td>gn:1861060</td></tr>
+                                <tr><td>tea:item/tea-ceremony-painting</td><td>dcterms:medium</td><td>crm:E57_Material</td></tr>
+                                <tr><td>tea:item/tea-ceremony-painting</td><td>edm:dataProvider</td><td>foaf:Organization</td></tr>
+                                <tr><td>tea:item/tea-ceremony-painting</td><td>dcterms:source</td><td>https://www.europeana.eu/en/item/15514/BI_17444_11_9</td></tr>
+                                <tr><td>tea:item/tea-ceremony-painting</td><td>foaf:depicts</td><td>tea:person_sen-no-rikyu</td></tr>
+                                <tr><td>tea:item/tea-ceremony-painting</td><td>foaf:depicts</td><td>tea:acitivity_tea-ceremony</td></tr>
+                                <tr><td>tea:item/tea-ceremony-painting</td><td>foaf:depicts</td><td>wd:Q483444</td></tr>
+                                <tr><td>tea:item/tea-ceremony-painting</td><td>foaf:depicts</td><td>tea:place_roji</td></tr>
+                            </tbody>
+                        </table>
+                    </div>                    
+                    <div id="Samurai Woodblock" class="table-section">
+                        <h2>Samurai Woodblock</h2>
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Predicate</th>
+                                    <th>Object</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>tea:item_samurai-woodblock</td><td>rdf:type</td><td>crm:E22_Human-Made_Object</td></tr>
+                                <tr><td>tea:item_samurai-woodblock</td><td>dcterms:date</td><td>1755</td></tr>
+                                <tr><td>tea:item_samurai-woodblock</td><td>dcterms:temporal</td><td>wd:Q184963</td></tr>
+                                <tr><td>tea:item_samurai-woodblock</td><td>dcterms:spatial</td><td>gn:1861060</td></tr>
+                                <tr><td>tea:item_samurai-woodblock</td><td>dcterms:medium</td><td>crm:E57_Material</td></tr>
+                                <tr><td>tea:item_samurai-woodblock</td><td>crm:P50_has_current_keeper</td><td>foaf:Organization</td></tr>
+                                <tr><td>tea:item_samurai-woodblock</td><td>dcterms:source</td><td>https://www.britishmuseum.org/collection/object/A_1907-0531-0-3</td></tr>
+                                <tr><td>tea:item_samurai-woodblock</td><td>foaf:depicts</td><td>wd:Q38142</td></tr>
+                                <tr><td>tea:item_samurai-woodblock</td><td>foaf:depicts</td><td>tea:acitivity_tea-ceremony</td></tr>
+                            </tbody>
+                        </table>
+                    </div>                    
+                    <div id="Book of Tea" class="table-section">
+                        <h2>Book of Tea</h2>
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Predicate</th>
+                                    <th>Object</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>tea:item_book-of-tea</td><td>rdf:type</td><td>bf:Text</td></tr>
+                                <tr><td>tea:item_book-of-tea</td><td>owl:sameAs</td><td>wd:Q7719311</td></tr>
+                                <tr><td>tea:item_book-of-tea</td><td>bf:title</td><td>The book of tea</td></tr>
+                                <tr><td>tea:item_book-of-tea</td><td>bf:date</td><td>1906</td></tr>
+                                <tr><td>tea:item_book-of-tea</td><td>dcterms:creator</td><td>tea:person_okakura-kakuzo</td></tr>
+                                <tr><td>tea:item_book-of-tea</td><td>dcterms:publisher</td><td>bf:Agent</td></tr>
+                                <tr><td>tea:item_book-of-tea</td><td>dcterms:spacial</td><td>gn:1861060</td></tr>
+                                <tr><td>tea:item_book-of-tea</td><td>dcterms:source</td><td>https://www.loc.gov/resource/gdcebookspublic.2019299129/</td></tr>
+                                <tr><td>tea:item_book-of-tea</td><td>bf:subject</td><td>tea:acitivity_tea-ceremony</td></tr>
+                                <tr><td>tea:item_book-of-tea</td><td>bf:subject</td><td>tea:place_tearoom</td></tr>
+                                <tr><td>tea:item_book-of-tea</td><td>skos:related</td><td>wd:Q11899</td></tr>
+                                <tr><td>tea:item_book-of-tea</td><td>schema:mentions</td><td>tea:person_sen-no-rikyu</td></tr>
+                                <tr><td>tea:item_book-of-tea</td><td>schema:mentions</td><td>tea:person_honami-koetsu</td></tr>
+                                <tr><td>tea:item_book-of-tea</td><td>bf:subject</td><td>tea:acitivity_ikebana</td></tr>
+                                <tr><td>tea:item_book-of-tea</td><td>bf:subject</td><td>tea:concept_wabisabi</td></tr>
+                                <tr><td>tea:item_book-of-tea</td><td>bf:subject</td><td>tea:concept_zen</td></tr>
+                            </tbody>
+                        </table>
+                    </div>                    
+                    <div id="Ikebana Book" class="table-section">
+                        <h2>Ikebana Book</h2>
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Predicate</th>
+                                    <th>Object</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>tea:item_ikebana-book</td><td>rdf:type</td><td>bf:Archival</td></tr>
+                                <tr><td>tea:item_ikebana-book</td><td>bf:title</td><td>Ikebana hinagata densho</td></tr>
+                                <tr><td>tea:item_ikebana-book</td><td>bf:date</td><td>1600</td></tr>
+                                <tr><td>tea:item_ikebana-book</td><td>dcterms:temporal</td><td>wd:Q184963</td></tr>
+                                <tr><td>tea:item_ikebana-book</td><td>dcterms:publisher</td><td>bf:Agent</td></tr>
+                                <tr><td>tea:item_ikebana-book</td><td>dcterms:spatial</td><td>gn:1861060</td></tr>
+                                <tr><td>tea:item_ikebana-book</td><td>dcterms:source</td><td>https://archive.org/details/ikebanahinagata00</td></tr>
+                                <tr><td>tea:item_ikebana-book</td><td>bf:subject</td><td>tea:acitivity_ikebana</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="Teagarden Book" class="table-section">
+                        <h2>Teagarden Book</h2>
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Predicate</th>
+                                    <th>Object</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>tea:item_teagarden</td><td>rdf:type</td><td>bf:Text</td></tr>
+                                <tr><td>tea:item_teagarden</td><td>bf:title</td><td>Mysterious Japan</td></tr>
+                                <tr><td>tea:item_teagarden</td><td>bf:date</td><td>1922</td></tr>
+                                <tr><td>tea:item_teagarden</td><td>dcterms:creator</td><td>foaf:Person</td></tr>
+                                <tr><td>tea:item_teagarden</td><td>dcterms:publisher</td><td>bf:Agent</td></tr>
+                                <tr><td>tea:item_teagarden</td><td>dcterms:spatial</td><td>gn:1861060</td></tr>
+                                <tr><td>tea:item_teagarden</td><td>dcterms:source</td><td>https://archive.org/details/mysteriousjapan00streuoft/</td></tr>
+                                <tr><td>tea:item_teagarden</td><td>foaf:depicts</td><td>tea:place_roji</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="Non-items" class="table-section">
+                        <h2>Non-items</h2>
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Predicate</th>
+                                    <th>Object</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>tea:acitivity_tea-ceremony</td><td>rdf:type</td><td>crm:E7_Activity</td></tr>
+                                <tr><td>tea:acitivity_tea-ceremony</td><td>owl:sameAs</td><td>wd:Q202298</td></tr>
+                                <tr><td>tea:acitivity_tea-ceremony</td><td>dcterms:contributor</td><td>tea:person_sen-no-rikyu</td></tr>
+                                <tr><td>tea:person_sen-no-rikyu</td><td>rdf:type</td><td>foaf:Person</td></tr>
+                                <tr><td>tea:person_sen-no-rikyu</td><td>owl:sameAs</td><td>wd:Q305477</td></tr>
+                                <tr><td>tea:person_sen-no-rikyu</td><td>rdfs:label</td><td>Sen no Riky?</td></tr>
+                                <tr><td>tea:person_sen-no-rikyu</td><td>schema:hasRole</td><td>Japanese tea master</td></tr>
+                                <tr><td>tea:person_honami-koetsu</td><td>rdf:type</td><td>foaf:Person</td></tr>
+                                <tr><td>tea:person_honami-koetsu</td><td>owl:sameAs</td><td>wd:Q3139920</td></tr>
+                                <tr><td>tea:person_honami-koetsu</td><td>rdfs:label</td><td>Honami K?etsu</td></tr>
+                                <tr><td>tea:person_okakura-kakuzo</td><td>rdf:type</td><td>foaf:Person</td></tr>
+                                <tr><td>tea:person_okakura-kakuzo</td><td>owl:sameAs</td><td>wd:Q942995</td></tr>
+                                <tr><td>tea:person_okakura-kakuzo</td><td>rdfs:label</td><td>Okakura Kakuzo</td></tr>
+                                <tr><td>tea:person_okakura-kakuzo</td><td>foaf:member</td><td>wd:Q49133</td></tr>
+                                <tr><td>wd:Q49133</td><td>rdf:type</td><td>foaf:Organization</td></tr>
+                                <tr><td>wd:Q49133</td><td>rdfs:label</td><td>Museum of Fine Arts Boston</td></tr>
+                                <tr><td>wd:Q160236</td><td>rdf:type</td><td>foaf:Organization</td></tr>
+                                <tr><td>wd:Q160236</td><td>rdfs:label</td><td>Metropolitan Museum of Art</td></tr>
+                                <tr><td>wd:Q926</td><td>rdf:type</td><td>foaf:Person</td></tr>
+                                <tr><td>wd:Q926</td><td>rdfs:label</td><td>Claude Monet</td></tr>
+                                <tr><td>wd:Q926</td><td>crm:P91_has_created</td><td>wd:Q11899</td></tr>
+                                <tr><td>wd:Q11899</td><td>rdf:type</td><td>crm:E78_Collection</td></tr>
+                                <tr><td>wd:Q11899</td><td>rdfs:label</td><td>Water Lilies</td></tr>
+                                <tr><td>wd:Q11899</td><td>crm:P190_has_symbolic_content</td><td>skos:Concept</td></tr>
+                                <tr><td>gn:1861060</td><td>rdfs:label</td><td>Japan</td></tr>
+                                <tr><td>gn:1861060</td><td>rdf:type</td><td>dcterms:Location</td></tr>
+                                <tr><td>wd:Q184963</td><td>rdf:type</td><td>crm:E4_Period</td></tr>
+                                <tr><td>wd:Q184963</td><td>rdfs:label</td><td>Edo Period (1603-1868)</td></tr>
+                                <tr><td>wd:Q3006804</td><td>schema:usedIn</td><td>tea:acitivity_tea-ceremony</td></tr>
+                                <tr><td>wd:Q95965973</td><td>schema:usedIn</td><td>tea:acitivity_tea-ceremony</td></tr>
+                                <tr><td>wd:Q483444</td><td>crm:P101_had_as_general_use</td><td>tea:acitivity_tea-ceremony</td></tr>
+                                <tr><td>wd:Q38142</td><td>rdfs:label</td><td>samurai</td></tr>
+                                <tr><td>wd:Q2740942</td><td>rdfs:label</td><td>kintsugi</td></tr>
+                                <tr><td>wd:Q2740942</td><td>rdf:type</td><td>crm:E29_Design_or_Procedure</td></tr>
+                                <tr><td>wd:Q2740942</td><td>dcterms:contributor</td><td>tea:person_sen-no-rikyu</td></tr>
+                                <tr><td>tea:place_roji</td><td>rdfs:label</td><td>roji (tea garden)</td></tr>
+                                <tr><td>tea:place_roji</td><td>owl:sameAs</td><td>wd:Q402729</td></tr>
+                                <tr><td>tea:place_roji</td><td>schema:isPartOf</td><td>tea:acitivity_tea-ceremony</td></tr>
+                                <tr><td>tea:place_roji</td><td>rdf:type</td><td>crm:E53_Place</td></tr>
+                                <tr><td>tea:place_tearoom</td><td>rdfs:label</td><td>chashitsu(tea room)</td></tr>
+                                <tr><td>tea:place_tearoom</td><td>owl:sameAs</td><td>wd:Q402729</td></tr>
+                                <tr><td>tea:place_tearoom</td><td>schema:isPartOf</td><td>tea:acitivity_tea-ceremony</td></tr>
+                                <tr><td>tea:place_tearoom</td><td>rdf:type</td><td>crm:E53_Place</td></tr>
+                                <tr><td>tea:place_tearoom</td><td>crm:P89_falls_within</td><td>tea:place_tearoom</td></tr>
+                                <tr><td>tea:acitivity_ikebana</td><td>rdf:type</td><td>crm:E7_Activity</td></tr>
+                                <tr><td>tea:acitivity_ikebana</td><td>owl:sameAs</td><td>wd:Q178459</td></tr>
+                                <tr><td>tea:acitivity_ikebana</td><td>rdfs:label</td><td>ikebana (japanese flower arrangement)</td></tr>
+                                <tr><td>tea:acitivity_ikebana</td><td>skos:related</td><td>tea:acitivity_tea-ceremony</td></tr>
+                                <tr><td>tea:concept_zen</td><td>rdf:type</td><td>skos:Concept</td></tr>
+                                <tr><td>tea:concept_zen</td><td>owl:sameAs</td><td>wd:Q7953</td></tr>
+                                <tr><td>tea:concept_zen</td><td>rdfs:label</td><td>zen</td></tr>
+                                <tr><td>tea:concept_zen</td><td>crm:P15_influenced</td><td>tea:place_tearoom</td></tr>
+                                <tr><td>tea:concept_zen</td><td>crm:P15_influenced</td><td>tea:acitivity_tea-ceremony</td></tr>
+                                <tr><td>tea:concept_zen</td><td>skos:related</td><td>tea:concept_taoism</td></tr>
+                                <tr><td>tea:concept_zen</td><td>skos:related</td><td>tea:concept_wabisabi</td></tr>
+                                <tr><td>tea:concept_taoism</td><td>rdf:type</td><td>skos:Concept</td></tr>
+                                <tr><td>tea:concept_taoism</td><td>owl:sameAs</td><td>wd:Q9598</td></tr>
+                                <tr><td>tea:concept_taoism</td><td>rdfs:label</td><td>Taoism</td></tr>
+                                <tr><td>tea:concept_taoism</td><td>crm:P15_influenced</td><td>tea:acitivity_tea-ceremony</td></tr>
+                                <tr><td>tea:concept_wabisabi</td><td>rdf:type</td><td>skos:Concept</td></tr>
+                                <tr><td>tea:concept_wabisabi</td><td>owl:sameAs</td><td>wd:Q1142664</td></tr>
+                                <tr><td>tea:concept_wabisabi</td><td>rdfs:label</td><td>wabi sabi</td></tr>
+                                <tr><td>tea:concept_wabisabi</td><td>crm:P15_influenced</td><td>tea:acitivity_ikebana</td></tr>
+                            </tbody>
+                        </table>
+                    </div>        
 
-            </div>
 
+                            <!--embed code here maybe -->
 
-          </div>
+                            <!--Explain rdf production-->  
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi temporibus assumenda nisi doloribus vero dolores nostrum accusantium aliquid, sequi tempore nam eveniet veniam, mollitia reprehenderit! Laboriosam repellendus ad corporis porro.</p>
 
-           <!--Explain conceptual model-->
-          <div>
-            <p>Lorem Ipsum</p>
-          </div>
-        </section>
+                </div> 
+             </div>
+
+         </div> 
+        </div>
       </section>      
 
-      <!--Rdf visualization-->
+      
+      
+  <!--Rdf visualization-->
       <section id="rdf-visualization" class="intro section">
-        <!-- Section Title -->
-        <section id="intro" class="intro section">
-          <div class="section-title" data-aos="fade-up">
-            <h2>RDF visualization</h2>
-          </div>
+        <div class="container section-title" data-aos="fade-up">
+            <div class="section-title">
+              <h2>RDF Visualization</h2> 
 
-          <div class="row gy-4">
-          <div class="col-md-4">
+              <div class="row justify-content-center">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed ea ut placeat eaque. Asperiores voluptas dolorem commodi cumque voluptatem tempore velit consequatur reiciendis veniam? Voluptas alias est blanditiis iure?</p>
+                <br>
 
-            <!--put here img and link to preview in index.html-->
-            <div class="row justify-content-between gy-4">
-              <div class="col-lg-12">
-                <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
                 <!--For now i put this image . i will do the graph after the whole website is done and will embed-->
                 <!--see how to put the rdf graphs from rdf grapher - cards ir img or embed or image with fullscreen popup thingy-->
-                <img src="assets/img/profile-img.jpg" class="img-fluid" alt=""></div>
-              </div>
+                <div class="frame m-4">
+                <img src="to_rdf/full_dataset.png" class="img-fluid m-5" alt="">
+                                <table>csv tables come here </table>
 
-            </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-
-          </div>
-
-           <!--Explain Knowledge graph-->
-          <div>
-            <p>Lorem Ipsum</p>
-          </div>
-        </section>
+              </div>              
+            </div> 
+        </div>
       </section>      
+    
   </main>
 
   <!--footer-->
@@ -263,5 +579,34 @@ Cards that will link to a bigger image and description
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+function showTable(sectionId) {
+    // Hide all table sections
+    const sections = document.querySelectorAll('.table-section');
+    sections.forEach(section => {
+        section.classList.remove('active');
+    });
+
+    // Remove 'active' class from all buttons
+    const buttons = document.querySelectorAll('.tab-button');
+    buttons.forEach(button => {
+        button.classList.remove('active');
+    });
+
+    // Show the selected table section
+    const selectedSection = document.getElementById(sectionId);
+    if (selectedSection) {
+        selectedSection.classList.add('active');
+    }
+
+    // Highlight the active button
+    const selectedButton = Array.from(buttons).find(btn => btn.textContent === sectionId);
+    if (selectedButton) {
+        selectedButton.classList.add('active');
+    }
+}
+
+</script>
+<body onload="showTable('Book of Tea')"></body>
 </body>
 </html>
