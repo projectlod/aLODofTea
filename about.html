@@ -4,13 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Service Details - DevFolio Bootstrap Template</title>
+  <title>About the Project</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -43,38 +45,46 @@
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">DevFolio</h1>
+        <img src="assets/img/favicon.png" alt="">
+        <h1 class="sitename">aLODofTEA</h1>
       </a>
-
+      <!-- The navbar -->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home<br></a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#organization">Knowledge Organization</a></li>
-          <li><a href="#items">Items</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#hero" class="active"><span>Home</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="#intro">Introduction</a></li>
+              <li><a href="#items">Items</a></li>
+              <li><a href="#metadata">Metadata Analysis</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact</a></li>
+
+          <li class="dropdown"><a href="knowledge_organization.html"><span>Knowledge Organization</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="knowledge_organization.html#">Theoretical Model</a></li>
+              <li><a href="knowledge_organization.html#">Conceptual Model</a></li>
+              <li><a href="knowledge_organization.html#">Knowledge Graph</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="knowledge_representation.html"><span>Knowledge Representation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="knowledge_representation.html#">Full Text Analysis</a></li>
+
+              <li><a href="knowledge_representation.html#">RDF Production</a></li>
+              <li><a href="knowledge_representation.html#">RDF Visualisation</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="about.html"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="about.html#documentation">Documentation</a></li>
+              <li><a href="about.html#team">Team</a></li>
+            </ul>
+          </li>          
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
+ 
     </div>
   </header>
 
@@ -83,18 +93,25 @@
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Service Details</h1>
+        <h1 class="mb-2 mb-lg-0">About the Project</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Service Details</li>
+            <li class="current">About</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Service Details Section -->
+    <!-- Service Details Section -->   
+    
     <section id="about" class="about section">
+      
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Documentation</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
 
       <div class="container">
 
@@ -138,26 +155,69 @@
 
     </section><!-- /Service Details Section -->
 
+    <!-- Team section -->
+    <section id="team" class="team section">
+
+    <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+    
+    <!-- Team Members -->
+    
+  <div class="container py-5">
+  <div class="row justify-content-center g-2">
+
+    <!-- Member 1 -->
+    <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+      <div class="card text-center p-4 mx-auto" style="max-width: 300px;">
+        <img src="assets/img/favicon.png" class="rounded-circle profile-img" alt="Member 1">
+        <h5 class="card-title">Fahmida Islam</h5>
+        <a href="" target="_blank" class="icon-link d-block text-center">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Member 2 -->
+    <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+      <div class="card text-center p-4 mx-auto" style="max-width: 300px;">
+        <img src="assets/img/favicon.png" class="rounded-circle profile-img" alt="Member 2">
+        <h5 class="card-title">Shiho Nakamura</h5>
+        <a href="https://github.com" target="_blank" class="icon-link d-block text-center">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+  </div>
+
+  </div>
+</div>
+  </div>
+</div>
+
+    </section>
+      
   </main>
 
-  <footer id="footer" class="footer accent-background">
+   <footer id="footer" class="footer accent-background">
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">DevFolio</strong> <span>All Rights Reserved</span></p>
+        <p>©2025 <span>Copyright</span> <strong class="px-1 sitename">Fahmida Islam and Shiho Nakamura</strong></p>
+        <p><span>All copyrights and related rights on the content remain with their original owners.</span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/projectlod/aLODofTea"><i class="bi bi-github"></i></a>
+        <a href="https://github.com/Fahmyrose"><i class="bi bi-github"></i></a>
+        <a href="https://github.com/shiho1000"><i class="bi bi-github"></i></a>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade: DevFolio</a>
       </div>
     </div>
 

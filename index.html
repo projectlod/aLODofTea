@@ -55,7 +55,7 @@
         <img src="assets/img/favicon.png" alt=""> 
         <h1 class="sitename">aLODofTEA</h1>
       </a>
-
+      <!-- The navbar -->
       <nav id="navmenu" class="navmenu">
         <ul>
           <li class="dropdown"><a href="#hero" class="active"><span>Home</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -68,33 +68,24 @@
 
           <li class="dropdown"><a href="knowledge_organization.html"><span>Knowledge Organization</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Theoretical Model</a></li>
-              <!--<li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>-->
-              <li><a href="#">Conceptual Model</a></li>
-              <li><a href="#">Knowledge Graph</a></li>
+              <li><a href="knowledge_organization.html#">Theoretical Model</a></li>
+              <li><a href="knowledge_organization.html#">Conceptual Model</a></li>
+              <li><a href="knowledge_organization.html#">Knowledge Graph</a></li>
             </ul>
           </li>
 
           <li class="dropdown"><a href="knowledge_representation.html"><span>Knowledge Representation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Full Text Analysis</a></li>
+              <li><a href="knowledge_representation.html#">Full Text Analysis</a></li>
 
-              <li><a href="#">RDF Production</a></li>
-              <li><a href="#">RDF Visualisation</a></li>
+              <li><a href="knowledge_representation.html#">RDF Production</a></li>
+              <li><a href="knowledge_representation.html#">RDF Visualisation</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="about.html"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Documentation</a></li>
-              <li><a href="#">Team</a></li>
+              <li><a href="about.html#documentation">Documentation</a></li>
+              <li><a href="about.html#team">Team</a></li>
             </ul>
           </li>          
         </ul>
@@ -126,18 +117,19 @@
       <section id="intro" class="intro section">
         <div class="container section-title" data-aos="fade-up">
           <h2>Our Project</h2>
-
+          <div class="col">
           <p>
             This project explores how digital technologies such as Linked Open Data and metadata modeling
             can be used to preserve and interpret cultural knowledge. 
           </p>
           <p>
-            Our focus is the <strong>Japanese Tea Ceremony (茶道 / sadō)</strong> — a centuries-old tradition
+            Our focus is the <strong>Japanese Tea Ceremony (茶道 / sadō / chanoyu)</strong> — a centuries-old tradition
             that embodies harmony, respect, purity, and tranquility. 
           </p>
           <p>
             This is a linked open data project that aims to create a comprehensive representation. 
           </p>
+          </div>
         </div>
       </section>
     
@@ -149,14 +141,9 @@
 
             <div class="row justify-content-between gy-4">
               <div class="col-lg-12">
-                <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+                <img src="assets/img/profile-img.jpg" class="img-fluid w-75 mx-auto d-block" alt="">
               </div>
-              <!-- <div class="col-lg-7 intro-info">
-                <p><strong>Name: </strong> <span>Morgan Freeman</span></p>
-                <p><strong>Profile: </strong> <span>full stack developer</span></p>
-                <p><strong>Email: </strong> <span>contact@example.com</span></p>
-                <p><strong>Phone: </strong> <span>(617) 557-0089</span></p>
-              </div> -->
+
             </div>
 
             <!-- <div class="skills-content skills-animation">
@@ -195,22 +182,17 @@
 
           <div class="col-md-8">
             <div class="intro-me">
-              <h4>The Japanese Tea Ceremony (茶道 / sadō)</h4>
+              <h4>The Japanese Tea Ceremony (茶道 / sadō / chanoyu)</h4>
               <p>
-                Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
-                imperdiet et, porttitor
-                at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla
-                porttitor accumsan tincidunt.
+                The Japanese Tea Ceremony (<em>茶道 / sadō/ chanoyu</em>) is a traditional cultural practice that embodies the spirit of harmony, respect, purity, and tranquility. Rooted in centuries of refinement, this ritual is more than the act of drinking tea — it is a philosophical and aesthetic experience shaped by <strong>Zen</strong> Buddhism.
               </p>
+
               <p>
-                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
-                porttitor volutpat. Vestibulum
-                ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
+                Influenced deeply by the teachings of <strong>Sen no Rikyū</strong>, one of the most iconic tea masters of the 16th century, the ceremony emphasizes simplicity and the subtle beauty found in imperfection, a concept known as <strong>wabi-sabi</strong>. Every element of the practice — from the utensils to the setting — reflects this aesthetic.
               </p>
+
               <p>
-                Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-                Nulla porttitor accumsan
-                tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Western audiences were first introduced to these ideas through <strong><em>The Book of Tea</em></strong>, a 1906 essay by Okakura Kakuzō, which presents the tea ceremony as a bridge between art, nature, and spiritual reflection. Through this project, we aim to connect the heritage of the Tea Ceremony with the digital age, using Linked Open Data to trace its cultural, historical, and philosophical dimensions.
               </p>
             </div>
           </div>
@@ -226,7 +208,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Items</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p> This selection of cultural heritage items explores the world of the Japanese Tea Ceremony, from a tea bowl used in ritual practice to a portrait of Sen no Rikyū and the influential <em>Book of Tea</em>. Each object reveals a different aspect of <em>sadō</em>’s philosophy, aesthetics, and history.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -248,8 +230,8 @@
               <img src="assets/img/items/the-book-of-tea.gif" class="img-fluid" width="700" alt="">
               <div class="items-info">
                 <h4>The Book of Tea</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/items/the-book-of-tea.gif" title="The Book of Tea" data-gallery="items-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <p>A classic text by Okakura Kakuzō that introduced the philosophy and aesthetics of the Japanese tea ceremony to the Western world. It emphasizes the spirit of harmony, respect, purity, and tranquility.</p>
+                <a href="assets/img/items/the-book-of-tea.gif" title="The Book of Tea" data-gallery="items-gallery-app" class="glightbox preview-link" data-description="A classic text by Okakura Kakuzō that introduced the philosophy and aesthetics of the Japanese tea ceremony to the Western world. It emphasizes the spirit of harmony, respect, purity, and tranquility."></a>><i class="bi bi-zoom-in"></i></a>
                 <a href="https://www.loc.gov/resource/gdcebookspublic.2019299129/" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Items Item -->
@@ -258,8 +240,8 @@
               <img src="assets/img/items/rikyu-portrait.jpg" class="img-fluid" alt="">
               <div class="items-info">
                 <h4>Portrait of Sen no Rikyu</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/items/rikyu-portrait.jpg" title="Portrait of Sen no Rikyu" data-gallery="items-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <p>This portrait honors Sen no Rikyū, the legendary tea master who formalized the principles of <b>wabi-cha</b> and shaped the tea ceremony as a spiritual practice.</p>
+                <a href="assets/img/items/rikyu-portrait.jpg" title="Portrait of Sen no Rikyu" data-gallery="items-gallery-product" class="glightbox preview-link" data-description="This portrait honors Sen no Rikyū, the legendary tea master who formalized the principles of wabi-cha and shaped the tea ceremony as a spiritual practice."><i class="bi bi-zoom-in"></i></a>
                 <a href="https://www.metmuseum.org/art/collection/search/845141" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>  
             </div><!-- End Items Item -->
@@ -268,8 +250,8 @@
               <img src="assets/img/items/invitation.png" class="img-fluid" alt="">
               <div class="items-info">
                 <h4>Invitation to a Tea Ceremony</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/items/invitation.png" title="Invitation to a Tea Ceremony" data-gallery="items-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <p>This delicate print depicts a traditional invitation to a tea gathering, reflecting the ritualized and respectful nature of <b>sadō</b>.</p>
+                <a href="assets/img/items/invitation.png" title="Invitation to a Tea Ceremony" data-gallery="items-gallery-branding" class="glightbox preview-link" data-description="his delicate print depicts a traditional invitation to a tea gathering, reflecting the ritualized and respectful nature of sadō."><i class="bi bi-zoom-in"></i></a>
                 <a href="https://www.europeana.eu/en/item/15514/BI_17444_11_9" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Items Item -->
@@ -278,8 +260,8 @@
               <img src="assets/img/items/kimono.jpg" class="img-fluid" alt="">
               <div class="items-info">
                 <h4>Kimono</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/items/kimono.jpg" title="Kimono" data-gallery="items-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <p>A lightweight, unlined kimono worn in summer tea gatherings, showcasing seasonal awareness and refined textile aesthetics.</p>
+                <a href="assets/img/items/kimono.jpg" title="Kimono" data-gallery="items-gallery-book" class="glightbox preview-link" data-description="A lightweight, unlined kimono worn in summer tea gatherings, showcasing seasonal awareness and refined textile aesthetics."><i class="bi bi-zoom-in"></i></a>
                 <a href="https://collections.mfa.org/objects/28742/kimono-hitoe" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Items Item -->
@@ -288,8 +270,8 @@
               <img src="assets/img/items/ikebanahinagata00_0006.jpg" class="img-fluid" alt="">
               <div class="items-info">
                 <h4>Ikebana Hinagata Densho</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/items/ikebanahinagata00_0006.jpg" title="Ikebana Hinagata Densho" data-gallery="items-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <p>An early illustrated guide to <em>ikebana</em>, the art of flower arrangement, which often complements the tea ceremony setting.</p>
+                <a href="assets/img/items/ikebanahinagata00_0006.jpg" title="Ikebana Hinagata Densho" data-gallery="items-gallery-app" class="glightbox preview-link" data-description="An early illustrated guide to ikebana, the art of flower arrangement, which often complements the tea ceremony setting."><i class="bi bi-zoom-in"></i></a>
                 <a href="https://archive.org/details/ikebanahinagata00" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Items Item -->
@@ -298,8 +280,8 @@
               <img src="assets/img/items/samurai-woodblock.jpg" class="img-fluid" alt="">
               <div class="items-info">
                 <h4>Woodblock Print of Samurais</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/items/samurai-woodblock.jpg" title="Woodblock Print of Samurais" data-gallery="items-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <p>Kabuki actors as samurais takes part in a tea ceremony, highlighting how <em>sadō</em> transcended social classes. Even samurai would remove their armor to enter this space of calm, reflection, and refined etiquette.</p>
+                <a href="assets/img/items/samurai-woodblock.jpg" title="Woodblock Print of Samurais" data-gallery="items-gallery-product" class="glightbox preview-link" data-description="Kabuki actors as samurais takes part in a tea ceremony, highlighting how sadō transcended social classes. Even samurai would remove their armor to enter this space of calm, reflection, and refined etiquette."><i class="bi bi-zoom-in"></i></a>
                 <a href="https://www.britishmuseum.org/collection/object/A_1907-0531-0-3" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Items Item -->
@@ -308,8 +290,8 @@
               <img src="assets/img/items/teabowl.jpg" class="img-fluid" alt="">
               <div class="items-info">
                 <h4>Teabowl</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/items/teabowl.jpg" title="Teabowl" data-gallery="items-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <p>A rustic tea bowl used in <em>chanoyu</em>, featuring <em>kintsugi</em>—a gold repair technique that embraces flaws as part of the bowl’s history, reflecting the spirit of <em>wabi-sabi</em>.</p>
+                <a href="assets/img/items/teabowl.jpg" title="Teabowl" data-gallery="items-gallery-branding" class="glightbox preview-link" data-description="A rustic tea bowl used in chanoyu, featuring kintsugi—a gold repair technique that embraces flaws as part of the bowl’s history, reflecting the spirit of wabi-sabi."><i class="bi bi-zoom-in"></i></a>
                 <a href="https://www.metmuseum.org/art/collection/search/62879" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Items Item -->
@@ -318,8 +300,8 @@
               <img src="assets/img/items/teascoop.jpg" class="img-fluid" alt="">
               <div class="items-info">
                 <h4>Teascoop of Rikyu</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/items/teascoop.jpg" title="Teascoop of Rikyu" data-gallery="items-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <p>A bamboo tea scoop traditionally attributed to Sen no Rikyū, representing simplicity and spiritual depth in tea utensils.</p>
+                <a href="assets/img/items/teascoop.jpg" title="Teascoop of Rikyu" data-gallery="items-gallery-book" class="glightbox preview-link" data-description="A bamboo tea scoop traditionally attributed to Sen no Rikyū, representing simplicity and spiritual depth in tea utensils"><i class="bi bi-zoom-in"></i></a>
                 <a href="https://www.metmuseum.org/art/collection/search/752041" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Items Item -->
@@ -328,8 +310,8 @@
               <img src="assets/img/items/the_japanese_footbridge_1992.9.1.jpg" class="img-fluid" alt="">
               <div class="items-info">
                 <h4>The Japanese Footbridge</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/items/the_japanese_footbridge_1992.9.1.jpg" title="The Japanese Footbridge" data-gallery="items-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <p>Claude Monet’s <em>Water Lilies</em> series, deeply inspired by Japanese gardens, reflects the tranquil beauty also found in tea gardens. This bridge, featured in one of his iconic paintings, captures the same serene aesthetic later echoed on the cover of <em>The Book of Tea</em>.</p>
+                <a href="assets/img/items/the_japanese_footbridge_1992.9.1.jpg" title="The Japanese Footbridge" data-gallery="items-gallery-product" class="glightbox preview-link" data-description="Claude Monet’s Water Lilies series, deeply inspired by Japanese gardens, reflects the tranquil beauty also found in tea gardens. This bridge, featured in one of his iconic paintings, captures the same serene aesthetic later echoed on the cover of The Book of Tea."><i class="bi bi-zoom-in"></i></a>
                 <a href="https://www.nga.gov/artworks/74796-japanese-footbridge" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -337,8 +319,8 @@
               <img src="assets/img/items/mysterious-japan.jpg" class="img-fluid" alt="">
               <div class="items-info">
                 <h4>Mysterious Japan</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/items/mysterious-japan.jpg" title="Mysterious Japan" data-gallery="items-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <p>A photograph from Mysterious Japan captures the serene ambiance of a traditional tea garden, designed to guide guests into a meditative mindset.</p>
+                <a href="assets/img/items/mysterious-japan.jpg" title="Mysterious Japan" data-gallery="items-gallery-app" class="glightbox preview-link" data-description="A photograph from Mysterious Japan captures the serene ambiance of a traditional tea garden, designed to guide guests into a meditative mindset."><i class="bi bi-zoom-in"></i></a>
                 <a href="https://archive.org/details/mysteriousjapan00streuoft/page/188/mode/1up?q=garden"  target="_blank"  title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Items Item -->
@@ -358,97 +340,96 @@
       <!-- Section Title -->  
       <div class="container section-title" data-aos="fade-up">
         <h2>Metadata Analysis</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+         <p class="container">In this section, we investigated the availability and structure of metadata across the different institutions that store the selected items. Europeana provides metadata compliant with the official EDM (Europeana Data Model) standard, enabling consistent integration. In contrast, while The Met offers downloadable metadata through its API, it does not follow a specific metadata standard. To ensure interoperability, we chose to express its data using CIDOC-CRM, a widely used ontology for cultural heritage. Other museums, such as the Museum of Fine Arts, Boston and the National Gallery of Art, provide descriptive texts on their websites, but no downloadable metadata or standardized format could be identified. For books and archival materials, MARCXML-formatted metadata was available; however, due to its complexity and limited human readability, we applied the BIBFRAME model to represent relationships and connections more effectively.</p></div>
       </div><!-- End Section Title -->
 
       
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
       <!-- Metadata Tables -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
       <div class="table-responsive">
-  <table class="table table-bordered table-striped align-middle custom-table">
-    <thead class="table-light text-center">
-      <tr>
-        <th>Item</th>
-        <th>Item Type</th>
-        <th>Institution</th>
-        <th>Metadata Standard Provided by the Institution</th>
-        <th>Chosen Metadata Standard</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Book of Tea</td>
-        <td>Book</td>
-        <td>Library of Congress</td>
-        <td>MODS<br>DC<br>MARCXML</td>
-        <td>BIBFRAME</td>
-      </tr>
-      <tr>
-        <td>Portrait of Sen no Rikyu</td>
-        <td>Hanging scroll</td>
-        <td>Metropolitan Museum of Art</td>
-        <td>-</td>
-        <td>CIDOC-CRM</td>
-      </tr>
-      <tr>
-        <td>The Tea Scoop of Rikyu</td>
-        <td>Bamboo</td>
-        <td>Metropolitan Museum of Art</td>
-        <td>-</td>
-        <td>CIDOC-CRM</td>
-      </tr>
-      <tr>
-        <td>Invitation to a Tea Ceremony</td>
-        <td>Painting</td>
-        <td>Europeana</td>
-        <td>EDM</td>
-        <td>EDM</td>
-      </tr>
-      <tr>
-        <td>Woodblock Print of Samurai in Tea Ceremony</td>
-        <td>Woodblock print</td>
-        <td>British Museum</td>
-        <td>-</td>
-        <td>CIDOC-CRM</td>
-      </tr>
-      <tr>
-        <td>Kimono (hitoe)</td>
-        <td>Costume</td>
-        <td>Museum of Fine Arts Boston</td>
-        <td>-</td>
-        <td>CIDOC-CRM</td>
-      </tr>
-      <tr>
-        <td>Ikebana Hinagata Densho</td>
-        <td>Illustrated Book</td>
-        <td>Internet Archive</td>
-        <td>MARCXML</td>
-        <td>BIBFRAME</td>
-      </tr>
-      <tr>
-        <td>Mysterious Japan</td>
-        <td>Book</td>
-        <td>Internet Archive</td>
-        <td>MARCXML</td>
-        <td>BIBFRAME</td>
-      </tr>
-      <tr>
-        <td>Tea Bowl</td>
-        <td>Ceramic</td>
-        <td>The Metropolitan Museum of Art</td>
-        <td>-</td>
-        <td>CIDOC-CRM</td>
-      </tr>
-      <tr>
-        <td>The Japanese Footbridge</td>
-        <td>Painting</td>
-        <td>National Gallery of Art</td>
-        <td>-</td>
-        <td>CIDOC-CRM</td>
-      </tr>
-    </tbody>
-  </table>
+        <table class="table custom-table table-striped align-middle">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Item Type</th>
+              <th>Institution</th>
+              <th>Metadata Standard Provided by the Institution</th>
+              <th>Chosen Metadata Standard</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Book of Tea</td>
+              <td>Book</td>
+              <td>Library of Congress</td>
+              <td>MODS<br>DC<br>MARCXML</td>
+              <td>BIBFRAME</td>
+            </tr>
+            <tr>
+              <td>Portrait of Sen no Rikyu</td>
+              <td>Hanging scroll</td>
+              <td>Metropolitan Museum of Art</td>
+              <td>-</td>
+              <td>CIDOC-CRM</td>
+            </tr>
+            <tr>
+              <td>The Tea Scoop of Rikyu</td>
+              <td>Bamboo</td>
+              <td>Metropolitan Museum of Art</td>
+              <td>-</td>
+              <td>CIDOC-CRM</td>
+            </tr>
+            <tr>
+              <td>Invitation to a Tea Ceremony</td>
+              <td>Painting</td>
+              <td>Europeana</td>
+              <td>EDM</td>
+              <td>EDM</td>
+            </tr>
+            <tr>
+              <td>Woodblock Print of Samurai in Tea Ceremony</td>
+              <td>Woodblock print</td>
+              <td>British Museum</td>
+              <td>-</td>
+              <td>CIDOC-CRM</td>
+            </tr>
+            <tr>
+              <td>Kimono (hitoe)</td>
+              <td>Costume</td>
+              <td>Museum of Fine Arts Boston</td>
+              <td>-</td>
+              <td>CIDOC-CRM</td>
+            </tr>
+            <tr>
+              <td>Ikebana Hinagata Densho</td>
+              <td>Illustrated Book</td>
+              <td>Internet Archive</td>
+              <td>MARCXML</td>
+              <td>BIBFRAME</td>
+            </tr>
+            <tr>
+              <td>Mysterious Japan</td>
+              <td>Book</td>
+              <td>Internet Archive</td>
+              <td>MARCXML</td>
+              <td>BIBFRAME</td>
+            </tr>
+            <tr>
+              <td>Tea Bowl</td>
+              <td>Ceramic</td>
+              <td>The Metropolitan Museum of Art</td>
+              <td>-</td>
+              <td>CIDOC-CRM</td>
+            </tr>
+            <tr>
+              <td>The Japanese Footbridge</td>
+              <td>Painting</td>
+              <td>National Gallery of Art</td>
+              <td>-</td>
+              <td>CIDOC-CRM</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
   
@@ -464,93 +445,73 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2 a href="knowledge_organization.html">Knowledge Organization</h2>
+        <h2><a href="knowledge_organization.html">Knowledge Organization</a></h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
-
+      
+      <!-- Cards with thumbnails -->
       <div class="container">
+      <div class="row gy-4">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="organization-item position-relative">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="organization-item  position-relative">
-              <div class="icon">
-                <i class="bi bi-activity"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Nesciunt Mete</h3>
-              </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+          <div class="thumbnail mt-2 text-center">
+            <img src="assets/img/theoretical_thumbnail.png" alt="Thumbnail for Theoretical Model" class="img-fluid rounded custom-thumbnail">
+          </div>
+          <div class="icon-title d-flex align-items-center mt-3">
+            <div class="icon me-3">
+              <i class="bi bi-lightbulb"></i>
             </div>
-          </div><!-- End Service Item -->
+            <a href="knowledge_organization#theoretical_model" class="stretched-link mb-0">
+              <h3 class="mb-0">Theoretical Model</h3>
+            </a>
+          </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="organization-item position-relative">
-              <div class="icon">
-                <i class="bi bi-broadcast"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Eosle Commodi</h3>
-              </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="organization-item position-relative">
-              <div class="icon">
-                <i class="bi bi-easel"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Ledo Markt</h3>
-              </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="organization-item position-relative">
-              <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
-              </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="organization-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Velit Doloremque</h3>
-              </a>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="organization-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Dolori Architecto</h3>
-              </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
+          <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
         </div>
+      </div>
+      <!-- End Service Item -->
 
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="organization-item position-relative">
+
+          <div class="thumbnail mt-2 text-center">
+            <img src="assets/img/concepual_thumbnail.png" alt="Thumbnail for Theoretical Model" class="img-fluid rounded custom-thumbnail">
+          </div>
+          <div class="icon-title d-flex align-items-center mt-3">
+            <div class="icon me-3">
+              <i class="bi bi-activity"></i>
+            </div>
+            <a href="knowledge_organization#conceptual_model" class="stretched-link mb-0">
+              <h3 class="mb-0">Conceptual Model</h3>
+            </a>
+          </div>
+
+          <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+        </div>
       </div>
 
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="organization-item position-relative">
+
+          <div class="thumbnail mt-2 text-center">
+            <img src="assets/img/graph_visualisation_thumbnail.png" alt="Thumbnail for Visualisation" class="img-fluid rounded custom-thumbnail">
+          </div>
+          <div class="icon-title d-flex align-items-center mt-3">
+            <div class="icon me-3">
+              <i class="bi bi-activity"></i>
+            </div>
+            <a href="knowledge_organization#graph_visualisatioin" class="stretched-link mb-0">
+              <h3 class="mb-0">Graph Visualisation</h3>
+            </a>
+          </div>
+
+          <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+        </div>
+      </div><!-- End Service Item -->
+    </div>
+    </div>
     </section><!-- /Knowledge Organization Section -->
 
     <!-- Stats Section Commented out-->
