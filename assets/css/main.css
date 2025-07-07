@@ -1323,7 +1323,7 @@ section,
 
 .sticky-menu {
     position: sticky;
-    top: 300px;
+    top: 100px;
     z-index: 100;
 }
 
@@ -1696,10 +1696,4 @@ section,
     border-radius: 8px;
     padding: 30px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
 }
