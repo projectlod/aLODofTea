@@ -51,7 +51,7 @@
       <!-- The navbar -->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li class="dropdown"><a href="#hero" class="active"><span>Home</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="index.html#hero"><span>Home</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="index.html#intro">Introduction</a></li>
               <li><a href="index.html#items">Items</a></li>
@@ -277,9 +277,8 @@
                             <p>Relationships related to the tea ceremony are rarely linear. The practice encompasses complex and interwoven concepts, often without clearly defined hierarchies or causal structures. For instance, the tea ceremony is influenced by Taoism and Zen, and is closely connected with the concept of wabi-sabi. Physical elements such as ikebana, the tearoom, and roji are interconnected with each of these concepts. These relationships cannot be captured through simple binary associations.</p><p>Moreover, the tea ceremony, like many traditional practices, has multiple schools and lineages, each with its own philosophies and interpretations. We referenced *The Book of Tea* by Okakura Kakuzō as a key theoretical foundation. Rather than focusing on the practical aspects of the ceremony, Okakura emphasizes its spiritual and conceptual significance. Inspired by this, we designed our ontology to reflect and incorporate these broader philosophical dimensions.</p>
 
 
-                            </div>
                     </div>
-
+                    
                     <!-- Tab Content: Full Text Analysis -->
                     <div class="tab-content" id="fulltext">
                         
@@ -295,23 +294,33 @@
                         <p>
                             Through comprehensive text analysis, we extract meaningful insights and transform unstructured data into valuable research assets.
                         </p>
+                        
                     </div>
 
-                    <!-- Tab Content: Ontology Design -->
-                    <div class="tab-content" id="ontology">
-                        
+ <!-- Tab Content: Ontology Design -->
+                    <div class="tab-content" id="ontology">    
+
                         <h3>Ontology Design and RDF Production: Semantic Web Technologies</h3>
-                        <p>
-                            This section focuses on creating formal ontologies and producing RDF data to enable semantic web applications and enhanced data interoperability.
-                        </p>
-                        <ul>
-                            <li><i class="bi bi-check-circle"></i> <span>Ontology engineering methodologies</span></li>
-                            <li><i class="bi bi-check-circle"></i> <span>RDF data modeling and production</span></li>
-                            <li><i class="bi bi-check-circle"></i> <span>Semantic web standards compliance</span></li>
-                        </ul>
-                        <p>
-                            Our ontology design ensures that data is structured in a way that promotes interoperability and semantic understanding across different systems.
-                        </p>
+                        <p>    In parallel with the development of the <strong>Conceptual Model</strong>, we designed the <strong>ontology</strong> to support the upcoming transformation of data into RDF format. </p>
+                        <p>    As a preparatory step, we extracted the relationships between entities illustrated in the Conceptual Model and organized them for each item. Each item was treated as a <em>subject</em>, and its relationships were described using <em>predicates</em> and <em>objects</em> in a formal language.  </p>  <p>    In addition to specific items (such as artworks and utensils), we also modeled abstract or contextual entities such as the <strong>Japanese tea ceremony</strong> itself, as well as related concepts defined with custom URIs (e.g., <em>Sen no Rikyū</em>, <em>Zen</em>, or <em>wabi-sabi</em>). These were also structured separately.  </p>  
+                      </div>
+                        <p> Once all relationships were defined, the data was converted into <strong>CSV files</strong>. We then used the <code>rdflib</code> library in Python to serialize the data into <strong>Turtle syntax</strong>, an RDF serialization format. Turtle was chosen because it allows for clear and compact representation of URIs using prefixes, and expresses data in a clean <em>Subject–Predicate–Object</em> structure. </p>  <p>Refer to the <a href="knowledge_representation.html#rdf-production">RDF Production section</a> of this website to view the tabular format of the CSV files.</p>  <p>    The final RDF dataset contains <strong>127 triples</strong>, which were visualized using the <strong>RDF Grapher</strong> tool. </p><h4>Prefixes Used (in Turtle Syntax)</h4>  
+                          <pre><code>
+                          @prefix tea: &lt;https://w3id.org/a-lod-of-tea/&gt; .
+                          @prefix crm: &lt;https://www.cidoc-crm.org/&gt; .
+                          @prefix edm: &lt;http://www.europeana.eu/schemas/edm/&gt; .
+                          @prefix bf: &lt;http://id.loc.gov/ontologies/bibframe/&gt; .
+                          @prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+                          @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+                          @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+                          @prefix schema: &lt;https://schema.org/&gt; .
+                          @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+                          @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+                          @prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
+                          @prefix wd: &lt;https://www.wikidata.org/wiki/&gt; .
+                          @prefix gn: &lt;http://www.geonames.org/&gt; .
+                          </code></pre><p>    Finally, all RDF outputs were <strong>merged into a single RDF file</strong> using Python. While combining everything into one CSV file from the start would also have been possible, we opted for separate files per item to support a more structured and step-by-step modeling process. </p>
+                          <p> The visualization can be found here, and the datasets are available on our <a href="https://github.com/projectlod/aLODofTea/tree/main/to_rdf/ttl" target="_blank"></a>GitHub repository. </p></div>
                     </div>
 
                     <!-- Tab Content: Bibliography -->
