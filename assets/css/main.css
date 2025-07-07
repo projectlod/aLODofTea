@@ -1054,7 +1054,7 @@ section,
 }
 
 .logo-img {
-  width: 120px;        /* Or whatever size fits your design */
+  width: 40px;        /* Or whatever size fits your design */
   height: auto;
   object-fit: contain;
 }
