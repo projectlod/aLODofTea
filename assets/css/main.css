@@ -1053,6 +1053,12 @@ section,
   transition: ease-in-out 0.3s;
 }
 
+.logo-img {
+  width: 40px;        /* Or whatever size fits your design */
+  height: auto;
+  object-fit: cover;
+}
+
 .organization .organization-item h3 {
   font-weight: 700;
   margin: 10px 0 15px 0;
