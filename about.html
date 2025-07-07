@@ -111,7 +111,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Documentation</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p></p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -142,22 +142,10 @@
                     <!-- Tab Content: The Theme -->
                     <div class="tab-content active" id="theme">
                         <h3>The Theme: Understanding Our Research Framework</h3>
-                        <p>
-                            This section introduces the central theme of our research, establishing the foundational concepts that guide our investigation. We explore the theoretical underpinnings and contextual framework that shapes our analytical approach.
+                          <p>    As our team included members with a strong interest in Japanese culture — including a Japanese member — we were naturally drawn to selecting a theme rooted in Japan's rich cultural heritage. Among the many possibilities, the Japanese Tea Ceremony stood out for its symbolic depth and multifaceted nature.  </p>
+                            <p>    The Tea Ceremony is far more than a ritual of serving and drinking tea. It embodies a complex system of values, aesthetics, philosophies (such as Zen), and traditional craftsmanship, all performed through carefully choreographed actions. This makes it an ideal subject for semantic modeling and Linked Open Data, where meaningful connections between diverse entities can be expressed and visualized. </p> <p>    Additionally, because the Tea Ceremony has been extensively documented in both Japanese and international contexts, it allows for the integration of existing open data resources, including museum collections, historical figures, and conceptual vocabularies. This supports both the preservation and reinterpretation of cultural heritage through digital tools.  </p>
                         </p>
-                        <ul>
-                            <li><i class="bi bi-check-circle"></i> <span>Comprehensive thematic analysis methodology</span></li>
-                            <li><i class="bi bi-check-circle"></i> <span>Integration of multiple theoretical perspectives</span></li>
-                            <li><i class="bi bi-check-circle"></i> <span>Systematic approach to theme development</span></li>
-                        </ul>
-                        <p>
-                            Our thematic framework provides the lens through which we examine and interpret the data, ensuring consistency and depth in our analytical process.
-                        </p>
-                                            <div style="height: 800px; background: linear-gradient(to bottom, #f8f9fa, #e9ecef); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                        <div class="text-center">
-                            <h3>スクロールテスト用の高さ</h3>
-                            <p>この長いコンテンツでスクロール動作を確認できます</p>
-                        </div>
+
                     </div>
                     </div>
 
@@ -303,7 +291,6 @@
                         <h3>Ontology Design and RDF Production: Semantic Web Technologies</h3>
                         <p>    In parallel with the development of the <strong>Conceptual Model</strong>, we designed the <strong>ontology</strong> to support the upcoming transformation of data into RDF format. </p>
                         <p>    As a preparatory step, we extracted the relationships between entities illustrated in the Conceptual Model and organized them for each item. Each item was treated as a <em>subject</em>, and its relationships were described using <em>predicates</em> and <em>objects</em> in a formal language.  </p>  <p>    In addition to specific items (such as artworks and utensils), we also modeled abstract or contextual entities such as the <strong>Japanese tea ceremony</strong> itself, as well as related concepts defined with custom URIs (e.g., <em>Sen no Rikyū</em>, <em>Zen</em>, or <em>wabi-sabi</em>). These were also structured separately.  </p>  
-                      </div>
                         <p> Once all relationships were defined, the data was converted into <strong>CSV files</strong>. We then used the <code>rdflib</code> library in Python to serialize the data into <strong>Turtle syntax</strong>, an RDF serialization format. Turtle was chosen because it allows for clear and compact representation of URIs using prefixes, and expresses data in a clean <em>Subject–Predicate–Object</em> structure. </p>  <p>Refer to the <a href="knowledge_representation.html#rdf-production">RDF Production section</a> of this website to view the tabular format of the CSV files.</p>  <p>    The final RDF dataset contains <strong>127 triples</strong>, which were visualized using the <strong>RDF Grapher</strong> tool. </p><h4>Prefixes Used (in Turtle Syntax)</h4>  
                           <pre><code>
                           @prefix tea: &lt;https://w3id.org/a-lod-of-tea/&gt; .
