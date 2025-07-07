@@ -1334,6 +1334,46 @@ section,
 }
 
 
+.thumbnail-rdf {
+  width: 80%; /* 小さい画面で表示するサイズ */
+  height: 500px; /* 高さは自動調整 */
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-height: 95vh; /* 画面高の95%まで使う */
+  height: auto;
+  width: auto;       /* 幅は自動調整（縦長向け） */
+  max-width: 100%;
+  transition: transform 0.2s;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/

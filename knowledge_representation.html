@@ -153,10 +153,15 @@ Cards that will link to a bigger image and description
               <h2>RDF Production</h2> 
 
               <div class="row justify-content-center">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed ea ut placeat eaque. Asperiores voluptas dolorem commodi cumque voluptatem tempore velit consequatur reiciendis veniam? Voluptas alias est blanditiis iure?</p>
-                <br>
+                <p>For the RDF transformation procedure, we defined the relationships between objects based on the conceptual model and the URIs we defined. We organized all triples by item and compiled them into CSV files, which were then generated into RDF data via Python.</p>
+                <p>All of the tables and codes introduced below are also available in our <a href="aLODofTea" target="_blank"><strong>GitHub repository.</strong></a></p>
+                <br><br><br>
 
-                <!--put here tables of csv-->
+                <h4 class="mt-4"><strong>Triple Structure Overview</strong></h4>
+                <p>The table below shows the triples we defined for each item. <br>We structured each table so that the items is the subject of each triple, and prepared separate files accordingly. <br>Additionally, a separate "Non-Items" table collects all triples where the subject is not representing a specific item</p>
+
+              
+                <!-- tables of csv-->
                 <div id="tabContainer" class="mt-5">
                     <button class="tab-button" onclick="showTable('Book of Tea')">Book of Tea</button>
                     <button class="tab-button" onclick="showTable('Portrait')">Portrait</button>
@@ -167,12 +172,12 @@ Cards that will link to a bigger image and description
                     <button class="tab-button" onclick="showTable('Samurai Woodblock')">Samurai Woodblock</button>
                     <button class="tab-button" onclick="showTable('Teagarden Book')">Teagarden Book</button>
                     <button class="tab-button" onclick="showTable('Ikebana Book')">Ikebana Book</button>
-                    <button class="tab-button" onclick="showTable('Non-items')">Non-items</button>
+                    <button class="tab-button" onclick="showTable('Non-items')">Non-Items</button>
                 </div>
                 
                 <div id="tableContainer">                    
                     <div id="Portrait" class="table-section">
-                        <h2>Portrait</h2>
+                        <h2 style="font-size: 1.2em;">Portrait</h2>
                         <table class="custom-table">
                             <thead>
                                 <tr>
@@ -196,7 +201,7 @@ Cards that will link to a bigger image and description
                         </table>
                     </div>                    
                     <div id="Teabowl" class="table-section">
-                        <h2>Teabowl</h2>
+                        <h2 style="font-size: 1.2em;">Teabowl</h2>
                         <table class="custom-table">
                             <thead>
                                 <tr>
@@ -230,7 +235,7 @@ Cards that will link to a bigger image and description
                         </table>
                     </div>                    
                     <div id="Japanese Footbridge" class="table-section">
-                        <h2>Japanese Footbridge</h2>
+                        <h2 style="font-size: 1.2em;">Japanese Footbridge</h2>
                         <table class="custom-table">
                             <thead>
                                 <tr>
@@ -255,7 +260,7 @@ Cards that will link to a bigger image and description
                         </table>
                     </div>                    
                     <div id="Kimono" class="table-section">
-                        <h2>Kimono</h2>
+                        <h2 style="font-size: 1.2em;">Kimono</h2>
                         <table class="custom-table">
                             <thead>
                                 <tr>
@@ -278,7 +283,7 @@ Cards that will link to a bigger image and description
                         </table>
                     </div>                    
                     <div id="Tea Ceremony Painting" class="table-section">
-                        <h2>Tea Ceremony Painting</h2>
+                        <h2 style="font-size: 1.2em;">Tea Ceremony Painting</h2>
                         <table class="custom-table">
                             <thead>
                                 <tr>
@@ -304,7 +309,7 @@ Cards that will link to a bigger image and description
                         </table>
                     </div>                    
                     <div id="Samurai Woodblock" class="table-section">
-                        <h2>Samurai Woodblock</h2>
+                        <h2 style="font-size: 1.2em;">Samurai Woodblock</h2>
                         <table class="custom-table">
                             <thead>
                                 <tr>
@@ -327,7 +332,7 @@ Cards that will link to a bigger image and description
                         </table>
                     </div>                    
                     <div id="Book of Tea" class="table-section">
-                        <h2>Book of Tea</h2>
+                        <h2 style="font-size: 1.2em;">Book of Tea</h2>
                         <table class="custom-table">
                             <thead>
                                 <tr>
@@ -357,7 +362,7 @@ Cards that will link to a bigger image and description
                         </table>
                     </div>                    
                     <div id="Ikebana Book" class="table-section">
-                        <h2>Ikebana Book</h2>
+                        <h2 style="font-size: 1.2em;">Ikebana Book</h2>
                         <table class="custom-table">
                             <thead>
                                 <tr>
@@ -379,7 +384,7 @@ Cards that will link to a bigger image and description
                         </table>
                     </div>
                     <div id="Teagarden Book" class="table-section">
-                        <h2>Teagarden Book</h2>
+                        <h2 style="font-size: 1.2em;">Teagarden Book</h2>
                         <table class="custom-table">
                             <thead>
                                 <tr>
@@ -401,7 +406,7 @@ Cards that will link to a bigger image and description
                         </table>
                     </div>
                     <div id="Non-items" class="table-section">
-                        <h2>Non-items</h2>
+                        <h2 style="font-size: 1.2em;">Non-items</h2>
                         <table class="custom-table">
                             <thead>
                                 <tr>
@@ -476,19 +481,24 @@ Cards that will link to a bigger image and description
                                 <tr><td>tea:concept_wabisabi</td><td>crm:P15_influenced</td><td>tea:acitivity_ikebana</td></tr>
                             </tbody>
                         </table>
-                    </div>        
+                    </div>       
+                  </div> 
+                <br><br><br>
+                <h4><strong>Python Script for Transformation</strong></h4>
+                <p>The Python script used for transforming the CSV files into RDF data is available below.</p>
+                <div class="frame m-4"> 
+                <iframe frameborder="0" scrolling="yes" style="width:800px; height:500px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fprojectlod%2FaLODofTea%2Fblob%2Fmain%2Fto_rdf%2Fpy%2Fcsv_to_rdf_template.py&style=atom-one-dark-reasonable&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>
+                </div>
+                <div><br><br><br></div>
 
+                <h4><strong>RDF Dataset</strong></h4><p>This is full data set of the generated RDF, transformed into turtle format.</p>
+                  <div class="frame m-4"> 
+                  <iframe frameborder="0" scrolling="yes" style="width:800px; height:500px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fprojectlod%2FaLODofTea%2Fblob%2Fmain%2Fto_rdf%2Fttl%2Ffull_dataset.ttl&style=atom-one-dark-reasonable&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>
+                  </div>
+                  <p>The individual .ttl files for each item are also available in our <a href="aLODofTea" target="_blank"><strong>GitHub repository.</strong></a></p>
 
-                            <!--embed code here maybe -->
-
-                            <!--Explain rdf production-->  
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi temporibus assumenda nisi doloribus vero dolores nostrum accusantium aliquid, sequi tempore nam eveniet veniam, mollitia reprehenderit! Laboriosam repellendus ad corporis porro.</p>
-
-                </div> 
              </div>
-
-         </div> 
-        </div>
+         </div>
       </section>      
 
       
@@ -500,17 +510,16 @@ Cards that will link to a bigger image and description
               <h2>RDF Visualization</h2> 
 
               <div class="row justify-content-center">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed ea ut placeat eaque. Asperiores voluptas dolorem commodi cumque voluptatem tempore velit consequatur reiciendis veniam? Voluptas alias est blanditiis iure?</p>
-                <br>
+                <p>After we transformed all of the triples into a ttl file, we then created a visualization of the whole dataset, using RDF Grapher.</p>
+                <p>Click on the image to view a zoomable version in full size. <br><br></p>
 
-                <!--For now i put this image . i will do the graph after the whole website is done and will embed-->
-                <!--see how to put the rdf graphs from rdf grapher - cards ir img or embed or image with fullscreen popup thingy-->
-                <div class="frame m-4">
-                <img src="to_rdf/full_dataset.png" class="img-fluid m-5" alt="">
-
-
+                  <img src="to_rdf/full_dataset.png" alt="rdf visualization" class="thumbnail-rdf" onclick="openModal()">
+                  <div id="imgModal" class="modal" onclick="closeModal()">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="fullImage" src="to_rdf/full_dataset.png">
+                  </div>
               </div>              
-            </div> 
+            </div>
         </div>
       </section>      
     
@@ -606,7 +615,36 @@ function showTable(sectionId) {
     }
 }
 
+
 </script>
+<script>
+  let scale = 1;
+
+  function openModal() {
+    document.getElementById("imgModal").style.display = "block";
+    scale = 1;
+    document.getElementById("fullImage").style.transform = `scale(${scale})`;
+  }
+
+  const img = document.getElementById("fullImage");
+  img.style.transform = `scale(${scale})`;
+
+  // scroll to the top of the modal when opened
+  modal.scrollTop = 0;
+
+  function closeModal() {
+    document.getElementById("imgModal").style.display = "none";
+  }
+
+  // Zoom functionality
+  document.getElementById("fullImage").addEventListener("wheel", function(e) {
+    e.preventDefault();
+    scale += e.deltaY * -0.001;
+    scale = Math.min(Math.max(0.5, scale), 5); // 0.5x～5xの範囲
+    this.style.transform = `scale(${scale})`;
+  });
+</script>
+
 <body onload="showTable('Book of Tea')"></body>
 </body>
 </html>
