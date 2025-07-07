@@ -160,6 +160,7 @@
                         </div>
                     </div>
                     </div>
+
                     <!-- Tab Content: Item Selections -->
                     <div class="tab-content" id="selections">
                         
@@ -176,26 +177,20 @@
                             Each item undergoes thorough evaluation to ensure it meets our established standards for inclusion in the research corpus.
                         </p>
                     </div>
-                      <!-- Tab Content: Metadata Analysis -->
+
+                     <!-- Tab Content: Metadata Analysis -->
                     <div class="tab-content" id="metadata">
                         
                         <h3>Metadata Analysis: Extracting Meaningful Information</h3>
-			<p>
-			This step involves the identification and examination of the <strong>metadata standards</strong> employed by the institutions providing the selected items.
-			</p>
-                        <ul>
-                            <li><i class="bi bi-check-circle"></i> <span>Automated metadata extraction techniques</span></li>
-                            <li><i class="bi bi-check-circle"></i> <span>Pattern recognition and classification</span></li>
-                            <li><i class="bi bi-check-circle"></i> <span>Semantic enrichment processes</span></li>
-                        </ul>
                         <p>
-                            Through sophisticated analysis of metadata, we uncover hidden patterns and relationships that inform our broader research understanding.
+                        This step involves the identification and examination of the <strong>metadata standards</strong> employed by the institutions providing the selected items.
                         </p>
+                        <p>Three of our items—<strong>the Portrait of Rikyū</strong>, <strong>the Teaspoon</strong>, and <strong>the Teabowl</strong>—originate from the Metropolitan Museum of Art (The Met). The Met holds an extensive collection of Asian art, a significant portion of which is Open Access, thereby facilitating easier referencing and reuse. The Met offers an API key that allows users to access and download detailed item information in JSON format, alongside a dataset available in CSV format. However, in terms of metadata standards, The Met does not adhere to a single recognized standard; instead, it employs a combination of vocabularies and approaches. A detailed explanation of how these vocabularies were formed could not be found. Therefore, we initially decided to map the data to the <strong>CDWA</strong>(Categories for the Description of Works of Art) in order to understand and organize the categorical structure of the descriptions. This served as a foundation for representing the data ontologically using <strong>CIDOC-CRM</strong>, a formal ontology designed to model cultural heritage information.</p><p>For the items from the British Museum (<strong>the Woodblock print</strong>), the National Gallery of Art (<strong>the Japanese Footbridge</strong>), and the Museum of Fine Arts, Boston (<strong>Kimono</strong>), no identifiable metadata standards or downloadable metadata files were available. Consequently, we chose to align their descriptive information using the CDWA framework, as we had done with the items from The Met. We then applied the same methodology for ontology design using CIDOC-CRM.</p><p>The ukiyo-e painting titled <strong>Invitation to a Tea Ceremony</strong> was sourced from Europeana. Europeana provides an API that grants access to an extensive range of digital collections from cultural heritage institutions across Europe in JSON format. Europeana requires that all aggregators and data partners map their original metadata to the <strong>EDM</strong> (Europeana Data Model). EDM primarily utilizes its own schema, designated with the <code>edm:</code> namespace, but also incorporates widely adopted vocabularies such as <code>dcterms</code> and <code>skos</code>. As a result, we chose to describe the relationships surrounding this item using EDM.</p><p>Regarding the bibliographic item <strong>The Book of Tea</strong>, the eBook version was sourced from the Library of Congress, which provided metadata in <strong>MARCXML</strong>, <strong>DCTERMS</strong>, and <strong>MODS</strong> formats. For the purpose of general understanding and interoperability, we adopted <strong>BIBFRAME</strong> in our ontology, as it is both more human-readable and easily mappable with MARCXML using Python.</p><p>The other two bibliographic items—<strong>The Illustrated Book of Ikebana</strong> and <strong>Mysterious Japan</strong>—were sourced from the Internet Archive, which also provides metadata in MARCXML. Consequently, we applied BIBFRAME to these items as well.</p>
+                      
                     </div>
 
                     <!-- Tab Content: Theoretical Model -->
-                    <div class="tab-content" id="theoretical">
-                        
+                    <div class="tab-content" id="theoretical">                        
                         <h3>Developing the Theoretical Model: Building Conceptual Frameworks</h3>
                         <p>
                             The theoretical model development phase involves creating robust conceptual frameworks that guide our research methodology and interpretation of findings.
@@ -209,22 +204,80 @@
                             Our theoretical model serves as the backbone for understanding complex relationships within our research domain.
                         </p>
                     </div>
+                    
 
                     <!-- Tab Content: Conceptual Model -->
                     <div class="tab-content" id="conceptual">
+                    
                         
                         <h3>Developing the Conceptual Model: Practical Implementation</h3>
-                        <p>
-                            The conceptual model translates theoretical frameworks into practical, implementable structures that can be applied to real-world scenarios.
-                        </p>
-                        <ul>
-                            <li><i class="bi bi-check-circle"></i> <span>Concept mapping and visualization</span></li>
-                            <li><i class="bi bi-check-circle"></i> <span>Relationship definition and modeling</span></li>
-                            <li><i class="bi bi-check-circle"></i> <span>Implementation strategy development</span></li>
-                        </ul>
-                        <p>
-                            This phase bridges the gap between theoretical understanding and practical application in our research context.
-                        </p>
+                        <p>In the Theoretical Model phase, we identified and explored the relationships between the metadata of each item, the tea ceremony, and the associated concepts. After this analytical process, we moved on to the development of the <strong>Conceptual Model</strong> to represent the findings in a more formal structure.</p><p>We began by creating custom URIs for the items we wanted to include in our ontology. Our criteria for custom URI generation were as follows:</p>
+                        <li>Custom URIs for individual items</li>
+                            <li>Custom URIs for entities that have a close relationship with the tea ceremony (mainly people and concepts)</li><br>
+                            <p>The full list of generated URIs is as follows:</p>
+                              <ul><li><strong>Base URI:</strong> https://w3id.org/a-lod-of-tea</li></ul>
+
+                            <details>
+                              <summary><strong>/item</strong></summary>
+                              <ul>
+                                <li>rikyu-portrait</li>
+                                <li>teabowl</li>
+                                <li>teascoop</li>
+                                <li>kimono</li>
+                                <li>book-of-tea</li>
+                                <li>samurai-woodblock</li>
+                                <li>teagarden</li>
+                                <li>ikebana-book</li>
+                                <li>tea-ceremony-painting</li>
+                                <li>japanese-bridge</li>
+                              </ul>
+                            </details>
+
+                            <details>
+                              <summary><strong>/activity</strong></summary>
+                              <ul>
+                                <li>tea-ceremony</li>
+                                <li>ikebana</li>
+                              </ul>
+                            </details>
+
+                            <details>
+                              <summary><strong>/concept</strong></summary>
+                              <ul>
+                                <li>taoism</li>
+                                <li>wabisabi</li>
+                                <li>zen</li>
+                              </ul>
+                            </details>
+
+                            <details>
+                              <summary><strong>/person</strong></summary>
+                              <ul>
+                                <li>sen-no-rikyu</li>
+                                <li>okakura-kakuzo</li>
+                                <li>honami-koetsu</li>
+                              </ul>
+                            </details>
+
+                            <details>
+                              <summary><strong>/place</strong></summary>
+                              <ul>
+                                <li>tearoom</li>
+                                <li>roji</li>
+                              </ul>
+                            </details><br>
+                            <p>Other entities that are related across multiple items but not directly connected to the tea ceremony were represented using existing instances from external datasets such as Wikidata or GeoNames.</p>
+                            <p>Regarding the choice of schemas, we prioritized the metadata vocabularies identified in the earlier metadata analysis phase:</p>
+                            <ul><li>CIDOC-CRM for museum items from institutions other than Europeana</li>
+                                <li>EDM for the item sourced from Europeana</li>
+                                <li>BIBFRAME for books and archival materials</li>
+                            </ul><p>These were used as the primary frameworks, with adjustments made as needed in subsequent stages.</p><p>To represent subject–predicate–object relationships, we began by assigning classes to items (represented as small purple nodes in our model) to define what the item is (represented in red in the model). For the entities with custom URIs (represented as small red nodes), we also assigned classes to indicate their nature. While we aimed to use appropriate schema vocabularies, in many cases they were not available. Therefore, we applied general-purpose vocabularies such as FOAF (for <code>Person</code> and <code>Organization</code>) and SKOS (<code>Concept</code>).</p>
+                            <p>The property used to define "what it is" was <code>rdf:type</code>, and we included <code>rdfs:label</code> to ensure readability. In cases where the same entity existed in Wikidata or GeoNames, we established equivalency using <code>owl:sameAs</code>.</p>
+                            <p>General metadata-related information directly associated with items—such as creation date, author, or institution—was expressed either through URIs (if connected to other items) or as literals if no such relationship existed. In either case, we prioritized using the schema originally associated with the item’s institution. When an appropriate property was unavailable, we adopted terms from DCTERMS or FOAF.</p><p>For entities that are related across items—such as people, concepts, or activities—we similarly prioritized CIDOC-CRM and BIBFRAME. For more general relationships not involving specific items, DCTERMS and FOAF were primarily used.</p>
+                            <p>Relationships related to the tea ceremony are rarely linear. The practice encompasses complex and interwoven concepts, often without clearly defined hierarchies or causal structures. For instance, the tea ceremony is influenced by Taoism and Zen, and is closely connected with the concept of wabi-sabi. Physical elements such as ikebana, the tearoom, and roji are interconnected with each of these concepts. These relationships cannot be captured through simple binary associations.</p><p>Moreover, the tea ceremony, like many traditional practices, has multiple schools and lineages, each with its own philosophies and interpretations. We referenced *The Book of Tea* by Okakura Kakuzō as a key theoretical foundation. Rather than focusing on the practical aspects of the ceremony, Okakura emphasizes its spiritual and conceptual significance. Inspired by this, we designed our ontology to reflect and incorporate these broader philosophical dimensions.</p>
+
+
+                            </div>
                     </div>
 
                     <!-- Tab Content: Full Text Analysis -->
@@ -291,7 +344,7 @@
     <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Team</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>We are master’s students in <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Digital Humanities and Digital Knowledge</a> at the University of Bologna, with a shared passion for culture and technology. We’re interested in making connections and finding meaning within the humanities, and exploring how to shape and express them in digital contexts</p>
       </div><!-- End Section Title -->
     
     <!-- Team Members -->
@@ -302,10 +355,10 @@
     <!-- Member 1 -->
     <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
       <div class="card text-center p-4 mx-auto" style="max-width: 300px;">
-        <img src="assets/img/favicon.png" class="rounded-circle profile-img" alt="Member 1">
+        <img src="assets/img/fahmida.png" class="rounded-circle profile-img" alt="Member 1">
         <h5 class="card-title">Fahmida Islam</h5>
-        <a href="" target="_blank" class="icon-link d-block text-center">
-          <i class="fab fa-linkedin"></i>
+        <a href="https://github.com/Fahmyrose" target="_blank" class="icon-link d-block text-center">
+          <i class="fab fa-github"></i>
         </a>
       </div>
     </div>
@@ -313,9 +366,9 @@
     <!-- Member 2 -->
     <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
       <div class="card text-center p-4 mx-auto" style="max-width: 300px;">
-        <img src="assets/img/favicon.png" class="rounded-circle profile-img" alt="Member 2">
+        <img src="assets/img/shiho.jpg" class="rounded-circle profile-img" alt="Member 2">
         <h5 class="card-title">Shiho Nakamura</h5>
-        <a href="https://github.com" target="_blank" class="icon-link d-block text-center">
+        <a href="https://github.com/shiho1000" target="_blank" class="icon-link d-block text-center">
           <i class="fab fa-github"></i>
         </a>
       </div>
