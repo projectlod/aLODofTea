@@ -1040,7 +1040,7 @@ section,
 
 .organization .organization-item .icon {
   color: var(--contrast-color);
-  background: #ffffff;
+  background: var(--accent-color);
   margin: 0;
   width: 64px;
   height: 64px;
