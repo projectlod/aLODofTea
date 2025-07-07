@@ -1083,6 +1083,36 @@ section,
     color: var(--accent-color);
   }
 }
+.details-container {
+  display: block;
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.details-container details {
+  margin-bottom: 1.5rem;
+}
+
+.details-container ul {
+  text-align: left; /* 中身だけ左揃え */
+  padding-left: 1.2rem;
+  margin-top: 1rem;
+}
+
+.details-container ul + ul {
+  margin-top: 1.5rem;
+}
+
+.details-container summary {
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: list-item;       /* これで▼は表示 */
+  text-align: center;       /* タイトルは中央 */
+  list-style-position: inside; /* これで▼が文字と同じ行に */
+}
 
 /*--------------------------------------------------------------
 # Stats Section
