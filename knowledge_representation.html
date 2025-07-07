@@ -86,8 +86,10 @@ Cards that will link to a bigger image and description
 
           <li class="dropdown"><a href="knowledge_representation.html"><span>Knowledge Representation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="knowledge_representation.html#full-text">Full Text Analysis</a></li>
-
+              <li class="dropdown"><a href="knowledge_representation.html#full-text"><span>Full Text Analysis</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="full_text/book_of_tea.html#the-book-of-tea-html">The Book of Tea</a></li>
+                </ul>
               <li><a href="knowledge_representation.html#rdf-production">RDF Production</a></li>
               <li><a href="knowledge_representation.html#rdf-visualization">RDF Visualization</a></li>
             </ul>
@@ -127,7 +129,8 @@ Cards that will link to a bigger image and description
               <h2>Full-Text Analysis</h2>          
           
               <div class="row justify-content-center">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed ea ut placeat eaque. Asperiores voluptas dolorem commodi cumque voluptatem tempore velit consequatur reiciendis veniam? Voluptas alias est blanditiis iure?</p>
+                <p>This section presents a TEI/XML-encoded excerpt of <i>The Book of Tea</i> by Okakura Kakuzō. 
+                The encoding highlights key structural and semantic components such as chapters, paragraphs, names of places and people, and significant thematic references. Following TEI P5 Guidelines, the markup emphasizes the cultural, philosophical, and aesthetic ideas associated with the Japanese tea ceremony, including Zen, simplicity, and transience. Line breaks and metadata-rich elements were also used to ensure both textual fidelity and interoperability with semantic tools.</p>
 
                 <!--put here img and link to preview in index.html-->
 
@@ -137,7 +140,7 @@ Cards that will link to a bigger image and description
                 </div>
               
                 <!--Explain full text analysis-->  
-                <p>explain full text analysis. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugiat commodi quo aliquam officia dolor deleniti impedit dignissimos cumque, ratione incidunt qui fuga doloribus, repudiandae culpa vero? Placeat, obcaecati excepturi?</p>
+                <p>The tei/xml and all the files related to the book can be found in a dedicated folder in our <a href="https://github.com/projectlod/aLODofTea/tree/main/full_text" target="_blank"><strong>GitHub repository.</strong></a></p>
 
               </div>              
             </div>
@@ -153,7 +156,7 @@ Cards that will link to a bigger image and description
 
               <div class="row justify-content-center">
                 <p>For the RDF transformation procedure, we defined the relationships between objects based on the conceptual model and the URIs we defined. We organized all triples by item and compiled them into CSV files, which were then generated into RDF data via Python.</p>
-                <p>All of the tables and codes introduced below are also available in our <a href="aLODofTea" target="_blank"><strong>GitHub repository.</strong></a></p>
+                <p>All of the tables and codes introduced below are also available in our <a href="https://github.com/projectlod/aLODofTea/tree/main/to_rdf" target="_blank"><strong>GitHub repository.</strong></a></p>
                 <br><br><br>
 
                 <h4 class="mt-4"><strong>Triple Structure Overview</strong></h4>
@@ -494,7 +497,7 @@ Cards that will link to a bigger image and description
                   <div class="frame m-4"> 
                   <iframe frameborder="0" scrolling="yes" style="width:800px; height:500px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fprojectlod%2FaLODofTea%2Fblob%2Fmain%2Fto_rdf%2Fttl%2Ffull_dataset.ttl&style=atom-one-dark-reasonable&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>
                   </div>
-                  <p>The individual .ttl files for each item are also available in our <a href="aLODofTea" target="_blank"><strong>GitHub repository.</strong></a></p>
+                  <p>The individual .ttl files for each item are also available in our <a href="https://github.com/projectlod/aLODofTea/tree/main/to_rdf" target="_blank"><strong>GitHub repository.</strong></a></p>
 
              </div>
          </div>
