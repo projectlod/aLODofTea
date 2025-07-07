@@ -221,7 +221,7 @@
               <div class="items-info">
                 <h4>The Book of Tea</h4>
                 <p>A classic text by Okakura Kakuzō that introduced the philosophy and aesthetics of the Japanese tea ceremony to the Western world. It emphasizes the spirit of harmony, respect, purity, and tranquility.</p>
-                <a href="assets/img/items/the-book-of-tea.gif" title="The Book of Tea" data-gallery="items-gallery-app" class="glightbox preview-link" data-description="A classic text by Okakura Kakuzō that introduced the philosophy and aesthetics of the Japanese tea ceremony to the Western world. It emphasizes the spirit of harmony, respect, purity, and tranquility."></a>><i class="bi bi-zoom-in"></i></a>
+                <a href="assets/img/items/the-book-of-tea.gif" title="The Book of Tea" data-gallery="items-gallery-app" class="glightbox preview-link" data-description="A classic text by Okakura Kakuzō that introduced the philosophy and aesthetics of the Japanese tea ceremony to the Western world. It emphasizes the spirit of harmony, respect, purity, and tranquility."></a><i class="bi bi-zoom-in"></i></a>
                 <a href="https://www.loc.gov/resource/gdcebookspublic.2019299129/" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Items Item -->
@@ -330,7 +330,9 @@
       <!-- Section Title -->  
       <div class="container section-title" data-aos="fade-up">
         <h2>Metadata Analysis</h2>
-         <p class="container">We investigated the availability and structure of metadata across the different institutions that store the selected items. Europeana provides metadata compliant with the official EDM (Europeana Data Model) standard, enabling consistent integration. In contrast, while The Met offers downloadable metadata through its API, it does not follow a specific metadata standard. To ensure interoperability, we chose to express its data using CIDOC-CRM, a widely used ontology for cultural heritage. Other museums, such as the Museum of Fine Arts, Boston and the National Gallery of Art, provide descriptive texts on their websites, but no downloadable metadata or standardized format could be identified. For books and archival materials, MARCXML-formatted metadata was available; however, due to its complexity and limited human readability, we applied the BIBFRAME model to represent relationships and connections more effectively.</p></div>
+         <p class="container">We investigated the metadata availability across institutions holding the selected items. Europeana offers standardized metadata using EDM, while The Met provides API-based metadata without a common standard, so we applied CIDOC-CRM. For books and archives, MARCXML was available and interpreted into BIBFRAME for better operability for RDF production.The table below summarizes the metadata standards used by each institution, and the standards adopted for our ontology. Further details can be found in the <a href="about.html#about">Documentation section</a></p>
+
+</p></div>
       </div><!-- End Section Title -->
 
       
@@ -556,10 +558,8 @@
       <div class="container section-title" data-aos="fade-up">
         <!--i put the link to the html page for now on the title h2-->
         <h2><a href="knowledge_representation.html">Knowledge Representation</a></h2>
-        <p> We finally explored how knowledge about each cultural heritage object can be formally structured. We translated item descriptions into triple statements using established ontologies. By mapping cultural meanings and relationships into triples, we aimed to make implicit connections.
-        </p>
-        <p>
-          The representation follows semantic web principles, allowing each entity—whether a person, place, object, or concept—to be identified with a URI and linked meaningfully to others.</p>
+        <p> The final steps of the project involved the data creation of the relations created in our models. <br>
+        The process includes the text analysis and encoding of The Book of Tea, the convertion into HTML and RDF datasets, and the visualization of the full RDF dataset. </p>
 
       </div><!-- End Section Title -->
 
@@ -571,25 +571,25 @@
                 <!-- first row -->
                 <div class="row row-border">
                   <div class="col-md-3 heading-col text-center">Full Text Analysis</div>
-                  <div class="col-md-9 content-col">An analysis of text extracts from The Book of Tea. TEI encoding, transformation using XSLT, and HTML production using python. </div>
+                  <div class="col-md-9 content-col">An analysis of text extracts from The Book of Tea. TEI encoding, transformation into HTML using XSLT, and RDF production using Python. </div>
                 </div>
 
                 <!-- second row -->
                 <div class="row row-border">
                   <div class="col-md-3 heading-col text-center">RDF Production</div>
-                  <div class="col-md-9 content-col">sing Python, we converted both the conceptual model and insights from The Book of Tea into RDF triples, making them ready for the semantic web.</div>
+                  <div class="col-md-9 content-col">The data convertion of our triples using Python into the Turtle serialization format, making them interoperable for the semantic web.</div>
                 </div>
 
                 <!-- third row -->
                 <div class="row row-border">
                   <div class="col-md-3 heading-col text-center">RDF Visualization</div>
-                  <div class="col-md-9 content-col">We visualized the generated RDF data to highlight connections between concepts, entities, and their relationships in a semantic structure.</div>
+                  <div class="col-md-9 content-col">The visualization RDF data as a graph, showcasing the relationships formed in our ontology.</div>
                 </div>
 
                 <!-- Button -->
                 <div class="row m-4">
                   <div class="col text-center">
-                    <a href="knowledge_representation.html" class="btn btn-primary">Details</a>
+                    <a href="knowledge_representation.html" class="btn btn-primary">View details</a>
                   </div>
                 </div>
               </div>
