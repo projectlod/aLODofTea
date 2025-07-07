@@ -1040,7 +1040,7 @@ section,
 
 .organization .organization-item .icon {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: #ffffff;
   margin: 0;
   width: 64px;
   height: 64px;
@@ -1054,9 +1054,9 @@ section,
 }
 
 .logo-img {
-  width: 80px;        /* Or whatever size fits your design */
+  width: 120px;        /* Or whatever size fits your design */
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .organization .organization-item h3 {
