@@ -140,10 +140,19 @@ Cards that will link to a bigger image and description
                 </div>
               
                 <!--Explain full text analysis-->  
-                <p>The tei/xml and all the files related to the book can be found in a dedicated folder in our <a href="https://github.com/projectlod/aLODofTea/tree/main/full_text" target="_blank"><strong>GitHub repository.</strong></a></p>
-
-              </div>              
-            </div>
+                <p>This encoded text has been transformed with XSLT using <a href="https://www.freeformatter.com/xsl-transformer.html"></a>FreeFormatter</a> into an HTML code file in a <b>.xsl</b> file format. The <b>html code</b> has been turned into and actual functioning and consultable <b><a href="book_of_tea.html#the-book-of-tea-html">.html page</a></b> containing the annotated text.
+                This <b>.xml</b> file has been also turned into a RDF file in the <b>.ttl</b> format using a <b>.py</b> script. The rdf file has been validated using <a href="https://www.ldf.fi/service/rdf-grapher">RDF Grapher</a> which produced a RDF Graph (the image right below) and a <b>.rdf</b> file format that contains all the relationships throughout the elements inside the encoded text only and that are visualized in the graph.
+                All the files related to the book - including the <b>.pdf</b> of the entire book - can be found in a dedicated folder in our <a href="https://github.com/projectlod/aLODofTea/tree/main/full_text" target="_blank"><strong>GitHub repository.</strong></a></p>
+              <br/>
+              <div class="row justify-content-center">
+                <h4 class="mt-4"><strong>The RDF Graph</strong></h4>
+                  <p>Click on the image to view a zoomable version in full size. <br><br></p>
+                  <img src="full_text/book_of_tea_rdf_graph.png" alt="rdf visualization" class="thumbnail-rdf" onclick="openModal('imgModal1', 'fullImage1')">
+                    <div id="imgModal1" class="modal" onclick="closeModal('imgModal1')">
+                      <span class="close">&times;</span>
+                      <img id="fullImage1" class="modal-content" src="full_text/book_of_tea_rdf_graph.png">
+                    </div>
+                </div>
           </div>
       </section>
 
@@ -514,11 +523,10 @@ Cards that will link to a bigger image and description
               <div class="row justify-content-center">
                 <p>After we transformed all of the triples into a ttl file, we then created a visualization of the whole dataset, using RDF Grapher.</p>
                 <p>Click on the image to view a zoomable version in full size. <br><br></p>
-
-                  <img src="to_rdf/full_dataset.png" alt="rdf visualization" class="thumbnail-rdf" onclick="openModal()">
-                  <div id="imgModal" class="modal" onclick="closeModal()">
+                <img src="to_rdf/full_dataset.png" alt="rdf visualization" class="thumbnail-rdf" onclick="openModal('imgModal2', 'fullImage2')">
+                  <div id="imgModal2" class="modal" onclick="closeModal('imgModal2')">
                     <span class="close">&times;</span>
-                    <img class="modal-content" id="fullImage" src="to_rdf/full_dataset.png">
+                    <img id="fullImage2" class="modal-content" src="to_rdf/full_dataset.png">
                   </div>
               </div>              
             </div>
@@ -622,30 +630,32 @@ function showTable(sectionId) {
 <script>
   let scale = 1;
 
-  function openModal() {
-    document.getElementById("imgModal").style.display = "block";
+  function openModal(modalId, imageId) {
+    const modal = document.getElementById(modalId);
+    const image = document.getElementById(imageId);
+
+    modal.style.display = "block";
     scale = 1;
-    document.getElementById("fullImage").style.transform = `scale(${scale})`;
+    image.style.transform = `scale(${scale})`;
+
+    // Remove previous listeners (optional if you're reusing IDs properly)
+    image.onwheel = null;
+
+    // Add zoom functionality to the current image
+    image.addEventListener("wheel", function zoomHandler(e) {
+      e.preventDefault();
+      scale += e.deltaY * -0.001;
+      scale = Math.min(Math.max(0.5, scale), 5);
+      image.style.transform = `scale(${scale})`;
+    }, { passive: false });
   }
 
-  const img = document.getElementById("fullImage");
-  img.style.transform = `scale(${scale})`;
-
-  // scroll to the top of the modal when opened
-  modal.scrollTop = 0;
-
-  function closeModal() {
-    document.getElementById("imgModal").style.display = "none";
+  function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.style.display = "none";
   }
-
-  // Zoom functionality
-  document.getElementById("fullImage").addEventListener("wheel", function(e) {
-    e.preventDefault();
-    scale += e.deltaY * -0.001;
-    scale = Math.min(Math.max(0.5, scale), 5); // 0.5x～5xの範囲
-    this.style.transform = `scale(${scale})`;
-  });
 </script>
+
 
 <body onload="showTable('Book of Tea')"></body>
 </body>
