@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-    <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,21 +13,21 @@
         <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
         <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
         <!--Dublin Core Metadata-->
-        <meta name="DC.title" content="aLODofTEA" />
-        <meta name="DC.creator" content="Fahmida Islam, Shiho Nakamura" />
-        <meta name="DC.subject" content="Digital Humanities Project, Cultural Heritage, (LOD)Linked Open Data, Knowledge Organization, Knowledge Representation, Japanese tea ceremony." />
-        <meta name="DC.description" content="A Linked Open Data about the Japanese Tea Ceremony." />
-        <meta name="DC.publisher" content="University of Bologna, DHDK MA Program" />
-        <meta name="DC.rights" content="© 2025 Fahmida Islam, Shiho Nakamura. Educational use only." />
+        <meta name="DC.title" content="The Book of Tea: A Digital Edition" />
+        <meta name="DC.creator" content="Fahmida Islam" />
+        <meta name="DC.subject" content="Digital Humanities Project, The book of tea, Okakura Kakuzo, Japanese tea ceremony, Tea masters, Sen no Rikyu." />
+        <meta name="DC.description" content="An digital edition of The book of tea by Okakura Kakuzo. />
+        <meta name="DC.publisher" content="University of Bologna, DHDK MA Program." />
+        <meta name="DC.rights" content="© 2025 Fahmida Islam. Educational use only." />
 
         <!--put url of website!!!-->
         <meta name="DC.identifier" content="https://github.com/projectlod/aLODofTea" />
-        <meta name="DC.type" scheme="DCTERMS.DCMIType" content="LOD Resource/>
+        <meta name="DC.type" scheme="DCTERMS.DCMIType" content="Digital Edition/>
 
         <!--RFC 3066 scheme for language codes-->
         <meta name="DC.language" scheme="DCTERMS.RFC3066" content="en" />
         <!-- More precise with DCTERMS -->
-        <meta name="DCTERMS.created" content="2025-06-18" />
+        <meta name="DCTERMS.created" content="2025-07-04" />
         <meta name="DCTERMS.issued" content="2025-07-07" />
 
   <!-- Favicons -->
@@ -81,7 +80,7 @@
       <!-- The navbar -->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li class="dropdown"><a href="#hero" class="active"><span>Home</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="index.html"><span>Home</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#intro">Introduction</a></li>
               <li><a href="#items">Items</a></li>
@@ -96,7 +95,7 @@
             </ul>
           </li>
 
-          <li class="dropdown"><a href="knowledge_representation.html"><span>Knowledge Representation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#hero knowledge_representation.html" class="active"><span>Knowledge Representation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li class="dropdown"><a href="knowledge_representation.html#full-text"><span>Full Text Analysis</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
@@ -148,7 +147,7 @@
             <div class="bibl-info">
                 <h3>The Book of Tea</h3>
                 <p>Author: <a href="https://www.wikidata.org/wiki/Q942995">Okakura Kakuzō</a></p>
-                <p>Editors: GabrielleHarbowy, Matthew, DavidWidger</p>
+                <p>Editors: Gabrielle Harbowy, Matthew, David Widger</p>
                 <p>Publisher: Project Gutenberg / Library of Congress</p>
                 <p>Publication Date: 2019-01-24</p>
                 <p>
@@ -593,6 +592,35 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+     <!--script for active page in navbar-->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const path = window.location.pathname;
+
+  // Select all top-level nav links
+  const navLinks = document.querySelectorAll('.navmenu > ul > li > a');
+
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+
+    // CASE 1: Home page with internal anchors (#hero etc.)
+    if ((path.endsWith("index.html") || path === "/" || path === "") && href.includes("#hero")) {
+      link.classList.add("current-page");
+    }
+
+    // CASE 2: Exact match with other page names (e.g. about.html)
+    if (href && path.includes(href)) {
+      link.classList.add("current-page");
+    }
+
+    // CASE 3: Relative links (e.g., href="knowledge_organization.html")
+    if (href && path.endsWith(href)) {
+      link.classList.add("current-page");
+    }
+  });
+});
+</script>
 
 </body>
+
 </html>

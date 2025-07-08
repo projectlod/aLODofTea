@@ -69,7 +69,7 @@ Cards that will link to a bigger image and description
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li class="dropdown"><a href="index.html#hero"><span>Home</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="index.html"><span>Home</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="index.html#intro">Introduction</a></li>
               <li><a href="index.html#items">Items</a></li>
@@ -84,7 +84,7 @@ Cards that will link to a bigger image and description
             </ul>
           </li>
 
-          <li class="dropdown"><a href="knowledge_representation.html"><span>Knowledge Representation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#hero knowledge_representation.html" class="active"><span>Knowledge Representation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li class="dropdown"><a href="knowledge_representation.html#full-text"><span>Full Text Analysis</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
@@ -655,7 +655,34 @@ function showTable(sectionId) {
     modal.style.display = "none";
   }
 </script>
+   <!--script for active page in navbar-->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const path = window.location.pathname;
 
+  // Select all top-level nav links
+  const navLinks = document.querySelectorAll('.navmenu > ul > li > a');
+
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+
+    // CASE 1: Home page with internal anchors (#hero etc.)
+    if ((path.endsWith("index.html") || path === "/" || path === "") && href.includes("#hero")) {
+      link.classList.add("current-page");
+    }
+
+    // CASE 2: Exact match with other page names (e.g. about.html)
+    if (href && path.includes(href)) {
+      link.classList.add("current-page");
+    }
+
+    // CASE 3: Relative links (e.g., href="knowledge_organization.html")
+    if (href && path.endsWith(href)) {
+      link.classList.add("current-page");
+    }
+  });
+});
+</script>
 
 <body onload="showTable('Book of Tea')"></body>
 </body>

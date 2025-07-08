@@ -80,7 +80,7 @@
       <!-- The navbar -->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li class="dropdown"><a href="#hero" class="active"><span>Home</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#hero index.html" class="active"><span>Home</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#intro">Introduction</a></li>
               <li><a href="#items">Items</a></li>
@@ -481,51 +481,7 @@
         </div>
       </section>
       <!-- /Knowledge Organization Section -->
-
-    <!-- Stats Section Commented out-->
-    <!-- <section id="stats" class="stats section accent-background">
-
-      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
-
-      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter">232</span>
-              <p>Clients</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0" class="purecounter">521</span>
-              <p>Projects</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="0" class="purecounter">1453</span>
-              <p>Hours Of Support</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter">32</span>
-              <p>Awards</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section> -->
-
-
+      
     <!-- Knowledge Representation Section -->
     <section id="representation" class="representation section">
     <!-- Section Title -->
@@ -643,6 +599,41 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!--script for active page in navbar-->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const path = window.location.pathname;
+
+  // Select all top-level nav links
+  const navLinks = document.querySelectorAll('.navmenu > ul > li > a');
+
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+
+    // CASE 1: Home page with internal anchors (#hero etc.)
+    if ((path.endsWith("index.html") || path === "/" || path === "") && href.includes("#hero")) {
+      link.classList.add("current-page");
+    }
+
+    // CASE 2: Exact match with other page names (e.g. about.html)
+    if (href && path.includes(href)) {
+      link.classList.add("current-page");
+    }
+
+    // CASE 3: Relative links (e.g., href="knowledge_organization.html")
+    if (href && path.endsWith(href)) {
+      link.classList.add("current-page");
+    }
+  });
+});
+</script>
+
+
+
+
+
+
 
 </body>
 

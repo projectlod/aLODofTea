@@ -51,7 +51,7 @@
       <!-- The navbar -->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li class="dropdown"><a href="index.html#hero"><span>Home</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="index.html"><span>Home</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="index.html#intro">Introduction</a></li>
               <li><a href="index.html#items">Items</a></li>
@@ -76,7 +76,7 @@
               <li><a href="knowledge_representation.html#rdf-visualization">RDF Visualization</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="about.html"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#hero about.html" class="active"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="about.html#documentation">Documentation</a></li>
               <li><a href="about.html#team">Team</a></li>
@@ -448,6 +448,36 @@
     </script> 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!--script for active page in navbar-->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const path = window.location.pathname;
+
+  // Select all top-level nav links
+  const navLinks = document.querySelectorAll('.navmenu > ul > li > a');
+
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+
+    // CASE 1: Home page with internal anchors (#hero etc.)
+    if ((path.endsWith("index.html") || path === "/" || path === "") && href.includes("#hero")) {
+      link.classList.add("current-page");
+    }
+
+    // CASE 2: Exact match with other page names (e.g. about.html)
+    if (href && path.includes(href)) {
+      link.classList.add("current-page");
+    }
+
+    // CASE 3: Relative links (e.g., href="knowledge_organization.html")
+    if (href && path.endsWith(href)) {
+      link.classList.add("current-page");
+    }
+  });
+});
+</script>
+
 
   
 
