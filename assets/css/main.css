@@ -73,6 +73,10 @@
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -124,57 +128,6 @@ p {
   border-color: #1c6446d3 !important;
 }
 
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 # Global Header
@@ -220,6 +173,12 @@ p {
   .navmenu {
     padding: 0;
   }
+  
+  .navmenu .dropdown ul {
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
 
   .navmenu ul {
     margin: 0;
@@ -298,7 +257,7 @@ p {
     display: block;
     position: absolute;
     visibility: hidden;
-    left: 14px;
+    left: 0;
     top: 130%;
     opacity: 0;
     transition: 0.3s;
@@ -306,6 +265,19 @@ p {
     z-index: 99;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
   }
+
+  .navmenu .dropdown ul ul {
+  position: relative;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+  background: none;
+  box-shadow: none;
+  padding-left: 15px;
+  padding-top: 0;
+}
+
 
   .navmenu .dropdown ul li {
     min-width: 200px;
@@ -335,10 +307,16 @@ p {
   }
 
   .navmenu .dropdown .dropdown ul {
-    top: 0;
-    left: -90%;
-    visibility: hidden;
-  }
+  top: 0;
+  left: auto;
+  right: 100%; /* instead of pushing left, align to the right */
+  visibility: hidden;
+  max-width: 250px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
 
   .navmenu .dropdown .dropdown:hover>ul {
     opacity: 1;
