@@ -21,7 +21,7 @@
 
 Through this project, we:
 
-- Created a TEI-compliant digital edition of chapters from the <i>The Book of Tea</i> by Okakura Kakuzo
+- Created a TEI-compliant digital edition of chapters from <i>The Book of Tea</i> by Okakura Kakuzo
 - Identified and linked cultural heritage objects related to our domain
 - Modeled the information in RDF using real museum metadata
 - Visualized the data in a <a href="https://projectlod.github.io/aLODofTea/">website</a>
@@ -57,5 +57,5 @@ Please cite appropriately and respect cultural context when reusing content.
 
 ## ☕ Final Notes
 
-Thank you for joining us in this quiet, mindful journey through heritage, poetry, and philosophy — all contained in a cup of tea 🍵.
+Thank you for joining us in this quiet, mindful journey through heritage, poetry and philosophy — all contained in a cup of tea 🍵.
 

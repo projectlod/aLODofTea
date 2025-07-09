@@ -136,7 +136,6 @@
                       <a href="#resources" class="tab-link" data-tab="resources">Resources</a>
                   </div>
                 </div>
-            
           </div>
 
             <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
@@ -147,8 +146,9 @@
                   <div class="tab-content active" id="theme">
 
                     <h3>The Theme: Understanding Our Research Framework</h3>
-                      <p>    As our team included members with a strong interest in Japanese culture — including a Japanese member — we were naturally drawn to selecting a theme rooted in Japan's rich cultural heritage. Among the many possibilities, the Japanese Tea Ceremony stood out for its symbolic depth and multifaceted nature.  </p>
-                      <p>    The Tea Ceremony is far more than a ritual of serving and drinking tea. It embodies a complex system of values, aesthetics, philosophies (such as Zen), and traditional craftsmanship, all performed through carefully choreographed actions. This makes it an ideal subject for semantic modeling and Linked Open Data, where meaningful connections between diverse entities can be expressed and visualized. </p> <p>    Additionally, because the Tea Ceremony has been extensively documented in both Japanese and international contexts, it allows for the integration of existing open data resources, including museum collections, historical figures, and conceptual vocabularies. This supports both the preservation and reinterpretation of cultural heritage through digital tools.  </p>
+                      <p>    As our team included members with a strong interest in Japanese culture — including a Japanese member — we were naturally drawn to selecting a theme rooted in Japan's rich cultural heritage. Among the many possibilities, the Japanese Tea Ceremony stood out for its symbolic depth and multifaceted nature. </p>
+                      <p>    The Tea Ceremony is far more than a ritual of serving and drinking tea. It embodies a complex system of values, aesthetics, philosophies (such as Zen), and traditional craftsmanship, all performed through carefully choreographed actions. This makes it an ideal subject for semantic modeling and Linked Open Data, where meaningful connections between diverse entities can be expressed and visualized. </p> 
+                      <p>    Additionally, because the Tea Ceremony has been extensively documented in both Japanese and international contexts, it allows for the integration of existing open data resources, including museum collections, historical figures, and conceptual vocabularies. This supports both the preservation and reinterpretation of cultural heritage through digital tools.  </p>
                   
                   </div>
 
@@ -157,7 +157,10 @@
                   <div class="tab-content" id="selections">
 
                       <h3>Item Selections: Curating Quality Data</h3>
-                      <p></p>
+                      <p>The item selection process began with a brainstorming session in which we explored various aspects of Japanese culture that interested us. Among the topics that emerged were kimono decorations, the aesthetic concept of wabi-sabi, ikebana (the art of flower arrangement), and traditional craftsmanship. As we discussed these, we realized that many of these themes were deeply embedded in the broader cultural domain of the Japanese tea ceremony. This ceremony, with its highly symbolic and multi-sensory nature, offered a unifying framework that could meaningfully encompass the other concepts we were drawn to. Therefore, we decided to focus our project on the theme of the Japanese tea ceremony.</p>
+                      <p>To identify relevant cultural heritage items, we conducted targeted research across institutional collections such as those of The Met and the British Museum. We received support and suggestions through ChatGPT, which helped us refine our queries and discover objects already accompanied by metadata in prospect of the metadata analysis we had to do later on.</p>
+                      <p>A central item that emerged during this process was <i>The Book of Tea</i> by Okakura Kakuzō. This short but rich text (56 pages) not only aligned perfectly with the core themes of our project but also served as a conceptual bridge between many of the original ideas we had discussed. Because of its foundational relevance, we decided to read the full text carefully, annotating passages that could inspire or justify the inclusion of specific objects in our collection. The annotated version of the book can be found <a href="full_text/book_of_tea_notes.pdf"><b>here</b></a> (inside the GitHub repository).</p>
+                      <p>To manage the item selection collaboratively, we used a shared <a href="https://www.notion.com"><b>Notion workspace</b></a> throughout the project. This allowed us to discuss, compare, and evaluate potential objects in real time. We prioritized items that were clearly connected to the tea ceremony and could be directly linked to specific excerpts or ideas in <i>The Book of Tea</i>. This method proved to be especially helpful when we began building our theoretical model, as it ensured conceptual coherence between the textual and material dimensions of our project.</p>
                       
                   </div>
 
@@ -176,8 +179,105 @@
                   <div class="tab-content" id="theoretical">
 
                       <h3>Developing the Theoretical Model: Building Conceptual Frameworks</h3>
-                      <p></p>
+                      <p>While reading <i>The Book of Tea</i>, we began identifying recurring concepts and underlying themes within the text. During this process, we created an initial hand-drawn sketch to visualize the conceptual relationships between the main ideas explored in the book. This preliminary diagram later evolved into our formal <a href="https://projectlod.github.io/aLODofTea/knowledge_organization.html#theoretical"><b>Theoretical Model</b></a> as well as an <a href="full_text/book_of_tea_rdf_graph.png"><b>RDF graph</b></a> representing the connections found in selected chapters, particularly the opening and closing ones. These diagrams illustrate how the different themes, referred to as “keywords/concepts” in our <a href="full_text/tei_book_of_tea.xml"><b>encoded TEI file</b></a>, interact and inform one another throughout the text.</p>
+                      <p>As our main source, <i>The Book of Tea</i> once again proved essential: not only was it the basis for identifying relationships between themes, but it also served as the central node around which all our selected items could be meaningfully connected. The book is widely regarded as a classic in Japanese cultural discourse, especially in regard to the philosophy and aesthetics surrounding tea, which further justified its central role in our theoretical model.</p>
+                      <p>To create the visual model collaboratively, we used <a href=""></a><b>Miro</b></a>, which allowed us to work together remotely and iteratively. Through Miro, we formalized the diagram by identifying the relationships between objects and themes using clear, human-readable predicates. This step laid the foundation for the later development of our conceptual model, offering a structured approach to organizing both textual and object-based data.</p>
+                      <p>In order to ensure semantic consistency, we developed a shared list of predicates written in CamelCase format. For this, we initially consulted ChatGPT to obtain a list of commonly used predicates. We then adapted and refined this list based on our specific needs, renaming some of the predicates and tailoring others to better reflect the conceptual connections unique to our project. The final list of predicates used is included below.</p>
+                        
+                      <ul><li><strong>PREDICATES (all the arrows going in and out for ...):</strong></li></ul>
 
+                          <details>
+                            <summary><strong>for WHAT (object/general)</strong></summary>
+                            <ul>
+                              <li>isPartOf</li>
+                              <li>isUsedIn</li>
+                              <li>depicts</li>
+                              <li>hasClassification</li>
+                              <li>hasStyle</li>
+                              <li>isA</li>
+                              <li>isATypeOf</li>
+                              <li>isIllustradedIn</li>
+                              <li>isProducedBy</li>
+                              <li>hasGenre</li>
+                              <li>hasMaterial</li>
+                              <li>hasSubject</li>
+                              <li>isIntroducedIn</li>
+                              <li>describes</li>
+                              <li>isDepictedIn</li>
+                              <li>isRelatedTo</li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary><strong>for WHERE (place)</strong></summary>
+                            <ul>
+                              <li>hasPlace</li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary><strong>for WHO (people)</strong></summary>
+                            <ul>
+                              <li>isPoducedBy</li>
+                              <li>isPublishedBy</li>
+                              <li>isInscriptedBy</li>
+                              <li>hasAuthor</li>
+                              <li>isMadeBy</li>
+                              <li>isAMasterOf</li>
+                              <li>isIntroducedIn</li>
+                              <li>isIllustradedIn</li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary><strong>for WHEN (date)</strong></summary>
+                            <ul>
+                              <li>isPartOf</li>
+                              <li>hasDate</li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary><strong>for SADO (domain)</strong></summary>
+                            <ul>
+                              <li>isPartOf</li>
+                              <li>isUsedIn</li>
+                              <li>isAMasterOf</li>
+                              <li>isExplainedIn</li>
+                              <li>illustratesEtiquetteOf</li>
+                              <li>isIllustradeIn</li>
+                              <li>isWornIn</li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary><strong>for ITEMS (our 10 items)</strong></summary>
+                            <ul>
+                              <li>isUsedUn</li>
+                              <li>isPartOf</li>
+                              <li>isProducedBy</li>
+                              <li>depicts</li>
+                              <li>hasCover</li>
+                              <li>hasAuthor</li>
+                              <li>isIntroducedIn</li>
+                              <li>isExplainedIn</li>
+                              <li>isInscriptedBy</li>
+                              <li>describes</li>
+                              <li>isIllustradedIn</li>
+                              <li>isMadeBy</li>
+                              <li>illustratesEtiquetteOf</li>
+                              <li>hasSubject</li>
+                              <li>hasDate</li>
+                              <li>isPublishedBy</li>
+                              <li>hasPlace</li>
+                              <li>hasMaterial</li>
+                              <li>hasGenre</li>
+                              <li>isA</li>
+                              <li>hasClassification</li>
+                              <li>isProvidedBy</li>
+                              <li>usesTechnique</li>
+                            </ul>
+                        </details>
                   </div>
                       
                   <!--Shiho-->
@@ -258,9 +358,27 @@
                   <div class="tab-content" id="fulltext">
                       
                       <h3>Full Text Analysis and Transformation: Deep Content Processing</h3>
-                      <p></p>
-
+                      <p>For the full text analysis, we focused on <i>The Book of Tea</i> by Okakura Kakuzō as our central textual source - the other two items that are also books represent illustrations or photographs as their main content so this was the only full-text item. 
+                      Our goal was to manually encode the text using the <a href="">TEI (Text Encoding Initiative) P5 guidelines</a> - we began by transcribing and encoding the text in a TEI/XML file, applying appropriate structural and semantic markup writing the mandatory sections at first, following the slides created by Professor D'Aquino, and enriched the annotations adding more sections based on our encoding needs and also to connect it to our domain as much as possible. 
+                      This included encoding chapters, paragraphs, and significant concepts using tags such as "div","p", "head" and "term" - the last one depicts the main keywords and concept that are underlined in the book and are related to our domain. We also tagged names of people ("persName"), places ("placeName"), added bibliographic references ("bibl") - since there are two publications and the encoded text refers to the transcribed version of the original - allowing for a more precise mapping of the knowledge embedded in the book. 
+                      To enhance semantic richness, we linked the mentioned places to external authority files using <a href="https://www.geonames.org/">GeoNames URIs</a>, where available. Additionally, we compiled a structured list of the people and places referenced in the book using ("listPerson") and ("listPlace"), making the encoded file both human and machine-readable.</p>
+                      <p>To convert the TEI file into RDF, we opted for an XSLT-based transformation. Instead of writing a transformation pipeline in Python, we used <a href="https://www.freeformatter.com/xsl-transformer.html#google_vignette">FreeFormatter</a> to simplify the process. With guidance from ChatGPT (as suggested from the professor because of the complexity level of XSLT), we wrote a custom XSLT stylesheet, ensuring the use of the correct XML and RDF namespaces.
+                      After testing and refining the stylesheet, we uploaded both the TEI/XML and XSLT files to the FreeFormatter tool. The transformation produced an RDF/Turtle file that captured essential entities and relationships from the encoded text, especially from the introductory and final chapters. To present the logic of this transformation clearly, we created the HTML page version of the XSL file that shows the key mappings and semantic structure used in the conversion.</p>
+                      <p>Additionally, as requested, we developed a Python script (with the help of ChatGPT) capable of transforming the TEI/XML file into RDF, offering an alternative method for data processing and enabling more flexibility in how we worked with the file. This script also made it easier to validate our RDF output, which we checked using RDF Grapher to ensure consistency and correctness.</p>
+                      <p>During this process, we created a dedicated URI for our own digital edition of the book ("http://example.org/bookoftea/the-book-of-tea-digital-edition") to distinguish it from the URI used for the main cultural heritage item representation of the book, which served as a conceptual hub connecting the other selected objects. So the RDF Graph of this digital edition is independent fron the one referring to the entire book as an item, linked into the combination of RDFs graph comprehensive of all the other items we selected for the project.</p>
+                      <p>The produced files:
+                          <ul>
+                              <li><a href="full_text/tei_book_of_tea.xml">tei/xml</a></li>
+                              <li><a href="full_text/book_of_tea.xsl">.xsl</a></li>
+                              <li><a href="book_of_tea.html">html page</a></li>
+                              <li><a href="full_text/book_of_tea.ttl">.ttl</a></li>
+                              <li><a href="full_text/tei_to_rdf.py">.py</a></li>
+                              <li><a href="full_text/book_of_tea.rdf">.rdf</a></li>
+                              <li><a href="full_text/book_of_tea_rdf_graph.png">graph png</a></li>
+                            </ul>
+                      </p>
                   </div>
+                    
 
                   <!--Shiho-->
                   <!-- Tab Content: Ontology Design -->
@@ -285,21 +403,75 @@
                         @prefix wd: &lt;https://www.wikidata.org/wiki/&gt; .
                         @prefix gn: &lt;http://www.geonames.org/&gt; .
                         </code></pre><p>    Finally, all RDF outputs were <strong>merged into a single RDF file</strong> using Python. While combining everything into one CSV file from the start would also have been possible, we opted for separate files per item to support a more structured and step-by-step modeling process. </p>
-                        <p> The visualization can be found here, and the datasets are available on our <a href="https://github.com/projectlod/aLODofTea/tree/main/to_rdf/ttl" target="_blank"></a>GitHub repository. </p></div>
+                        <p> The visualization can be found here, and the datasets are available on our <a href="https://github.com/projectlod/aLODofTea/tree/main/to_rdf/ttl" target="_blank"></a>GitHub repository. </p>
+                      </div>
+
+                    
+              
 
                   <!--Together-->
                   <!-- Tab Content: Resources -->
                   <div class="tab-content" id="resources">
         
                       <h3>Resources: Research References and Sources</h3>
-                      <p>uuuuuuuu</p>
+                      
+                      <p><u>Research:</u></p>
+                        
+                            <ul><li>The Book of Tea: https://www.loc.gov/resource/gdcebookspublic.2019299129/</li></ul>
+                      
+
+                      <p><u>Ontology schemas:</u></p>
+                        <p>
+                          <ul>
+                            <li>TEI: https://tei-c.org/</li>
+                            <li>Europeana Data Model: https://pro.europeana.eu/discover-the-data/about-europeana-eu</li>
+                            <li>CIDOC-CRM: https://cidoc-crm.org/</li>
+                            <li>BIBFRAME: https://id.loc.gov/ontologies/bibframe.html</li>
+                            <li>Dublin Core Terms: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</li>
+                            <li>SKOS: https://www.w3.org/2009/08/skos-reference/skos.html</li>
+                            <li>RDF: https://www.w3.org/TR/rdf-schema/</li>
+                            <li>FOAF: http://xmlns.com/foaf/0.1/</li>
+                            <li>Wikidata: https://www.wikidata.org/wiki/</li>
+                            <li>GeoNames: http://www.geonames.org/</li>
+                            <li>CDWA: https://www.getty.edu/publications/categories-description-works-art/</li>
+                            <li>MARCXML: https://www.loc.gov/standards/marcxml/</li>
+                          </ul>
+                        </p>
+
+                        <p><u>Institutions:</u></p>
+                          <p>
+                          <ul>
+                            <li>The Metropolitan Museum of Art: https://www.metmuseum.org/</li>
+                            <li>The Met API: https://metmuseum.github.io/</li>
+                            <li>Europeana: https://www.europeana.eu/</li>
+                            <li>Europeana API: https://www.europeana.eu/</li>
+                            <li>Museum of Fine Arts, Boston: https://www.mfa.org/</li>
+                            <li>British Museum: https://www.britishmuseum.org/</li>
+                            <li>National Gallery of Art: https://www.nga.gov/</li>
+                            <li>Library of Congress: https://www.loc.gov/</li>
+                            <li>Internet Archive: https://archive.org/</li>
+                          </ul>
+                          </p>
+
+                          <p><u>Tools:</u></p>
+                            <p>
+                            <ul>
+                              <li>RDF Grapher: https://www.ldf.fi/service/rdf-grapher</li>
+                              <li>RDFLib: https://rdflib.readthedocs.io/en/stable/</li>
+                              <li>Miro: https://miro.com</li>
+                              <li>Notion: https://www.notion.com </li>
+                              <li>Free formatter: https://www.freeformatter.com</li>
+                              <li>ChatGPT: https://chatgpt.com<li>
+                              <li>Google spreadsheets: https://docs.google.com/spreadsheets/u/0/</li>
+                            </ul>
+                            </p>
 
                   </div>
-
+                </div>
               </div>
           </div>
         </div>
-        </div>
+
       </section><!-- /Service Details Section -->
 
       <!-- Team section -->
@@ -308,7 +480,7 @@
         <!-- Section Title -->
           <div class="container section-title" data-aos="fade-up">
             <h2>Team</h2>
-            <p>We are master’s students in <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Digital Humanities and Digital Knowledge</a> at the University of Bologna, with a shared passion for culture and technology. We’re interested in making connections and finding meaning within the humanities, and exploring how to shape and express them in digital contexts</p>
+            <p>We are master’s students in <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Digital Humanities and Digital Knowledge</a> at the University of Bologna, with a shared passion for culture and technology. We’re interested in making connections and finding meaning within the humanities and exploring how to shape and express them in digital contexts.</p>
           </div><!-- End Section Title -->
         
         <!-- Team Members -->
@@ -440,5 +612,6 @@
         });
       });
     </script>
+
   </body>
-</html>
+</html>        
