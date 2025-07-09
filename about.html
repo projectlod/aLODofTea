@@ -68,10 +68,9 @@
 
             <li class="dropdown"><a href="knowledge_representation.html"><span>Knowledge Representation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li>
-                  <a href="knowledge_representation.html#full-text">Full Text Analysis</a>
+                <li class="dropdown"><a href="knowledge_representation.html#full-text"><span>Full Text Analysis</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul class="sub-sub-dropdown">
-                    <li><a href="book_of_tea.html#the-book-of-tea-html">> The Book of Tea</a></li>
+                    <li><a href="book_of_tea.html#the-book-of-tea-html">The Book of Tea</a></li>
                   </ul>
                 </li>
                 <li><a href="knowledge_representation.html#rdf-production">RDF Production</a></li>
@@ -403,7 +402,7 @@
                         @prefix wd: &lt;https://www.wikidata.org/wiki/&gt; .
                         @prefix gn: &lt;http://www.geonames.org/&gt; .
                         </code></pre><p>    Finally, all RDF outputs were <strong>merged into a single RDF file</strong> using Python. While combining everything into one CSV file from the start would also have been possible, we opted for separate files per item to support a more structured and step-by-step modeling process. </p>
-                        <p> The visualization can be found here, and the datasets are available on our <a href="https://github.com/projectlod/aLODofTea/tree/main/to_rdf/ttl" target="_blank"></a>GitHub repository. </p>
+                        <p> The visualization can be found <a href="knowledge_representation.html#rdf-visualization">here</a>, and the datasets are available on our <a href="https://github.com/projectlod/aLODofTea/tree/main/to_rdf/ttl" target="_blank"></a>GitHub repository. </p>
                       </div>
 
                     
@@ -615,4 +614,4 @@
     </script>
 
   </body>
-</html>        
+</html>
