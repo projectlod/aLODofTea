@@ -35,18 +35,6 @@
   mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
 
   /**
-   * Hide mobile nav on same-page/hash links
-   */
-  document.querySelectorAll('#navmenu a').forEach(navmenu => {
-    navmenu.addEventListener('click', () => {
-      if (document.querySelector('.mobile-nav-active')) {
-        mobileNavToogle();
-      }
-    });
-
-  });
-
-  /**
    * Toggle mobile nav dropdowns
    */
   document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
@@ -180,14 +168,6 @@
 
   });
 
-  /**
-   * Frequently Asked Questions Toggle
-   */
-  document.querySelectorAll('.representation-item h3, .representation-item .representation-toggle').forEach((representationItem) => {
-    representationItem.addEventListener('click', () => {
-      representationItem.parentNode.classList.toggle('representation-active');
-    });
-  });
 
   /**
    * Init swiper sliders
