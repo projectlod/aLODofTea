@@ -333,7 +333,7 @@
       <!-- Section Title -->  
       <div class="container section-title" data-aos="fade-up">
         <h2>Metadata Analysis</h2>
-          <p class="container">We investigated the metadata availability across institutions holding the selected items. Europeana offers standardized metadata using EDM, while The Met provides API-based metadata without a common standard, so we applied CIDOC-CRM. For books and archives, MARCXML was available and interpreted into BIBFRAME for better operability for RDF production.The table below summarizes the metadata standards used by each institution, and the standards adopted for our ontology. Further details can be found in the <a href="about.html#about">Documentation section</a></p>
+          <p class="container">We started our analysis by investigating the standards of metadata across the institutions that hold the selected items. Europeana provides standardized metadata using the EDM model. While The Met offers metadata via an API, they do not follow a specific standard, leading us to adopt CDWA for describition. We mapped it to the CIDOC-CRM when developing our ontology. For books and archival materials, metadata was available in MARCXML format, which we vocabularized with MODS descriptions. We translated this into BIBFRAME for our ontology and to support RDF generation. The table below summarizes the metadata standards used for description by each institution, as well as the standards we decided to adopt. </p>
 
   </p></div>
       </div><!-- End Section Title -->
@@ -349,7 +349,7 @@
                 <th>Item Type</th>
                 <th>Institution</th>
                 <th>Metadata Standard Provided by the Institution</th>
-                <th>Chosen Metadata Standard</th>
+                <th>Chosen Metadata / Ontology Standard</th>
               </tr>
             </thead>
             <tbody>
@@ -358,21 +358,21 @@
                 <td>Book</td>
                 <td>Library of Congress</td>
                 <td>MODS<br>DC<br>MARCXML</td>
-                <td>BIBFRAME</td>
+                <td>MODS / BIBFRAME</td>
               </tr>
               <tr>
                 <td>Portrait of Sen no Rikyu</td>
                 <td>Hanging scroll</td>
                 <td>Metropolitan Museum of Art</td>
                 <td>-</td>
-                <td>CIDOC-CRM</td>
+                <td>CDWA / CIDOC-CRM</td>
               </tr>
               <tr>
                 <td>The Tea Scoop of Rikyu</td>
                 <td>Bamboo</td>
                 <td>Metropolitan Museum of Art</td>
                 <td>-</td>
-                <td>CIDOC-CRM</td>
+                <td>CDWA / CIDOC-CRM</td>
               </tr>
               <tr>
                 <td>Invitation to a Tea Ceremony</td>
@@ -386,42 +386,42 @@
                 <td>Woodblock print</td>
                 <td>British Museum</td>
                 <td>-</td>
-                <td>CIDOC-CRM</td>
+                <td>CDWA / CIDOC-CRM</td>
               </tr>
               <tr>
                 <td>Kimono (hitoe)</td>
                 <td>Costume</td>
                 <td>Museum of Fine Arts Boston</td>
                 <td>-</td>
-                <td>CIDOC-CRM</td>
+                <td>CDWA / CIDOC-CRM</td>
               </tr>
               <tr>
                 <td>Ikebana Hinagata Densho</td>
                 <td>Illustrated Book</td>
                 <td>Internet Archive</td>
                 <td>MARCXML</td>
-                <td>BIBFRAME</td>
+                <td>MODS / BIBFRAME</td>
               </tr>
               <tr>
                 <td>Mysterious Japan</td>
                 <td>Book</td>
                 <td>Internet Archive</td>
                 <td>MARCXML</td>
-                <td>BIBFRAME</td>
+                <td>MODS / BIBFRAME</td>
               </tr>
               <tr>
                 <td>Tea Bowl</td>
                 <td>Ceramic</td>
                 <td>The Metropolitan Museum of Art</td>
                 <td>-</td>
-                <td>CIDOC-CRM</td>
+                <td>CDWA / CIDOC-CRM</td>
               </tr>
               <tr>
                 <td>The Japanese Footbridge</td>
                 <td>Painting</td>
                 <td>National Gallery of Art</td>
                 <td>-</td>
-                <td>CIDOC-CRM</td>
+                <td>CDWA / CIDOC-CRM</td>
               </tr>
             </tbody>
           </table>
@@ -475,7 +475,7 @@
                     <h3 class="mb-0">Conceptual Model</h3>
                   </a>
                 </div>
-                <p>Objects are represented as linked data using ontologies, enabling structured exploration across entities.</p>
+                <p>Objects are represented conceptually using ontology schemas, enabling exploration across entities in a more abstract level.</p>
               </div>
             </div>
 
@@ -509,7 +509,7 @@
                 <!-- second row -->
                 <div class="row row-border">
                   <div class="col-md-3 heading-col text-center">RDF Production</div>
-                  <div class="col-md-9 content-col">The data convertion of our triples using Python into the Turtle serialization format, making them interoperable for the semantic web.</div>
+                  <div class="col-md-9 content-col">The data convertion of descriptive metadata into ontology based RDF triples using Python into the Turtle serialization format, making them interoperable for the semantic web.</div>
                 </div>
 
                 <!-- third row -->

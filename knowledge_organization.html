@@ -135,7 +135,14 @@ Cards that will link to a bigger image and description
               <div class="row justify-content-center">
               <!--put here img and link to preview in index.html-->
                   <div class="frame m-4">
-                  <iframe width="850" height="500" src="https://miro.com/app/live-embed/uXjVIkjjCts=/?focusWidget=3458764633786299154&embedMode=view_only_without_ui&embedId=874282177771" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+                  <iframe 
+                    class="miro-frame"
+                    src="https://miro.com/app/live-embed/uXjVIkjjCts=/?focusWidget=3458764633786299154&embedMode=view_only_without_ui&embedId=874282177771"
+                    frameborder="0" 
+                    scrolling="no" 
+                    allow="fullscreen; clipboard-read; clipboard-write" 
+                    allowfullscreen>
+                  </iframe>
             </div>
           </section> 
 
@@ -144,67 +151,26 @@ Cards that will link to a bigger image and description
           <div class="container section-title" data-aos="fade-up">
               <h2>Conceptual Model</h2>
               <!--Explain conceptual model-->
-              <p>Building on our theoretical model, we began to formalize the relationships between entities by assigning URIs, selecting appropriate metadata standards, and defining connections through existing ontologies. This foundation shaped the development of our <b>Conceptual Model</b>, enabling us to translate cultural concepts of the Japanese Tea Ceremony into a structured and interoperable framework. </p>
+              <p>Building on our theoretical model, we attempted to define natural language based representation into a formal one, by applying formal vocabularies to classes and properties. The ontology schemas were decided based on the type of item and the metadata standards in which they were described. For cultural heritage items from museums, <strong>CIDOC-CRM</strong> and <strong>EDM </strong>were adopted as a primary schema. For literary works, we followed <strong>BIBFRAME</strong>. For general terms and relations, widely used schemas such as <strong>Dublin Core, SKOS, FOAF</strong> were adopted. The relations represented include general infomation regarding the items, as well as people, activities, and concepts closely related to the Japanese Tea Ceremony. </p>
 
               <!--put here img and link to preview in index.html-->
               <div class="row justify-content-center">
                 <div class="frame m-4">
-                  <iframe width="850" height="500" src="https://miro.com/app/live-embed/uXjVIheo92g=/?focusWidget=3458764633800244146&embedMode=view_only_without_ui&embedId=500150248142" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+                  <iframe 
+                    class="miro-frame"
+                    src="https://miro.com/app/live-embed/uXjVIheo92g=/?focusWidget=3458764633800244146&embedMode=view_only_without_ui&embedId=500150248142"
+                    frameborder="0" 
+                    scrolling="no" 
+                    allow="fullscreen; clipboard-read; clipboard-write" 
+                    allowfullscreen>
+                  </iframe>
                 </div>
               </div>
-
               <div class="details-container justify-content-center">
                 <details>
-                  <summary>See the custom URIs here</summary>
-                  <p><strong>Base URI:</strong> <code>https://w3id.org/a-lod-of-tea</code></p>
-                  <ul>
-                    <li><strong>items</strong>
-                      <ul>
-                        <li>rikyu-portrait</li>
-                        <li>teabowl</li>
-                        <li>teascoop</li>
-                        <li>kimono</li>
-                        <li>book-of-tea</li>
-                        <li>samurai-woodblock</li>
-                        <li>teagarden</li>
-                        <li>ikebana-book</li>
-                        <li>tea-ceremony-painting</li>
-                        <li>japanese-bridge</li>
-                      </ul>
-                    </li>
-                    <li><strong>activity</strong>
-                      <ul>
-                        <li>tea-ceremony</li>
-                        <li>ikebana</li>
-                      </ul>
-                    </li>
-                    <li><strong>concept</strong>
-                      <ul>
-                        <li>taoism</li>
-                        <li>wabisabi</li>
-                        <li>zen</li>
-                      </ul>
-                    </li>
-                    <li><strong>person</strong>
-                      <ul>
-                        <li>sen-no-rikyu</li>
-                        <li>okakura-kakuzo</li>
-                        <li>honami-koetsu</li>
-                      </ul>
-                    </li>
-                    <li><strong>place</strong>
-                      <ul>
-                        <li>tearoom</li>
-                        <li>roji</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </details>
-
-                <details>
-                  <summary>See the Ontologies Used here</summary>
-                  <ul>
-                    <li>CIDOC Conceptual Reference Model — <a href="https://www.cidoc-crm.org/" target="_blank">cidoc-crm.org</a></li>
+                  <summary>The list of ontology schemas used</summary>
+                  <ul class="text-center no-bullets">
+                    <li>CIDOC-CRM — <a href="https://www.cidoc-crm.org/" target="_blank">cidoc-crm.org</a></li>
                     <li>Europeana Data Model — <a href="http://www.europeana.eu/schemas/edm/" target="_blank">europeana.eu</a></li>
                     <li>BIBFRAME — <a href="http://id.loc.gov/ontologies/bibframe/" target="_blank">loc.gov</a></li>
                     <li>Dublin Core Terms — <a href="http://purl.org/dc/terms/" target="_blank">purl.org</a></li>

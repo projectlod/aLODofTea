@@ -1055,6 +1055,11 @@ section,
   margin-bottom: 0;
 }
 
+.no-bullets {
+  list-style-type: none;
+  padding-left: 0; /* 必要に応じて左の余白も除去 */
+}
+
 @media (min-width: 1365px) {
   .organization .organization-item:hover {
     transform: translateY(-10px);
@@ -1096,6 +1101,17 @@ section,
   list-style-position: inside; /* これで▼が文字と同じ行に */
 }
 
+.miro-frame {
+    width: 100%;  /* デフォルトはスマホ用に全幅 */
+    height: 500px;
+    border: none;
+  }
+
+  @media (min-width: 1200px) {
+    .miro-frame {
+      width: 70vw;  /* 画面が広いときは70% */
+    }
+  }
 
 /*--------------------------------------------------------------
 # Knowledge Representation Section

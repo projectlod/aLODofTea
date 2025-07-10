@@ -139,7 +139,7 @@ Cards that will link to a bigger image and description
 
                   <!--embed on emgithub.com-->
                   <div class="frame m-4"> 
-                    <iframe frameborder="0" scrolling="yes" style="width:800px; height:500px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fprojectlod%2FaLODofTea%2Fblob%2Fmain%2Ffull_text%2Ftei_book_of_tea.xml&style=night-owl&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>
+                    <iframe frameborder="0" scrolling="yes" style="min-width:60%; height:500px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fprojectlod%2FaLODofTea%2Fblob%2Fmain%2Ffull_text%2Ftei_book_of_tea.xml&style=night-owl&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>
                   </div>
                 
                   <!--Explain full text analysis-->  
@@ -164,17 +164,57 @@ Cards that will link to a bigger image and description
         <section id="rdf-production" class="intro section">
           <div class="container section-title" data-aos="fade-up">
               <div class="section-title">
-                <h2>RDF Production</h2> 
+                <h2>RDF Production</h2>
+                
+                <p>The RDF production involved a few steps, as described below.</p>
+                <p>All of the tables and codes introduced below are also available in our <a href="https://github.com/projectlod/aLODofTea/tree/main/to_rdf" target="_blank"><strong>GitHub repository.</strong></a></p>
+                  <br>
 
                 <div class="row justify-content-center">
-                  <p>For the RDF transformation procedure, we defined the relationships between objects based on the conceptual model and the URIs we defined. We organized all triples by item and compiled them into CSV files, which were then generated into RDF data via Python.</p>
-                  <p>All of the tables and codes introduced below are also available in our <a href="https://github.com/projectlod/aLODofTea/tree/main/to_rdf" target="_blank"><strong>GitHub repository.</strong></a></p>
-                  <br><br><br>
+
+                  <h4 class="mt-4"><strong>Custom URIs</strong></h4>
+                  <p>To further express relations developed in the conceptual model in a concrete way, people, activities, concepts, and places particularly with connections to the theme and items were assigned to custom URIs. <br>
+                  Our base URI defined is <code>https://w3id.org/a-lod-of-tea</code></p>
+                <div class="details-container justify-content-center">
+                <details>
+                  <summary>See the custom URIs here</summary>
+                   <ul class="text-center no-bullets"> 
+                    <li><strong>items</strong></li>
+                        <li>rikyu-portrait</li>
+                        <li>teabowl</li>
+                        <li>teascoop</li>
+                        <li>kimono</li>
+                        <li>book-of-tea</li>
+                        <li>samurai-woodblock</li>
+                        <li>teagarden</li>
+                        <li>ikebana-book</li>
+                        <li>tea-ceremony-painting</li>
+                        <li>japanese-bridge</li><br>
+                      <li><strong>activity</strong></li>
+                        <li>tea-ceremony</li>
+                        <li>ikebana</li><br>
+                      <li><strong>concept</strong></li>
+                        <li>taoism</li>
+                        <li>wabisabi</li>
+                        <li>zen</li><br>
+                      <li><strong>person</strong></li>
+                        <li>sen-no-rikyu</li>
+                        <li>okakura-kakuzo</li>
+                        <li>honami-koetsu</li><br>
+                      <li><strong>place</strong></li>
+                        <li>tearoom</li>
+                        <li>roji</li>
+                    </ul>
+                </details>
+                </div>
+
+
+                  <h4 class="mt-4"><strong>CSV Production</strong></h4>
+                  <p>We produced CSV files containing the full descriptions of each item, using either the metadata standard adopted in our project or the one provided by the respective institution. Based on the theoretical and conceptual models we developed, we selected and incorporated relevant connections and relationships among the items. They are available to view <a href="https://github.com/projectlod/aLODofTea/tree/main/to_rdf/full_description" target="_blank"><strong>here</strong></a><br><br></p>
+
 
                   <h4 class="mt-4"><strong>Triple Structure Overview</strong></h4>
-                  <p>The table below shows the triples we defined for each item. <br>We structured each table so that the items is the subject of each triple, and prepared separate files accordingly. <br>Additionally, a separate "Non-Items" table collects all triples where the subject is not representing a specific item</p>
-
-                
+                  <p>We then mapped the item descriptions to formal ontology schemas used in our conceptual model, representing them as RDF triples with each item serving as the subject, as shown by clicking on each entry below. In addition to custom URIs created for items and related entities, broader real-world instances were linked using external resources such as Wikidata and GeoNames. These instances, along with non-item entities defined by custom URIs, were assigned an rdf:type and a human-readable label. The "non-items" section contains triples in which these entities serve as subjects, enriching the overall ontology.</p>                
                   <!-- tables of csv-->
                   <div id="tabContainer" class="mt-5">
                       <button class="tab-button" onclick="showTable('Book of Tea')">Book of Tea</button>
@@ -499,17 +539,18 @@ Cards that will link to a bigger image and description
                     </div> 
                   <br><br><br>
                   <h4><strong>Python Script for Transformation</strong></h4>
-                  <p>The Python script used for transforming the CSV files into RDF data is available below.</p>
+                  <p>The transformation into RDF was done using Python, into the Turtle serialization format.
+                    Below is the Python script of one of the items ("The Portrait of Rikyu"). The Python files of all the items can be found <a href="https://github.com/projectlod/aLODofTea/tree/main/to_rdf/py" target="_blank"><strong>here.</strong></a></p>
                   <div class="frame m-4"> 
-                  <iframe frameborder="0" scrolling="yes" style="width:800px; height:500px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fprojectlod%2FaLODofTea%2Fblob%2Fmain%2Fto_rdf%2Fpy%2Fcsv_to_rdf_template.py&style=atom-one-dark-reasonable&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>
+                  <iframe frameborder="0" scrolling="yes" style="width:60%; height:500px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fprojectlod%2FaLODofTea%2Fblob%2Fmain%2Fto_rdf%2Fpy%2Frikyu-portrait.py&style=atom-one-dark-reasonable&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>
                   </div>
                   <div><br><br><br></div>
 
                   <h4><strong>RDF Dataset</strong></h4><p>This is full data set of the generated RDF, transformed into turtle format.</p>
                     <div class="frame m-4"> 
-                    <iframe frameborder="0" scrolling="yes" style="width:800px; height:500px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fprojectlod%2FaLODofTea%2Fblob%2Fmain%2Fto_rdf%2Fttl%2Ffull_dataset.ttl&style=atom-one-dark-reasonable&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>
+                    <iframe frameborder="0" scrolling="yes" style="width:60%; height:500px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fprojectlod%2FaLODofTea%2Fblob%2Fmain%2Fto_rdf%2Fttl%2Ffull_dataset.ttl&style=atom-one-dark-reasonable&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>
                     </div>
-                    <p>The individual .ttl files for each item are also available in our <a href="https://github.com/projectlod/aLODofTea/tree/main/to_rdf" target="_blank"><strong>GitHub repository.</strong></a></p>
+                    <p>The individual .ttl files can be found <a href="https://github.com/projectlod/aLODofTea/tree/main/to_rdf" target="_blank"><strong>here.</strong></a></p>
 
               </div>
           </div>

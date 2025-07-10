@@ -170,7 +170,7 @@
                       
                       <h3>Metadata Analysis: Extracting Meaningful Information</h3>
                       <p>This step involves the identification and examination of the <strong>metadata standards</strong> employed by the institutions providing the selected items.</p>
-                      <p>Three of our items—<strong>the Portrait of Rikyū</strong>, <strong>the Teaspoon</strong>, and <strong>the Teabowl</strong>—originate from the Metropolitan Museum of Art (The Met). The Met holds an extensive collection of Asian art, a significant portion of which is Open Access, thereby facilitating easier referencing and reuse. The Met offers an API key that allows users to access and download detailed item information in JSON format, alongside a dataset available in CSV format. However, in terms of metadata standards, The Met does not adhere to a single recognized standard; instead, it employs a combination of vocabularies and approaches. A detailed explanation of how these vocabularies were formed could not be found. Therefore, we initially decided to map the data to the <strong>CDWA</strong>(Categories for the Description of Works of Art) in order to understand and organize the categorical structure of the descriptions. This served as a foundation for representing the data ontologically using <strong>CIDOC-CRM</strong>, a formal ontology designed to model cultural heritage information.</p><p>For the items from the British Museum (<strong>the Woodblock print</strong>), the National Gallery of Art (<strong>the Japanese Footbridge</strong>), and the Museum of Fine Arts, Boston (<strong>Kimono</strong>), no identifiable metadata standards or downloadable metadata files were available. Consequently, we chose to align their descriptive information using the CDWA framework, as we had done with the items from The Met. We then applied the same methodology for ontology design using CIDOC-CRM.</p><p>The ukiyo-e painting titled <strong>Invitation to a Tea Ceremony</strong> was sourced from Europeana. Europeana provides an API that grants access to an extensive range of digital collections from cultural heritage institutions across Europe in JSON format. Europeana requires that all aggregators and data partners map their original metadata to the <strong>EDM</strong> (Europeana Data Model). EDM primarily utilizes its own schema, designated with the <code>edm:</code> namespace, but also incorporates widely adopted vocabularies such as <code>dcterms</code> and <code>skos</code>. As a result, we chose to describe the relationships surrounding this item using EDM.</p><p>Regarding the bibliographic item <strong>The Book of Tea</strong>, the eBook version was sourced from the Library of Congress, which provided metadata in <strong>MARCXML</strong>, <strong>DCTERMS</strong>, and <strong>MODS</strong> formats. For the purpose of general understanding and interoperability, we adopted <strong>BIBFRAME</strong> in our ontology, as it is both more human-readable and easily mappable with MARCXML using Python.</p><p>The other two bibliographic items—<strong>The Illustrated Book of Ikebana</strong> and <strong>Mysterious Japan</strong>—were sourced from the Internet Archive, which also provides metadata in MARCXML. Consequently, we applied BIBFRAME to these items as well.</p>
+                      <p>Three of our items—<strong>the Portrait of Rikyū</strong>, <strong>the Teaspoon</strong>, and <strong>the Teabowl</strong>—originate from the Metropolitan Museum of Art (The Met). The Met holds an extensive collection of Asian art, a significant portion of which is Open Access, thereby facilitating easier referencing and reuse. The Met offers an API key that allows users to access and download detailed item information in JSON format, alongside a dataset available in CSV format. However, in terms of metadata standards, The Met does not adhere to a single recognized standard; instead, it employs a combination of vocabularies and approaches. A detailed explanation of how these vocabularies were formed could not be found. Therefore, we decided to describe the data according to the <strong>CDWA</strong>(Categories for the Description of Works of Art) in order to understand and organize the categorical structure of the descriptions. This served as a foundation for representing the data ontologically using <strong>CIDOC-CRM</strong>, a formal ontology designed to model cultural heritage information, for the RDF production step.</p><p>For the items from the British Museum (<strong>the Woodblock print</strong>), the National Gallery of Art (<strong>the Japanese Footbridge</strong>), and the Museum of Fine Arts, Boston (<strong>Kimono</strong>), no identifiable metadata standards or downloadable metadata files were available. Consequently, we chose to align their descriptive information using the CDWA framework, as we had done with the items from The Met. We then applied the same methodology for ontology design using CIDOC-CRM.</p><p>The ukiyo-e painting titled <strong>Invitation to a Tea Ceremony</strong> was sourced from Europeana. Europeana provides an API that grants access to an extensive range of digital collections from cultural heritage institutions across Europe in JSON format. Europeana requires that all aggregators and data partners map their original metadata to the <strong>EDM</strong> (Europeana Data Model). EDM primarily utilizes its own schema, designated with the <code>edm:</code> namespace, but also incorporates widely adopted vocabularies such as <code>dcterms</code> and <code>skos</code>. As a result, we chose to describe the relationships surrounding this item using EDM.</p><p>Regarding the bibliographic item <strong>The Book of Tea</strong>, the eBook version was sourced from the Library of Congress, which provided metadata in <strong>MARCXML</strong>, <strong>DCTERMS</strong>, and <strong>MODS</strong> formats.  For the purpose of understanding the metadata, we adopted <strong>MODS</strong> for description as it is human-readable. Then we applied <strong>BIBFRAME</strong> to describe classes and properties formally in our ontology.</p><p>The other two bibliographic items—<strong>The Illustrated Book of Ikebana</strong> and <strong>Mysterious Japan</strong>—were sourced from the Internet Archive, which also provides metadata in MARCXML. Consequently, we applied we applied <strong>MODS</strong> for descrition, <strong>BIBFRAME</strong> for ontology representation to these items as well.</p>
                     
                   </div>
 
@@ -285,69 +285,14 @@
                   <div class="tab-content" id="conceptual">
                       
                       <h3>Developing the Conceptual Model: Practical Implementation</h3>
-                      <p>In the Theoretical Model phase, we identified and explored the relationships between the metadata of each item, the tea ceremony, and the associated concepts. After this analytical process, we moved on to the development of the <strong>Conceptual Model</strong> to represent the findings in a more formal structure.</p><p>We began by creating custom URIs for the items we wanted to include in our ontology. Our criteria for custom URI generation were as follows:</p>
-                      <li>Custom URIs for individual items</li>
-                          <li>Custom URIs for entities that have a close relationship with the tea ceremony (mainly people and concepts)</li><br>
-                          <p>The full list of generated URIs is as follows:</p>
-                            <ul><li><strong>Base URI:</strong> https://w3id.org/a-lod-of-tea</li></ul>
-
-                          <details>
-                            <summary><strong>/item</strong></summary>
-                            <ul>
-                              <li>rikyu-portrait</li>
-                              <li>teabowl</li>
-                              <li>teascoop</li>
-                              <li>kimono</li>
-                              <li>book-of-tea</li>
-                              <li>samurai-woodblock</li>
-                              <li>teagarden</li>
-                              <li>ikebana-book</li>
-                              <li>tea-ceremony-painting</li>
-                              <li>japanese-bridge</li>
-                            </ul>
-                          </details>
-
-                          <details>
-                            <summary><strong>/activity</strong></summary>
-                            <ul>
-                              <li>tea-ceremony</li>
-                              <li>ikebana</li>
-                            </ul>
-                          </details>
-
-                          <details>
-                            <summary><strong>/concept</strong></summary>
-                            <ul>
-                              <li>taoism</li>
-                              <li>wabisabi</li>
-                              <li>zen</li>
-                            </ul>
-                          </details>
-
-                          <details>
-                            <summary><strong>/person</strong></summary>
-                            <ul>
-                              <li>sen-no-rikyu</li>
-                              <li>okakura-kakuzo</li>
-                              <li>honami-koetsu</li>
-                            </ul>
-                          </details>
-
-                          <details>
-                            <summary><strong>/place</strong></summary>
-                            <ul>
-                              <li>tearoom</li>
-                              <li>roji</li>
-                            </ul>
-                          </details><br>
-
-                      <p>Other entities that are related across multiple items but not directly connected to the tea ceremony were represented using existing instances from external datasets such as Wikidata or GeoNames.</p>
+                      <p>In the Theoretical Model phase, we identified and explored the relationships between the metadata of each item, the tea ceremony, and the associated concepts. After this analytical process, we moved on to the development of the <strong>Conceptual Model</strong> to represent the findings in a more formal structure.</p>
+                      <p>We began by creating custom URIs for the items selected for the project, setting the base URI. 
+                      <br><strong>The Base URI:</strong> <code>https://w3id.org/a-lod-of-tea</code>
                       <p>Regarding the choice of schemas, we prioritized the metadata vocabularies identified in the earlier metadata analysis phase:</p>
                       <ul><li>CIDOC-CRM for museum items from institutions other than Europeana</li>
                           <li>EDM for the item sourced from Europeana</li>
                           <li>BIBFRAME for books and archival materials</li>
                       </ul><p>These were used as the primary frameworks, with adjustments made as needed in subsequent stages.</p><p>To represent subject–predicate–object relationships, we began by assigning classes to items (represented as small purple nodes in our model) to define what the item is (represented in red in the model). For the entities with custom URIs (represented as small red nodes), we also assigned classes to indicate their nature. While we aimed to use appropriate schema vocabularies, in many cases they were not available. Therefore, we applied general-purpose vocabularies such as FOAF (for <code>Person</code> and <code>Organization</code>) and SKOS (<code>Concept</code>).</p>
-                      <p>The property used to define "what it is" was <code>rdf:type</code>, and we included <code>rdfs:label</code> to ensure readability. In cases where the same entity existed in Wikidata or GeoNames, we established equivalency using <code>owl:sameAs</code>.</p>
                       <p>General metadata-related information directly associated with items—such as creation date, author, or institution—was expressed either through URIs (if connected to other items) or as literals if no such relationship existed. In either case, we prioritized using the schema originally associated with the item’s institution. When an appropriate property was unavailable, we adopted terms from DCTERMS or FOAF.</p><p>For entities that are related across items—such as people, concepts, or activities—we similarly prioritized CIDOC-CRM and BIBFRAME. For more general relationships not involving specific items, DCTERMS and FOAF were primarily used.</p>
                       <p>Relationships related to the tea ceremony are rarely linear. The practice encompasses complex and interwoven concepts, often without clearly defined hierarchies or causal structures. For instance, the tea ceremony is influenced by Taoism and Zen, and is closely connected with the concept of wabi-sabi. Physical elements such as ikebana, the tearoom, and roji are interconnected with each of these concepts. These relationships cannot be captured through simple binary associations.</p><p>Moreover, the tea ceremony, like many traditional practices, has multiple schools and lineages, each with its own philosophies and interpretations. We referenced *The Book of Tea* by Okakura Kakuzō as a key theoretical foundation. Rather than focusing on the practical aspects of the ceremony, Okakura emphasizes its spiritual and conceptual significance. Inspired by this, we designed our ontology to reflect and incorporate these broader philosophical dimensions.</p>
                   
@@ -379,35 +324,86 @@
                       </p>
                   </div>
                     
-
                   <!--Shiho-->
                   <!-- Tab Content: Ontology Design -->
                   <div class="tab-content" id="ontology">    
 
                       <h3>Ontology Design and RDF Production: Semantic Web Technologies</h3>
-                      <p>In parallel with the development of the <strong>Conceptual Model</strong>, we designed the <strong>ontology</strong> to support the upcoming transformation of data into RDF format. </p>
-                      <p>As a preparatory step, we extracted the relationships between entities illustrated in the Conceptual Model and organized them for each item. Each item was treated as a <em>subject</em>, and its relationships were described using <em>predicates</em> and <em>objects</em> in a formal language.  </p>  <p>    In addition to specific items (such as artworks and utensils), we also modeled abstract or contextual entities such as the <strong>Japanese tea ceremony</strong> itself, as well as related concepts defined with custom URIs (e.g., <em>Sen no Rikyū</em>, <em>Zen</em>, or <em>wabi-sabi</em>). These were also structured separately.  </p>  
-                      <p>Once all relationships were defined, the data was converted into <strong>CSV files</strong>. We then used the <code>rdflib</code> library in Python to serialize the data into <strong>Turtle syntax</strong>, an RDF serialization format. Turtle was chosen because it allows for clear and compact representation of URIs using prefixes, and expresses data in a clean <em>Subject–Predicate–Object</em> structure. </p>  <p>Refer to the <a href="knowledge_representation.html#rdf-production">RDF Production section</a> of this website to view the tabular format of the CSV files.</p>  <p>    The final RDF dataset contains <strong>127 triples</strong>, which were visualized using the <strong>RDF Grapher</strong> tool. </p><h4>Prefixes Used (in Turtle Syntax)</h4>  
-                        <pre><code>
-                        @prefix tea: &lt;https://w3id.org/a-lod-of-tea/&gt; .
-                        @prefix crm: &lt;https://www.cidoc-crm.org/&gt; .
-                        @prefix edm: &lt;http://www.europeana.eu/schemas/edm/&gt; .
-                        @prefix bf: &lt;http://id.loc.gov/ontologies/bibframe/&gt; .
-                        @prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
-                        @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
-                        @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-                        @prefix schema: &lt;https://schema.org/&gt; .
-                        @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
-                        @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-                        @prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
-                        @prefix wd: &lt;https://www.wikidata.org/wiki/&gt; .
-                        @prefix gn: &lt;http://www.geonames.org/&gt; .
-                        </code></pre><p>    Finally, all RDF outputs were <strong>merged into a single RDF file</strong> using Python. While combining everything into one CSV file from the start would also have been possible, we opted for separate files per item to support a more structured and step-by-step modeling process. </p>
-                        <p> The visualization can be found <a href="knowledge_representation.html#rdf-visualization">here</a>, and the datasets are available on our <a href="https://github.com/projectlod/aLODofTea/tree/main/to_rdf/ttl" target="_blank"></a>GitHub repository. </p>
-                      </div>
+                        <p>In parallel with the development of the <strong>Conceptual Model</strong>, we designed the <strong>ontology</strong> to support the transformation of data into RDF format. The ontology structure was informed by the metadata standards either adopted by our project or provided by partner institutions. Each item’s descriptive information was first organized into <strong>CSV files</strong>, reflecting both individual attributes and relationships derived from our conceptual and theoretical models.</p> <p>To express the conceptual relationships in a more formal and machine-readable way, we assigned custom URIs to people, activities, places, and abstract concepts closely connected to the theme and items (such as <em>Sen no Rikyū</em>, <em>Zen</em>, <em>wabi-sabi</em>, or the <strong>Japanese tea ceremony</strong> itself). These URIs followed a consistent base namespace structure (<code>https://w3id.org/a-lod-of-tea#</code>), and the full list of generated URIs is as follows:</p>
+                          <details>
+                            <summary><strong>item</strong></summary>
+                            <ul>
+                              <li>rikyu-portrait</li>
+                              <li>teabowl</li>
+                              <li>teascoop</li>
+                              <li>kimono</li>
+                              <li>book-of-tea</li>
+                              <li>samurai-woodblock</li>
+                              <li>teagarden</li>
+                              <li>ikebana-book</li>
+                              <li>tea-ceremony-painting</li>
+                              <li>japanese-bridge</li>
+                            </ul>
+                          </details>
 
-                    
-              
+                          <details>
+                            <summary><strong>activity</strong></summary>
+                            <ul>
+                              <li>tea-ceremony</li>
+                              <li>ikebana</li>
+                            </ul>
+                          </details>
+
+                          <details>
+                            <summary><strong>concept</strong></summary>
+                            <ul>
+                              <li>taoism</li>
+                              <li>wabisabi</li>
+                              <li>zen</li>
+                            </ul>
+                          </details>
+
+                          <details>
+                            <summary><strong>person</strong></summary>
+                            <ul>
+                              <li>sen-no-rikyu</li>
+                              <li>okakura-kakuzo</li>
+                              <li>honami-koetsu</li>
+                            </ul>
+                          </details>
+
+                          <details>
+                            <summary><strong>place</strong></summary>
+                            <ul>
+                              <li>tearoom</li>
+                              <li>roji</li>
+                            </ul>
+                          </details><br>
+  
+                          <p>Instances of more general real-world entities were instead aligned with existing external vocabularies such as <strong>Wikidata</strong> and <strong>GeoNames</strong>.</p> <p>Each item was treated as a <em>subject</em> in a triple structure, with relevant <em>predicates</em> and <em>objects</em> forming the full description. These descriptions were mapped to ontology schemas also referenced in the conceptual model. They may also be along with a <code>owl:sameAs</code>, in the case that a wikidata entry of the item exists. </p><p>In the case of non-item entities (such as abstract concepts or locations), separate triples were constructed with these entities as the subject, along with an <code>rdf:type</code> and <code>rdfs:label</code> to enhance human readability and semantic clarity.</p> <p>The transformation of the CSV-based data into RDF was implemented in Python using the <code>rdflib</code> library, and serialized in <strong>Turtle syntax</strong>. Turtle was chosen for its compact structure and readability, especially for URI-based data.<p>The final RDF dataset contains <strong>127 triples</strong>, and was visualized using the <strong>RDF Grapher</strong> tool.</p> 
+                          <h4>Prefixes Used (in Turtle Syntax)</h4>  
+                          <pre><code>
+                          @prefix tea: &lt;https://w3id.org/a-lod-of-tea/&gt; .
+                          @prefix crm: &lt;https://www.cidoc-crm.org/&gt; .
+                          @prefix edm: &lt;http://www.europeana.eu/schemas/edm/&gt; .
+                          @prefix bf: &lt;http://id.loc.gov/ontologies/bibframe/&gt; .
+                          @prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+                          @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+                          @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+                          @prefix schema: &lt;https://schema.org/&gt; .
+                          @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+                          @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+                          @prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
+                          @prefix wd: &lt;https://www.wikidata.org/wiki/&gt; .
+                          @prefix gn: &lt;http://www.geonames.org/&gt; .
+                          </code></pre><p>    Finally, all RDF outputs were <strong>merged into a single RDF file</strong> using Python. While combining everything into one CSV file from the start would also have been possible, we opted for separate files per item to support a more structured and step-by-step modeling process. </p>
+                          <p>The produced files: <br>
+                          <a href="https://github.com/projectlod/aLODofTea/tree/main/to_rdf/full_description" target="_blank">CSV files</a><br>
+                          <a href="https://github.com/projectlod/aLODofTea/tree/main/to_rdf/spo" target="_blank">Triples</a><br>
+                          <a href="https://github.com/projectlod/aLODofTea/tree/main/to_rdf/py" target="_blank">Python files</a><br>
+                          <a href="https://github.com/projectlod/aLODofTea/tree/main/to_rdf/ttl" target="_blank">Turtle files</a><br>
+                          <a href="https://github.com/projectlod/aLODofTea/blob/main/to_rdf/ttl/full_dataset.ttl" target="_blank">Full RDF data set</a><br>
+                    </div>
 
                   <!--Together-->
                   <!-- Tab Content: Resources -->
@@ -468,11 +464,12 @@
                             </p>
 
                   </div>
+
                 </div>
               </div>
-          </div>
-        </div>
-
+            </div>
+         
+        
       </section><!-- /Service Details Section -->
 
       <!-- Team section -->
