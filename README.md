@@ -17,11 +17,11 @@
 
 ## 🫖 Project Description
 
-**aLODofTEA** is a semantic web project that explores the **Japanese tea ceremony** (*chanoyu*) as a cultural practice, combining **text encoding (TEI/XML)** and **Linked Open Data (LOD)** technologies.
+**aLODofTEA** is a semantic web project that explores the **Japanese tea ceremony** (*Sadō*) as a cultural practice, combining **text encoding (TEI/XML)** and **Linked Open Data (LOD)** technologies.
 
 Through this project, we:
 
-- Created a TEI-compliant digital edition of chapters from <i>The Book of Tea</i> by Okakura Kakuzo
+- Created a TEI-compliant digital edition of chapters from <i>The Book of Tea</i> by Okakura Kakuzō
 - Identified and linked cultural heritage objects related to our domain
 - Modeled the information in RDF using real museum metadata
 - Visualized the data in a <a href="https://projectlod.github.io/aLODofTea/">website</a>
@@ -40,7 +40,7 @@ in the [**Digital Humanities and Digital Knowledge (DHDK)**](https://corsi.unibo
 
 ## 🌸 Highlights
 
-- 🗻 **Cultural Focus**: Embracing Zen, minimalism and symbolism of the tea ceremony  
+- 🗻 **Cultural Focus**: Embracing Zen, Wabi-Sabi and symbolism of the tea ceremony  
 - 🧾 **Textual Encoding**: TEI/XML edition with semantic markup of places and concepts  
 - 🏺 **Cultural Objects**: 10 cultural heritage items from real museum collections  
 - 🕸️ **LOD Integration**: RDF modeling, Theoretical and Conceptual models  
