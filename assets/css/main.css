@@ -1527,6 +1527,35 @@ section,
 }
 
 /*--------------------------------------------------------------
+# book of tea source description
+--------------------------------------------------------------*/
+
+.bibl-info-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+  margin-bottom: 3.5rem;
+  flex-wrap: nowrap; /* current default */
+}
+
+/* Responsive: stack vertically on mobile */
+@media (max-width: 768px) {
+  .bibl-info-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .bibl-info-wrapper img {
+    width: 100%;
+    max-width: 200px; /* or 150px if you want */
+    height: auto;
+  }
+  .bibl-info {
+    text-align: center;
+  }
+}
+
+/*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
 .about .about-list {
