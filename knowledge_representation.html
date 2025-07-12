@@ -699,7 +699,7 @@ Cards that will link to a bigger image and description
     const zoomHandler = function (e) {
       e.preventDefault();
       scale += e.deltaY * -0.001;
-      scale = Math.min(Math.max(0.5, scale), 5);
+      scale = Math.min(Math.max(0.5, scale), 10);
       image.style.transform = `scale(${scale})`;
 
       if (scale > 1.01) {
