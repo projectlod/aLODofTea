@@ -153,9 +153,11 @@ Cards that will link to a bigger image and description
                     <img src="full_text/book_of_tea_rdf_graph.png" alt="rdf visualization" class="thumbnail-rdf" onclick="openModal('imgModal1', 'fullImage1')">
                       <div id="imgModal1" class="modal" onclick="closeModal('imgModal1')">
                         <span class="close">&times;</span>
-                        <img id="fullImage1" class="modal-content" src="full_text/book_of_tea_rdf_graph.png">
+                        <div id="imgWrapper1" class="modal-image-wrapper">
+                          <img id="fullImage1" class="modal-content" src="full_text/book_of_tea_rdf_graph.png">
+                        </div>
                       </div>
-                  </div>
+                </div>
             </div>
         </section>
 
@@ -570,7 +572,9 @@ Cards that will link to a bigger image and description
                   <img src="to_rdf/full_dataset.png" alt="rdf visualization" class="thumbnail-rdf" onclick="openModal('imgModal2', 'fullImage2')">
                     <div id="imgModal2" class="modal" onclick="closeModal('imgModal2')">
                       <span class="close">&times;</span>
-                      <img id="fullImage2" class="modal-content" src="to_rdf/full_dataset.png">
+                      <div id="imgWrapper2" class="modal-image-wrapper">
+                        <img id="fullImage2" class="modal-content" src="to_rdf/full_dataset.png">
+                      </div>
                     </div>
                 </div>              
               </div>
@@ -672,35 +676,54 @@ Cards that will link to a bigger image and description
 
   </script>
 
-  <!--script for rdf images on zoom-->
-  <script>
+ <script>
+  let zoomHandlers = {};  // Keep track of zoom handlers per image
+
+  function openModal(modalId, wrapperId, imageId) {
+    const modal = document.getElementById(modalId);
+    const wrapper = document.getElementById(wrapperId);
+    const image = document.getElementById(imageId);
+
+    modal.style.display = "block";
+    document.body.classList.add("modal-open");
+
     let scale = 1;
+    image.style.transform = `scale(${scale})`;
+    wrapper.classList.remove("scrollable");
 
-    function openModal(modalId, imageId) {
-      const modal = document.getElementById(modalId);
-      const image = document.getElementById(imageId);
+    // Remove any previous handler if exists
+    if (zoomHandlers[imageId]) {
+      image.removeEventListener("wheel", zoomHandlers[imageId]);
+    }
 
-      modal.style.display = "block";
-      scale = 1;
+    const zoomHandler = function (e) {
+      e.preventDefault();
+      scale += e.deltaY * -0.001;
+      scale = Math.min(Math.max(0.5, scale), 5);
       image.style.transform = `scale(${scale})`;
 
-      // Remove previous listeners (optional if you're reusing IDs properly)
-      image.onwheel = null;
+      if (scale > 1.01) {
+        wrapper.classList.add("scrollable");
+      } else {
+        wrapper.classList.remove("scrollable");
+        wrapper.scrollTop = 0;  // Reset scroll to top when zoomed out
+      }
+    };
 
-      // Add zoom functionality to the current image
-      image.addEventListener("wheel", function zoomHandler(e) {
-        e.preventDefault();
-        scale += e.deltaY * -0.001;
-        scale = Math.min(Math.max(0.5, scale), 5);
-        image.style.transform = `scale(${scale})`;
-      }, { passive: false });
-    }
+    zoomHandlers[imageId] = zoomHandler;
+    image.addEventListener("wheel", zoomHandler, { passive: false });
+  }
 
-    function closeModal(modalId) {
-      const modal = document.getElementById(modalId);
-      modal.style.display = "none";
-    }
-  </script>
+  function closeModal(modalId, wrapperId) {
+    const modal = document.getElementById(modalId);
+    const wrapper = document.getElementById(wrapperId);
+
+    modal.style.display = "none";
+    document.body.classList.remove("modal-open");
+    wrapper.classList.remove("scrollable");
+  }
+</script>
+
 
   <!--script for active page in navbar-->
   <script>
