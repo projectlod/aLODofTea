@@ -142,23 +142,28 @@
           </div>
 
           <section id="rdf-production" class="intro section">
-          <div class="container section-title" data-aos="fade-up">
+            <div class="container section-title" data-aos="fade-up">
               <div class="section-title">
-            <div class="metadata-section">
-              <h2>Source Descriptions</h2>
-              <div class="bibl-info">
-                  <h3>The Book of Tea</h3>
-                  <p>Author: <a href="https://www.wikidata.org/wiki/Q942995">Okakura Kakuzō</a></p>
-                  <p>Editors: Gabrielle Harbowy, Matthew, David Widger</p>
-                  <p>Publisher: Project Gutenberg / Library of Congress</p>
-                  <p>Publication Date: 2019-01-24</p>
-                  <p>
-                      <a href="https://www.loc.gov/resource/gdcebookspublic.2019299129/"
-                      target="_blank"><u>Online access</u></a>
-                  </p>
-              </div>
-            </div>
-          </div>
+                <div class="metadata-section">
+                  <h2>Source Descriptions</h2>
+                  
+                  <div class="bibl-info-wrapper" style="display: flex; justify-content: center; align-items: center; gap: 3.5rem; margin-bottom: 3.5rem;">
+                    <!-- Image on the left -->
+                    <img src="assets/img/items/the-book-of-tea.png" alt="Book Cover" style="width: 150px; height: auto; border-radius: 8px;" />
+
+                    <!-- Description on the right -->
+                    <div class="bibl-info">
+                      <h3>The Book of Tea</h3>
+                      <p>Author: <a href="https://www.wikidata.org/wiki/Q942995">Okakura Kakuzō</a></p>
+                      <p>Editors: Gabrielle Harbowy, Matthew, David Widger</p>
+                      <p>Publisher: Project Gutenberg / Library of Congress</p>
+                      <p>Publication Date: 2019-01-24</p>
+                      <p>
+                        <a href="https://www.loc.gov/resource/gdcebookspublic.2019299129/" target="_blank"><u>Online access</u></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
             <div class="container section-title" data-aos="fade-up">
               <div>
@@ -531,6 +536,7 @@
             </section>
         </section>
     </main>
+
   <!--footer-->
     <footer id="footer" class="footer accent-background">
 
@@ -598,30 +604,23 @@
   <script>
   document.addEventListener("DOMContentLoaded", function () {
     const path = window.location.pathname;
-
-    // Select all top-level nav links
     const navLinks = document.querySelectorAll('.navmenu > ul > li > a');
 
     navLinks.forEach(link => {
       const href = link.getAttribute('href');
 
-      // CASE 1: Home page with internal anchors (#hero etc.)
-      if ((path.endsWith("index.html") || path === "/" || path === "") && href.includes("#hero")) {
-        link.classList.add("current-page");
+      // CASE 1: Homepage with anchors
+      if ((path.endsWith("index.html") || path === "/" || path === "") && href.includes("#")) {
+        link.classList.add("active");
       }
 
-      // CASE 2: Exact match with other page names (e.g. about.html)
-      if (href && path.includes(href)) {
-        link.classList.add("current-page");
-      }
-
-      // CASE 3: Relative links (e.g., href="knowledge_organization.html")
+      // CASE 2: Exact match for other HTML pages
       if (href && path.endsWith(href)) {
-        link.classList.add("current-page");
+        link.classList.add("active");
       }
     });
   });
-  </script>
+</script>
 
   </body>
 </html>
