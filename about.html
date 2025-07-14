@@ -181,7 +181,7 @@
                       <h3>Developing the Theoretical Model: Building Conceptual Frameworks</h3>
                       <p>While reading <i>The Book of Tea</i>, we began identifying recurring concepts and underlying themes within the text. During this process, we created an initial hand-drawn sketch to visualize the conceptual relationships between the main ideas explored in the book. This preliminary diagram later evolved into our formal <a href="https://projectlod.github.io/aLODofTea/knowledge_organization.html#theoretical"><b>Theoretical Model</b></a> as well as an <a href="full_text/book_of_tea_rdf_graph.png"><b>RDF graph</b></a> representing the connections found in selected chapters, particularly the opening and closing ones. These diagrams illustrate how the different themes, referred to as “keywords/concepts” in our <a href="full_text/tei_book_of_tea.xml"><b>encoded TEI file</b></a>, interact and inform one another throughout the text.</p>
                       <p>As our main source, <i>The Book of Tea</i> once again proved essential: not only was it the basis for identifying relationships between themes, but it also served as the central node around which all our selected items could be meaningfully connected. The book is widely regarded as a classic in Japanese cultural discourse, especially in regard to the philosophy and aesthetics surrounding tea, which further justified its central role in our theoretical model.</p>
-                      <p>To create the visual model collaboratively, we used <a href=""></a><b>Miro</b></a>, which allowed us to work together remotely and iteratively. Through Miro, we formalized the diagram by identifying the relationships between objects and themes using clear, human-readable predicates. This step laid the foundation for the later development of our conceptual model, offering a structured approach to organizing both textual and object-based data.</p>
+                      <p>To create the visual model collaboratively, we used <a href="https://miro.com/app/dashboard/"></a><b>Miro</b></a>, which allowed us to work together remotely and iteratively. Through Miro, we formalized the diagram by identifying the relationships between objects and themes using clear, human-readable predicates. This step laid the foundation for the later development of our conceptual model, offering a structured approach to organizing both textual and object-based data.</p>
                       <p>In order to ensure semantic consistency, we developed a shared list of predicates written in CamelCase format. For this, we initially consulted ChatGPT to obtain a list of commonly used predicates. We then adapted and refined this list based on our specific needs, renaming some of the predicates and tailoring others to better reflect the conceptual connections unique to our project. The final list of predicates used is included below.</p>
                         
                       <ul><li><strong>PREDICATES (all the arrows going in and out for ...):</strong></li></ul>
@@ -303,15 +303,15 @@
                   <div class="tab-content" id="fulltext">
                       
                       <h3>Full Text Analysis and Transformation: Deep Content Processing</h3>
-                      <p>For the full text analysis, we focused on <i>The Book of Tea</i> by Okakura Kakuzō as our central textual source - the other two items that are also books represent illustrations or photographs as their main content so this was the only full-text item. 
-                      Our goal was to manually encode the text using the <a href="">TEI (Text Encoding Initiative) P5 guidelines</a> - we began by transcribing and encoding the text in a TEI/XML file, applying appropriate structural and semantic markup writing the mandatory sections at first, following the slides created by Professor D'Aquino, and enriched the annotations adding more sections based on our encoding needs and also to connect it to our domain as much as possible. 
+                      <p>For the full text analysis, we focused on <i>The Book of Tea</i> by Okakura Kakuzō as our central textual source - the other two items that are also books represent illustrations or photographs as their main content so this is the only full-text item. 
+                      Our goal was to manually encode the text using the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/HD.html">TEI (Text Encoding Initiative) P5 guidelines</a> - we began by transcribing and encoding the text in a TEI/XML file, applying appropriate structural and semantic markup writing the mandatory sections at first, following the slides created by Professor D'Aquino, and enriched the annotations adding more sections based on our encoding needs and also to connect it to our domain as much as possible. 
                       This included encoding chapters, paragraphs, and significant concepts using tags such as "div","p", "head" and "term" - the last one depicts the main keywords and concept that are underlined in the book and are related to our domain. We also tagged names of people ("persName"), places ("placeName"), added bibliographic references ("bibl") - since there are two publications and the encoded text refers to the transcribed version of the original - allowing for a more precise mapping of the knowledge embedded in the book. 
                       To enhance semantic richness, we linked the mentioned places to external authority files using <a href="https://www.geonames.org/">GeoNames URIs</a>, where available. Additionally, we compiled a structured list of the people and places referenced in the book using ("listPerson") and ("listPlace"), making the encoded file both human and machine-readable.</p>
                       <p>To convert the TEI file into RDF, we opted for an XSLT-based transformation. Instead of writing a transformation pipeline in Python, we used <a href="https://www.freeformatter.com/xsl-transformer.html#google_vignette">FreeFormatter</a> to simplify the process. With guidance from ChatGPT (as suggested from the professor because of the complexity level of XSLT), we wrote a custom XSLT stylesheet, ensuring the use of the correct XML and RDF namespaces.
                       After testing and refining the stylesheet, we uploaded both the TEI/XML and XSLT files to the FreeFormatter tool. The transformation produced an RDF/Turtle file that captured essential entities and relationships from the encoded text, especially from the introductory and final chapters. To present the logic of this transformation clearly, we created the HTML page version of the XSL file that shows the key mappings and semantic structure used in the conversion.</p>
                       <p>Additionally, as requested, we developed a Python script (with the help of ChatGPT) capable of transforming the TEI/XML file into RDF, offering an alternative method for data processing and enabling more flexibility in how we worked with the file. This script also made it easier to validate our RDF output, which we checked using RDF Grapher to ensure consistency and correctness.</p>
                       <p>During this process, we created a dedicated URI for our own digital edition of the book ("http://example.org/bookoftea/the-book-of-tea-digital-edition") to distinguish it from the URI used for the main cultural heritage item representation of the book, which served as a conceptual hub connecting the other selected objects. So the RDF Graph of this digital edition is independent fron the one referring to the entire book as an item, linked into the combination of RDFs graph comprehensive of all the other items we selected for the project.</p>
-                      <p>The produced files:
+                      <p>The produced files (view them separately following the links below):
                           <ul>
                               <li><a href="full_text/tei_book_of_tea.xml">tei/xml</a></li>
                               <li><a href="full_text/book_of_tea.xsl">.xsl</a></li>
@@ -322,6 +322,7 @@
                               <li><a href="full_text/book_of_tea_rdf_graph.png">graph png</a></li>
                             </ul>
                       </p>
+                      <p>View them all together in the dedicated folder <a href="https://github.com/projectlod/aLODofTea/tree/main/full_text">here!</a></p>
                   </div>
                     
                   <!--Shiho-->
@@ -329,7 +330,7 @@
                   <div class="tab-content" id="ontology">    
 
                       <h3>Ontology Design and RDF Production: Semantic Web Technologies</h3>
-                        <p>In parallel with the development of the <strong>Conceptual Model</strong>, we designed the <strong>ontology</strong> to support the transformation of data into RDF format. The ontology structure was informed by the metadata standards either adopted by our project or provided by partner institutions. Each item’s descriptive information was first organized into <strong>CSV files</strong>, reflecting both individual attributes and relationships derived from our conceptual and theoretical models.</p> <p>To describe concretely abstract classes modeled conceptualy, in addition to the custom URIs of our items, we also decided to assign them to people, activities, places, and abstract concepts closely connected to the theme and items (such as <em>Sen no Rikyū</em>, <em>Zen</em>, <em>wabi-sabi</em>, or the <strong>Japanese tea ceremony</strong> itself). The full list of generated custom URIs is as follows, with the base URI as <code>https://w3id.org/a-lod-of-tea/</code>:</p>
+                        <p>In parallel with the development of the <strong>Conceptual Model</strong>, we designed the <strong>ontology</strong> to support the transformation of data into RDF format. The ontology structure was informed by the metadata standards either adopted by our project or provided by partner institutions. Each item’s descriptive information was first organized into <strong>CSV files</strong>, reflecting both individual attributes and relationships derived from our conceptual and theoretical models.</p> <p>To describe concretely abstract classes modeled conceptually, in addition to the custom URIs of our items, we also decided to assign them to people, activities, places, and abstract concepts closely connected to the theme and items (such as <em>Sen no Rikyū</em>, <em>Zen</em>, <em>wabi-sabi</em>, or the <strong>Japanese tea ceremony</strong> itself). The full list of generated custom URIs is as follows, with the base URI as <code>https://w3id.org/a-lod-of-tea/</code>:</p>
                           <details>
                             <summary><strong>item</strong></summary>
                             <ul>
@@ -419,7 +420,6 @@
                       <p><u>Ontology schemas:</u></p>
                         <p>
                           <ul>
-                            <li>TEI: https://tei-c.org/</li>
                             <li>Europeana Data Model: https://pro.europeana.eu/discover-the-data/about-europeana-eu</li>
                             <li>CIDOC-CRM: https://cidoc-crm.org/</li>
                             <li>BIBFRAME: https://id.loc.gov/ontologies/bibframe.html</li>
@@ -431,6 +431,17 @@
                             <li>GeoNames: http://www.geonames.org/</li>
                             <li>CDWA: https://www.getty.edu/publications/categories-description-works-art/</li>
                             <li>MARCXML: https://www.loc.gov/standards/marcxml/</li>
+                            <br/><p><u>Additional ones for the full text:</u></p>
+                              <p>
+                              <ul>
+                                <li>DBPEDIA: http://dbpedia.org/ontology/</li>
+                                <li>dc elements: http://purl.org/dc/elements/1.1/</li>
+                                <li>Library of Congress Subjects Headings: http://id.loc.gov/authorities/subjects/</li>
+                                <li>SCHEMA1: http://schema.org/</li>
+                                <li>TEI: http://www.tei-c.org/ns/1.0</li>
+                                <li>XSD: http://www.w3.org/2001/XMLSchema#</li>
+                              </ul> 
+                            </p>
                           </ul>
                         </p>
 
