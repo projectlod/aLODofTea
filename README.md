@@ -32,9 +32,7 @@ All work was conducted with special attention to aesthetics and cultural respect
 
 ## 🎓 Academic Context
 
-Developed as part of the course **Information Science and Cultural Heritage** (2024/2025),
-taught by [Prof. Francesca Tomasi](https://www.unibo.it/sitoweb/francesca.tomasi) and [Prof. Marilena D’Aquino](https://www.unibo.it/sitoweb/marilena.daquino2)  
-in the [**Digital Humanities and Digital Knowledge (DHDK)**](https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge/index.html) master's program at the University of Bologna.
+Developed as part of the course **Information Science and Cultural Heritage** (2024/2025), taught by [Prof. Francesca Tomasi](https://www.unibo.it/sitoweb/francesca.tomasi) and [Prof. Marilena D’Aquino](https://www.unibo.it/sitoweb/marilena.daquino2) in the [**Digital Humanities and Digital Knowledge (DHDK)**](https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge/index.html) master's program at the University of Bologna.
 
 ---
 
