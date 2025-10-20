@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/img/favicon.png" alt="aLODofTEA logo" width="150"/>
+  <img src="assets/img/favicon.png" alt="aLODofTEA logo" width="300"/>
 </p>
 
 ## 🍵 aLODofTEA
